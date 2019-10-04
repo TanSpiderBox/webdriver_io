@@ -1,0 +1,99 @@
+{
+  "uid" : "5a0b004926e6a54",
+  "name" : "Then User can't login system 2nd",
+  "fullName" : "Login: Verify user blank email field and can't login system.Then User can't login system 2nd",
+  "historyId" : "2e5886d29c49aae9a77056d8ddfa2521",
+  "time" : {
+    "start" : 1570177922634,
+    "stop" : 1570177922647,
+    "duration" : 13
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify user blank email field and can't login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify user blank email field and can't login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't login system 2nd"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify user blank email field and can't login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5ccfc9f6232562c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177753979,
+        "stop" : 1570177753992,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "87f6993786906a15",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177706485,
+        "stop" : 1570177706496,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "f6219d8c4cfaafdf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177648508,
+        "stop" : 1570177648523,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "4beaa596792af506",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570176858488,
+        "stop" : 1570176858502,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "ec5df58e5c985ac1",
+      "status" : "failed",
+      "statusDetails" : "Please input Email and password to sign in.: expected '//*[text()=\"Please input Email and password to sign in.\"]' to be an object",
+      "time" : {
+        "start" : 1570176412054,
+        "stop" : 1570176412055,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5a0b004926e6a54.json",
+  "parameterValues" : [ "chrome" ]
+}

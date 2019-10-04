@@ -1,0 +1,100 @@
+{
+  "uid" : "a498c3b0479b8dea",
+  "name" : "Then User can login system",
+  "fullName" : "Login: Verify user can login system.Then User can login system",
+  "historyId" : "50a4e5b463194f59cc3994826affb26c",
+  "time" : {
+    "start" : 1570177928729,
+    "stop" : 1570177928777,
+    "duration" : 48
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can login system"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5a10feb95a44287d",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression ('//*[text()=\"Dashboard\"]') because of the following error:\n                TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.\n                  (Session info: chrome=77.0.3865.90)",
+      "time" : {
+        "start" : 1570177759865,
+        "stop" : 1570177759916,
+        "duration" : 51
+      }
+    }, {
+      "uid" : "93b60b77753fa717",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression ('//*[text()='Dashboard']') because of the following error:\n                SyntaxError: Failed to execute 'evaluate' on 'Document': The string '('//*[text()='Dashboard']')' is not a valid XPath expression.\n                  (Session info: chrome=77.0.3865.90)",
+      "time" : {
+        "start" : 1570177712522,
+        "stop" : 1570177712582,
+        "duration" : 60
+      }
+    }, {
+      "uid" : "290c484f086ef46d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1570177653250,
+        "stop" : 1570177653251,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f158bae0de06d8f9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1570176860658,
+        "stop" : 1570176860658,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f4d4e62b6b69858d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1570176414224,
+        "stop" : 1570176414224,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a498c3b0479b8dea.json",
+  "parameterValues" : [ "chrome" ]
+}

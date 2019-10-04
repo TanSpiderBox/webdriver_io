@@ -1,0 +1,90 @@
+{
+  "uid" : "ee880689b7d1636f",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Register: Verify user don't select User Role and can't register new account 5th.Given User Open website MMAP",
+  "historyId" : "877c75e4ed894cbb180868fcbd15802a",
+  "time" : {
+    "start" : 1570185877399,
+    "stop" : 1570185877911,
+    "duration" : 512
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user don't select User Role and can't register new account 5th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user don't select User Role and can't register new account 5th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user don't select User Role and can't register new account 5th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6f9b39f2bd53418c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185684787,
+        "stop" : 1570185685292,
+        "duration" : 505
+      }
+    }, {
+      "uid" : "62ce4adf42eed61e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185556747,
+        "stop" : 1570185557257,
+        "duration" : 510
+      }
+    }, {
+      "uid" : "4af6390ba8aa1e0e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185066733,
+        "stop" : 1570185067233,
+        "duration" : 500
+      }
+    }, {
+      "uid" : "76895659cb11bc2b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570184981585,
+        "stop" : 1570184982245,
+        "duration" : 660
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ee880689b7d1636f.json",
+  "parameterValues" : [ "chrome" ]
+}

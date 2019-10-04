@@ -1,0 +1,93 @@
+{
+  "uid" : "ca58c63f3fb1905f",
+  "name" : "When User input Password don't match",
+  "fullName" : "Register: Verify user input Password don't match and can't register new account 6th.When User input Password don't match",
+  "historyId" : "34be8df9d8f953a8b16bd3f813c4f0d6",
+  "time" : {
+    "start" : 1570185880042,
+    "stop" : 1570185881574,
+    "duration" : 1532
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User input Password don't match"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "daa45fb20d248ad3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185687389,
+        "stop" : 1570185689021,
+        "duration" : 1632
+      }
+    }, {
+      "uid" : "c3cd292c75803f1c",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570185557808,
+        "stop" : 1570185557873,
+        "duration" : 65
+      }
+    }, {
+      "uid" : "529b76bd71861e3e",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570185067850,
+        "stop" : 1570185067920,
+        "duration" : 70
+      }
+    }, {
+      "uid" : "dffd088ca8b6fdc6",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570184983058,
+        "stop" : 1570184983244,
+        "duration" : 186
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ca58c63f3fb1905f.json",
+  "parameterValues" : [ "chrome" ]
+}

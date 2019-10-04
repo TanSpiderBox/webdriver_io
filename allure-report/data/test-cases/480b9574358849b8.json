@@ -1,0 +1,93 @@
+{
+  "uid" : "480b9574358849b8",
+  "name" : "When User input Password is too short",
+  "fullName" : "Register: Verify user input Password is so short can't register new account 8th.When User input Password is too short",
+  "historyId" : "6f92b3d008ef0313b2c2a07dc273b183",
+  "time" : {
+    "start" : 1570185884313,
+    "stop" : 1570185885417,
+    "duration" : 1104
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user input Password is so short can't register new account 8th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user input Password is so short can't register new account 8th"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User input Password is too short"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user input Password is so short can't register new account 8th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4e0bdf3314ccbd4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185691682,
+        "stop" : 1570185692815,
+        "duration" : 1133
+      }
+    }, {
+      "uid" : "a64b9b69f7e9048d",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570185559017,
+        "stop" : 1570185559084,
+        "duration" : 67
+      }
+    }, {
+      "uid" : "f0ffcb67d8de0676",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570185069414,
+        "stop" : 1570185069477,
+        "duration" : 63
+      }
+    }, {
+      "uid" : "fb8a122a9b528451",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570184984624,
+        "stop" : 1570184984782,
+        "duration" : 158
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "480b9574358849b8.json",
+  "parameterValues" : [ "chrome" ]
+}

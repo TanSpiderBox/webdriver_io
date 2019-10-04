@@ -1,0 +1,98 @@
+{
+  "uid" : "81652b61e4d131b9",
+  "name" : "When User blank 2 field",
+  "fullName" : "Login: Verify user blank 2 field and can't login system.When User blank 2 field",
+  "historyId" : "fcb6296c49f6c5fbd78b46a5baf15ec5",
+  "time" : {
+    "start" : 1570177920970,
+    "stop" : 1570177921349,
+    "duration" : 379
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify user blank 2 field and can't login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify user blank 2 field and can't login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User blank 2 field"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify user blank 2 field and can't login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d3e1fe2ca5ca546b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177752390,
+        "stop" : 1570177752731,
+        "duration" : 341
+      }
+    }, {
+      "uid" : "dabac722a2fa4bab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177704997,
+        "stop" : 1570177705364,
+        "duration" : 367
+      }
+    }, {
+      "uid" : "10339c6084168d55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177646889,
+        "stop" : 1570177647262,
+        "duration" : 373
+      }
+    }, {
+      "uid" : "31e599839312190",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570176856930,
+        "stop" : 1570176857288,
+        "duration" : 358
+      }
+    }, {
+      "uid" : "f4d68004ef7d868a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570176410502,
+        "stop" : 1570176410856,
+        "duration" : 354
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "81652b61e4d131b9.json",
+  "parameterValues" : [ "chrome" ]
+}

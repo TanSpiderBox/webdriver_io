@@ -1,0 +1,93 @@
+{
+  "uid" : "4b1ea56eaf38acf8",
+  "name" : "When User blank Password",
+  "fullName" : "Register: Verify user blank field Password can't register new account 3rd.When User blank Password",
+  "historyId" : "efabfb7d6310203518d2332824d4951f",
+  "time" : {
+    "start" : 1570185874697,
+    "stop" : 1570185875788,
+    "duration" : 1091
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user blank field Password can't register new account 3rd"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user blank field Password can't register new account 3rd"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User blank Password"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user blank field Password can't register new account 3rd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5d8ccaa1936c4949",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185682085,
+        "stop" : 1570185683117,
+        "duration" : 1032
+      }
+    }, {
+      "uid" : "c5b3cdbe1b1c6db9",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570185556083,
+        "stop" : 1570185556165,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "69f84e65edf147a6",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570185066046,
+        "stop" : 1570185066116,
+        "duration" : 70
+      }
+    }, {
+      "uid" : "a6488244e7f67d50",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570184980516,
+        "stop" : 1570184980702,
+        "duration" : 186
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4b1ea56eaf38acf8.json",
+  "parameterValues" : [ "chrome" ]
+}

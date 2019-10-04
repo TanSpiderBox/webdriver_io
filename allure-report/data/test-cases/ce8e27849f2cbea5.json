@@ -1,0 +1,98 @@
+{
+  "uid" : "ce8e27849f2cbea5",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Login: Verify user blank email field and can't login system.Given User Open website MMAP",
+  "historyId" : "a6058d1630ecc7c82c1ad4e206329650",
+  "time" : {
+    "start" : 1570177921375,
+    "stop" : 1570177921954,
+    "duration" : 579
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify user blank email field and can't login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify user blank email field and can't login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify user blank email field and can't login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bfb22321721fb9d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177752759,
+        "stop" : 1570177753271,
+        "duration" : 512
+      }
+    }, {
+      "uid" : "12cf6387de0ff221",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177705393,
+        "stop" : 1570177705887,
+        "duration" : 494
+      }
+    }, {
+      "uid" : "c7acc82b6990b5f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177647291,
+        "stop" : 1570177647810,
+        "duration" : 519
+      }
+    }, {
+      "uid" : "9526ddadf9b92e23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570176857318,
+        "stop" : 1570176857804,
+        "duration" : 486
+      }
+    }, {
+      "uid" : "66c4dd63b4f86977",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570176410874,
+        "stop" : 1570176411358,
+        "duration" : 484
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ce8e27849f2cbea5.json",
+  "parameterValues" : [ "chrome" ]
+}

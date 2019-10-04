@@ -1,0 +1,56 @@
+{
+  "uid" : "21b81137f0ae45de",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Login: Verify user can login system.Given User Open website MMAP",
+  "historyId" : "88f0948000049ea5d4375d59f70e3be1",
+  "time" : {
+    "start" : 1570176860124,
+    "stop" : 1570176860657,
+    "duration" : 533
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "21b81137f0ae45de.json",
+  "parameterValues" : [ "chrome" ]
+}

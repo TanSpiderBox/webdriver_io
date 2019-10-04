@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1570177758037' stop='1570177759917'>
+    <name>Login: Verify user can login system</name>
+    <title>Login: Verify user can login system</title>
+    <test-cases>
+        <test-case start='1570177758038' status='passed' stop='1570177758540'>
+            <name>Given User Open website MMAP</name>
+            <title>Given User Open website MMAP</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1570177758540' status='passed' stop='1570177759865'>
+            <name>When User input correct email and password</name>
+            <title>When User input correct email and password</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1570177759865' status='broken' stop='1570177759916'>
+            <name>Then User can login system</name>
+            <title>Then User can login system</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>invalid selector: Unable to locate an element with the xpath expression ('//*[text()="Dashboard"]') because of the following error:
+                TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+                  (Session info: chrome=77.0.3865.90)</message>
+                <stack-trace>invalid selector: Unable to locate an element with the xpath expression ('//*[text()="Dashboard"]') because of the following error:
+                TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+                  (Session info: chrome=77.0.3865.90)
+                    at getErrorFromResponseBody (D:\WebdriverIO\node_modules\@wdio\runner\node_modules\webdriver\build\utils.js:175:10)
+                    at Request._callback (D:\WebdriverIO\node_modules\@wdio\runner\node_modules\webdriver\build\request.js:110:64)
+                    at Request.self.callback (D:\WebdriverIO\node_modules\request\request.js:185:22)
+                    at Request.&lt;anonymous> (D:\WebdriverIO\node_modules\request\request.js:1161:10)
+                    at IncomingMessage.&lt;anonymous> (D:\WebdriverIO\node_modules\request\request.js:1083:12)
+                    at endReadableNT (_stream_readable.js:1145:12)
+                    at Browser.runCommandWithHooks (D:\WebdriverIO\node_modules\@wdio\sync\build\wrapCommand.js:56:22)
+                    at Browser.wrapCommandFn (D:\WebdriverIO\node_modules\@wdio\sync\build\wrapCommand.js:33:40)
+                    at global.$.selector (D:\WebdriverIO\node_modules\@wdio\runner\build\index.js:159:36)
+                    at World.$ (D:\WebdriverIO\tests\step-definitions/Login.spec.js:59:21)
+                    at World.executeSync (D:\WebdriverIO\node_modules\@wdio\sync\build\index.js:44:18)
+                    at D:\WebdriverIO\node_modules\@wdio\sync\build\index.js:102:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

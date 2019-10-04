@@ -1,0 +1,90 @@
+{
+  "uid" : "5cfb2bd274c56576",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Register: Verify user input Existing Email and can't register new account 7th.Given User Open website MMAP",
+  "historyId" : "7f33c43792895bf4ad033acdddeda3d5",
+  "time" : {
+    "start" : 1570185881592,
+    "stop" : 1570185882112,
+    "duration" : 520
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "89c485b0f775a9bb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185689040,
+        "stop" : 1570185689544,
+        "duration" : 504
+      }
+    }, {
+      "uid" : "7fa257f867f50667",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185557876,
+        "stop" : 1570185558401,
+        "duration" : 525
+      }
+    }, {
+      "uid" : "4ad7f34669cd4eae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185067925,
+        "stop" : 1570185068439,
+        "duration" : 514
+      }
+    }, {
+      "uid" : "6d737fb7cf44dbed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570184983254,
+        "stop" : 1570184983875,
+        "duration" : 621
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5cfb2bd274c56576.json",
+  "parameterValues" : [ "chrome" ]
+}

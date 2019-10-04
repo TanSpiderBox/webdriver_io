@@ -1,0 +1,90 @@
+{
+  "uid" : "7c042fcf3c2596f9",
+  "name" : "Then User can't register new account 6th",
+  "fullName" : "Register: Verify user input Password don't match and can't register new account 6th.Then User can't register new account 6th",
+  "historyId" : "aa9d85f5705920e51a50d8ea114fa2f1",
+  "time" : {
+    "start" : 1570185881575,
+    "stop" : 1570185881589,
+    "duration" : 14
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't register new account 6th"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4d48a362b5824185",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185689021,
+        "stop" : 1570185689034,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "c32ba92afcfdcbd5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1570185557873,
+        "stop" : 1570185557873,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "30a41fe24543df7f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1570185067920,
+        "stop" : 1570185067921,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cfbdfb5bb8f87f1d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1570184983244,
+        "stop" : 1570184983244,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7c042fcf3c2596f9.json",
+  "parameterValues" : [ "chrome" ]
+}

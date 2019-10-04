@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1570184981583' stop='1570184982427'>
+    <name>Register: Verify user don't select User Role and can't register new account 5th</name>
+    <title>Register: Verify user don't select User Role and can't register new account 5th</title>
+    <test-cases>
+        <test-case start='1570184981585' status='passed' stop='1570184982245'>
+            <name>Given User Open website MMAP</name>
+            <title>Given User Open website MMAP</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1570184982245' status='broken' stop='1570184982426'>
+            <name>When User don't select User Role</name>
+            <title>When User don't select User Role</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>selector needs to be typeof `string` or `function`</message>
+                <stack-trace>Error: selector needs to be typeof `string` or `function`
+                    at Browser.findElement (D:\WebdriverIO\node_modules\@wdio\runner\node_modules\webdriverio\build\utils.js:200:9)
+                    at Browser.$ (D:\WebdriverIO\node_modules\@wdio\runner\node_modules\webdriverio\build\commands\browser\$.js:19:40)
+                    at Browser.runCommandWithHooks (D:\WebdriverIO\node_modules\@wdio\sync\build\wrapCommand.js:62:30)
+                    at Browser.runCommandWithHooks (D:\WebdriverIO\node_modules\@wdio\sync\build\wrapCommand.js:56:22)
+                    at Browser.wrapCommandFn (D:\WebdriverIO\node_modules\@wdio\sync\build\wrapCommand.js:33:40)
+                    at global.$.selector (D:\WebdriverIO\node_modules\@wdio\runner\build\index.js:159:36)
+                    at World.$ (D:\WebdriverIO\tests\step-definitions/RegisterAccount.js:63:3)
+                    at World.executeSync (D:\WebdriverIO\node_modules\@wdio\sync\build\index.js:44:18)
+                    at D:\WebdriverIO\node_modules\@wdio\sync\build\index.js:102:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1570184982426' status='pending' stop='1570184982426'>
+            <name>Then User can't register new account 5th</name>
+            <title>Then User can't register new account 5th</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

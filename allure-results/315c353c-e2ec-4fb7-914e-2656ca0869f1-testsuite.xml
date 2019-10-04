@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1570184900134' stop='1570184913560'>
+    <name>Register: Verify user blank all field and can't register new account 1st</name>
+    <title>Register: Verify user blank all field and can't register new account 1st</title>
+    <test-cases>
+        <test-case start='1570184900137' status='passed' stop='1570184903455'>
+            <name>Given User Open website MMAP</name>
+            <title>Given User Open website MMAP</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1570184903455' status='broken' stop='1570184913557'>
+            <name>When User blank all all field</name>
+            <title>When User blank all all field</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "label[for="user_role_contractor"]" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "label[for="user_role_contractor"]" because element wasn't found
+                    at implicitWait (D:\WebdriverIO\node_modules\@wdio\runner\node_modules\webdriverio\build\utils\implicitWait.js:22:13)
+                    at Element.runCommandWithHooks (D:\WebdriverIO\node_modules\@wdio\sync\build\wrapCommand.js:56:22)
+                    at Element.wrapCommandFn (D:\WebdriverIO\node_modules\@wdio\sync\build\wrapCommand.js:33:40)
+                    at Element.elementErrorHandlerCallback (D:\WebdriverIO\node_modules\@wdio\runner\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at World.click (D:\WebdriverIO\tests\step-definitions/RegisterAccount.js:9:27)
+                    at World.executeSync (D:\WebdriverIO\node_modules\@wdio\sync\build\index.js:44:18)
+                    at D:\WebdriverIO\node_modules\@wdio\sync\build\index.js:102:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1570184913558' status='pending' stop='1570184913559'>
+            <name>Then User can't register new account 1st</name>
+            <title>Then User can't register new account 1st</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

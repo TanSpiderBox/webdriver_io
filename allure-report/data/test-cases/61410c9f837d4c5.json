@@ -1,0 +1,56 @@
+{
+  "uid" : "61410c9f837d4c5",
+  "name" : "Then User can't register new account 4th",
+  "fullName" : "Register: Verify user blank field Confirm Password and can't register new account 4th.Then User can't register new account 4th",
+  "historyId" : "9b9b1c541507e93fc16f673623fc8289",
+  "time" : {
+    "start" : 1570185556738,
+    "stop" : 1570185556738,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user blank field Confirm Password and can't register new account 4th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user blank field Confirm Password and can't register new account 4th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't register new account 4th"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user blank field Confirm Password and can't register new account 4th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "61410c9f837d4c5.json",
+  "parameterValues" : [ "chrome" ]
+}

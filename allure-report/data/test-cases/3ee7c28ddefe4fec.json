@@ -1,0 +1,101 @@
+{
+  "uid" : "3ee7c28ddefe4fec",
+  "name" : "When User input correct email and password",
+  "fullName" : "Login: Verify user can login system.When User input correct email and password",
+  "historyId" : "84e797e081e97c1e8a0029fa57ae6cd",
+  "time" : {
+    "start" : 1570177927250,
+    "stop" : 1570177928729,
+    "duration" : 1479
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User input correct email and password"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cbec9a9aa25c1bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177758540,
+        "stop" : 1570177759865,
+        "duration" : 1325
+      }
+    }, {
+      "uid" : "b7b1c4b19da1440e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177711082,
+        "stop" : 1570177712522,
+        "duration" : 1440
+      }
+    }, {
+      "uid" : "7017ec4c7973bf54",
+      "status" : "broken",
+      "statusDetails" : "Step \"When User input correct email and password\" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.",
+      "time" : {
+        "start" : 1570177653249,
+        "stop" : 1570177653250,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e737cd56e376e3e7",
+      "status" : "broken",
+      "statusDetails" : "Step \"When User input correct email and password\" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.",
+      "time" : {
+        "start" : 1570176860657,
+        "stop" : 1570176860657,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c06baa3d1c967422",
+      "status" : "broken",
+      "statusDetails" : "Step \"When User input correct email and password\" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.",
+      "time" : {
+        "start" : 1570176414223,
+        "stop" : 1570176414224,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3ee7c28ddefe4fec.json",
+  "parameterValues" : [ "chrome" ]
+}

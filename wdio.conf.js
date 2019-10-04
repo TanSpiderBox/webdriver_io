@@ -24,7 +24,7 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+        // './tests/features/1-Login.feature'
     ],
     //
     // ============

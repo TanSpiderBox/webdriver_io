@@ -1,30 +1,450 @@
 [ {
-  "uid" : "d878d75fe763c5a3",
-  "name" : "Given User Open website MMAP",
+  "uid" : "7c042fcf3c2596f9",
+  "name" : "Then User can't register new account 6th",
   "time" : {
-    "start" : 1570090683194,
-    "stop" : 1570090685708,
-    "duration" : 2514
+    "start" : 1570185881575,
+    "stop" : 1570185881589,
+    "duration" : 14
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1430be4786bc4e27",
+  "uid" : "5e46685311e906d5",
+  "name" : "When User blank password field",
+  "time" : {
+    "start" : 1570177923175,
+    "stop" : 1570177923744,
+    "duration" : 569
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "59d50b013d24e5d8",
+  "name" : "Then User can't register new account 2nd",
+  "time" : {
+    "start" : 1570185874147,
+    "stop" : 1570185874157,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81652b61e4d131b9",
+  "name" : "When User blank 2 field",
+  "time" : {
+    "start" : 1570177920970,
+    "stop" : 1570177921349,
+    "duration" : 379
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a0b004926e6a54",
+  "name" : "Then User can't login system 2nd",
+  "time" : {
+    "start" : 1570177922634,
+    "stop" : 1570177922647,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b352f675ecaa2a0",
+  "name" : "Then User can't login system 5th",
+  "time" : {
+    "start" : 1570177926641,
+    "stop" : 1570177926655,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ccaa2381579dec2",
   "name" : "When User input all valid infomation",
   "time" : {
-    "start" : 1570090685708,
-    "stop" : 1570090687286,
-    "duration" : 1578
+    "start" : 1570185885968,
+    "stop" : 1570185888715,
+    "duration" : 2747
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "de244c7f18d72291",
+  "uid" : "c780619e59d9587",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570177926658,
+    "stop" : 1570177927249,
+    "duration" : 591
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ee7c28ddefe4fec",
+  "name" : "When User input correct email and password",
+  "time" : {
+    "start" : 1570177927250,
+    "stop" : 1570177928729,
+    "duration" : 1479
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7722218ec64bb6f",
+  "name" : "When User blank Confirm Password",
+  "time" : {
+    "start" : 1570185876316,
+    "stop" : 1570185877375,
+    "duration" : 1059
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de52e1796359b83b",
+  "name" : "Then User can't register new account 5th",
+  "time" : {
+    "start" : 1570185879492,
+    "stop" : 1570185879521,
+    "duration" : 29
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd8237ada14a1706",
+  "name" : "When User don't select User Role",
+  "time" : {
+    "start" : 1570185877911,
+    "stop" : 1570185879492,
+    "duration" : 1581
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abc19273e0564692",
+  "name" : "Then User can't register new account 4th",
+  "time" : {
+    "start" : 1570185877375,
+    "stop" : 1570185877387,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d1d082231d1b2d1",
+  "name" : "When User blank First Name",
+  "time" : {
+    "start" : 1570185873100,
+    "stop" : 1570185874147,
+    "duration" : 1047
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "59e184ab3c4900ed",
+  "name" : "Then User can't login system 4th",
+  "time" : {
+    "start" : 1570177925113,
+    "stop" : 1570177925128,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d89a0464210d473e",
+  "name" : "When User input Existing Email",
+  "time" : {
+    "start" : 1570185882112,
+    "stop" : 1570185883768,
+    "duration" : 1656
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1e57fbce09ecb9a",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570185874161,
+    "stop" : 1570185874697,
+    "duration" : 536
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c206b6653ed16e0",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570185885444,
+    "stop" : 1570185885968,
+    "duration" : 524
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a498c3b0479b8dea",
   "name" : "Then User can login system",
   "time" : {
-    "start" : 1570090687286,
-    "stop" : 1570090687287,
-    "duration" : 1
+    "start" : 1570177928729,
+    "stop" : 1570177928777,
+    "duration" : 48
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce8e27849f2cbea5",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570177921375,
+    "stop" : 1570177921954,
+    "duration" : 579
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cecd01409c2542",
+  "name" : "Then User can't login system 1st",
+  "time" : {
+    "start" : 1570177921350,
+    "stop" : 1570177921366,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83f9b4fa85fe60f7",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570177922653,
+    "stop" : 1570177923174,
+    "duration" : 521
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df57f635ef8fe647",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570177925135,
+    "stop" : 1570177925634,
+    "duration" : 499
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "480b9574358849b8",
+  "name" : "When User input Password is too short",
+  "time" : {
+    "start" : 1570185884313,
+    "stop" : 1570185885417,
+    "duration" : 1104
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92ac82d206be0fbf",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570185879524,
+    "stop" : 1570185880042,
+    "duration" : 518
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "93e858c89f2f27be",
+  "name" : "When User blank email field",
+  "time" : {
+    "start" : 1570177921955,
+    "stop" : 1570177922634,
+    "duration" : 679
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50064e8747f6da07",
+  "name" : "When User input incorrect password field",
+  "time" : {
+    "start" : 1570177925634,
+    "stop" : 1570177926641,
+    "duration" : 1007
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ee880689b7d1636f",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570185877399,
+    "stop" : 1570185877911,
+    "duration" : 512
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a963ef95aa621e1",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570177923760,
+    "stop" : 1570177924293,
+    "duration" : 533
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca58c63f3fb1905f",
+  "name" : "When User input Password don't match",
+  "time" : {
+    "start" : 1570185880042,
+    "stop" : 1570185881574,
+    "duration" : 1532
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc773798f63de34a",
+  "name" : "Then User can't login system 3rd",
+  "time" : {
+    "start" : 1570177923744,
+    "stop" : 1570177923755,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b107d980dd445d",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570185883793,
+    "stop" : 1570185884313,
+    "duration" : 520
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69156603af6ed36a",
+  "name" : "Then User can't register new account 3rd",
+  "time" : {
+    "start" : 1570185875788,
+    "stop" : 1570185875796,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5cfb2bd274c56576",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570185881592,
+    "stop" : 1570185882112,
+    "duration" : 520
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b1ea56eaf38acf8",
+  "name" : "When User blank Password",
+  "time" : {
+    "start" : 1570185874697,
+    "stop" : 1570185875788,
+    "duration" : 1091
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3848553fb2b63486",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570185866410,
+    "stop" : 1570185871722,
+    "duration" : 5312
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "76a92df0e380d9a3",
+  "name" : "Then User can't register new account 1st",
+  "time" : {
+    "start" : 1570185872458,
+    "stop" : 1570185872505,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d0fb0b484661de24",
+  "name" : "Then User create account successful",
+  "time" : {
+    "start" : 1570185888716,
+    "stop" : 1570185888733,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f3ea788ea0b4196",
+  "name" : "When User input incorrect email",
+  "time" : {
+    "start" : 1570177924293,
+    "stop" : 1570177925113,
+    "duration" : 820
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34ce9bb115ea2c05",
+  "name" : "Then User can't register new account 8th",
+  "time" : {
+    "start" : 1570185885418,
+    "stop" : 1570185885435,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a77abb424270329d",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570185875803,
+    "stop" : 1570185876316,
+    "duration" : 513
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4eec7f495850907",
+  "name" : "When User blank all all field",
+  "time" : {
+    "start" : 1570185871723,
+    "stop" : 1570185872458,
+    "duration" : 735
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8938fc367019e243",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570177918333,
+    "stop" : 1570177920970,
+    "duration" : 2637
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "77e567500487bd96",
+  "name" : "Then User can't register new account 7th",
+  "time" : {
+    "start" : 1570185883768,
+    "stop" : 1570185883789,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1eba785d7ddc5a48",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570185872514,
+    "stop" : 1570185873100,
+    "duration" : 586
   },
   "status" : "passed",
   "severity" : "normal"

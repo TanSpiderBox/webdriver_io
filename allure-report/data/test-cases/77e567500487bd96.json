@@ -1,0 +1,90 @@
+{
+  "uid" : "77e567500487bd96",
+  "name" : "Then User can't register new account 7th",
+  "fullName" : "Register: Verify user input Existing Email and can't register new account 7th.Then User can't register new account 7th",
+  "historyId" : "973b4862156889ccac3bb143c6408af",
+  "time" : {
+    "start" : 1570185883768,
+    "stop" : 1570185883789,
+    "duration" : 21
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't register new account 7th"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "81a73380a7a3858",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185691131,
+        "stop" : 1570185691149,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "2848eef6985ca671",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1570185558465,
+        "stop" : 1570185558465,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9044dc1695eb878d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1570185068504,
+        "stop" : 1570185068504,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b5e223ecebbe0428",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1570184983966,
+        "stop" : 1570184983966,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "77e567500487bd96.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,56 @@
+{
+  "uid" : "baa927420d9980b1",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Register: Verify user blank field Confirm Password and can't register new account 4th.Given User Open website MMAP",
+  "historyId" : "306ddc9f10f46734ed7413452519064e",
+  "time" : {
+    "start" : 1570185683129,
+    "stop" : 1570185683663,
+    "duration" : 534
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user blank field Confirm Password and can't register new account 4th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user blank field Confirm Password and can't register new account 4th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user blank field Confirm Password and can't register new account 4th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "baa927420d9980b1.json",
+  "parameterValues" : [ "chrome" ]
+}

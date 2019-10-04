@@ -1,0 +1,56 @@
+{
+  "uid" : "cda8da4bb21dd20e",
+  "name" : "When User blank email field",
+  "fullName" : "Login: Verify user blank email field and can't login system.When User blank email field",
+  "historyId" : "68fbde1062dcca5877771bcdbc4bce88",
+  "time" : {
+    "start" : 1570176857804,
+    "stop" : 1570176858488,
+    "duration" : 684
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify user blank email field and can't login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify user blank email field and can't login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User blank email field"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify user blank email field and can't login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cda8da4bb21dd20e.json",
+  "parameterValues" : [ "chrome" ]
+}

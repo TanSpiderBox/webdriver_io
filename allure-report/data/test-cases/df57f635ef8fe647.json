@@ -1,0 +1,98 @@
+{
+  "uid" : "df57f635ef8fe647",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Login: Verify user input incorrect password can't login system.Given User Open website MMAP",
+  "historyId" : "794407c4d18fae050fc45ab8e016abe1",
+  "time" : {
+    "start" : 1570177925135,
+    "stop" : 1570177925634,
+    "duration" : 499
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify user input incorrect password can't login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify user input incorrect password can't login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify user input incorrect password can't login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ced5b55212609891",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177756473,
+        "stop" : 1570177756966,
+        "duration" : 493
+      }
+    }, {
+      "uid" : "f1bda3c42f028dec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177708953,
+        "stop" : 1570177709500,
+        "duration" : 547
+      }
+    }, {
+      "uid" : "b50f94c9a9ede179",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570177651160,
+        "stop" : 1570177651682,
+        "duration" : 522
+      }
+    }, {
+      "uid" : "4f5e38268e1d832e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570176859598,
+        "stop" : 1570176860117,
+        "duration" : 519
+      }
+    }, {
+      "uid" : "554d8710a55ee3bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570176413159,
+        "stop" : 1570176413686,
+        "duration" : 527
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "df57f635ef8fe647.json",
+  "parameterValues" : [ "chrome" ]
+}

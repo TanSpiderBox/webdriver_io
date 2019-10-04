@@ -1,0 +1,58 @@
+{
+  "uid" : "5a10feb95a44287d",
+  "name" : "Then User can login system",
+  "fullName" : "Login: Verify user can login system.Then User can login system",
+  "historyId" : "50a4e5b463194f59cc3994826affb26c",
+  "time" : {
+    "start" : 1570177759865,
+    "stop" : 1570177759916,
+    "duration" : 51
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "invalid selector: Unable to locate an element with the xpath expression ('//*[text()=\"Dashboard\"]') because of the following error:\n                TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.\n                  (Session info: chrome=77.0.3865.90)",
+  "statusTrace" : "invalid selector: Unable to locate an element with the xpath expression ('//*[text()=\"Dashboard\"]') because of the following error:\n                TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.\n                  (Session info: chrome=77.0.3865.90)\n                    at getErrorFromResponseBody (D:\\WebdriverIO\\node_modules\\@wdio\\runner\\node_modules\\webdriver\\build\\utils.js:175:10)\n                    at Request._callback (D:\\WebdriverIO\\node_modules\\@wdio\\runner\\node_modules\\webdriver\\build\\request.js:110:64)\n                    at Request.self.callback (D:\\WebdriverIO\\node_modules\\request\\request.js:185:22)\n                    at Request.<anonymous> (D:\\WebdriverIO\\node_modules\\request\\request.js:1161:10)\n                    at IncomingMessage.<anonymous> (D:\\WebdriverIO\\node_modules\\request\\request.js:1083:12)\n                    at endReadableNT (_stream_readable.js:1145:12)\n                    at Browser.runCommandWithHooks (D:\\WebdriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:56:22)\n                    at Browser.wrapCommandFn (D:\\WebdriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:33:40)\n                    at global.$.selector (D:\\WebdriverIO\\node_modules\\@wdio\\runner\\build\\index.js:159:36)\n                    at World.$ (D:\\WebdriverIO\\tests\\step-definitions/Login.spec.js:59:21)\n                    at World.executeSync (D:\\WebdriverIO\\node_modules\\@wdio\\sync\\build\\index.js:44:18)\n                    at D:\\WebdriverIO\\node_modules\\@wdio\\sync\\build\\index.js:102:70",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can login system"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5a10feb95a44287d.json",
+  "parameterValues" : [ "chrome" ]
+}

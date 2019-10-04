@@ -1,0 +1,93 @@
+{
+  "uid" : "bd8237ada14a1706",
+  "name" : "When User don't select User Role",
+  "fullName" : "Register: Verify user don't select User Role and can't register new account 5th.When User don't select User Role",
+  "historyId" : "dbd0b1d19096c5a026b538c29df32eab",
+  "time" : {
+    "start" : 1570185877911,
+    "stop" : 1570185879492,
+    "duration" : 1581
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user don't select User Role and can't register new account 5th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user don't select User Role and can't register new account 5th"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User don't select User Role"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user don't select User Role and can't register new account 5th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "badc839575ee0b0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185685292,
+        "stop" : 1570185686879,
+        "duration" : 1587
+      }
+    }, {
+      "uid" : "42a20013ac0b2d52",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570185557257,
+        "stop" : 1570185557316,
+        "duration" : 59
+      }
+    }, {
+      "uid" : "6ca25298a5efdfce",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570185067233,
+        "stop" : 1570185067290,
+        "duration" : 57
+      }
+    }, {
+      "uid" : "95f3a651b79aef46",
+      "status" : "broken",
+      "statusDetails" : "selector needs to be typeof `string` or `function`",
+      "time" : {
+        "start" : 1570184982245,
+        "stop" : 1570184982426,
+        "duration" : 181
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bd8237ada14a1706.json",
+  "parameterValues" : [ "chrome" ]
+}

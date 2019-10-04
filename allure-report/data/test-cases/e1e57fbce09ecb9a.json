@@ -1,0 +1,90 @@
+{
+  "uid" : "e1e57fbce09ecb9a",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Register: Verify user blank field Password can't register new account 3rd.Given User Open website MMAP",
+  "historyId" : "262630efc0eab4e8b69143fdc0a8abb",
+  "time" : {
+    "start" : 1570185874161,
+    "stop" : 1570185874697,
+    "duration" : 536
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify user blank field Password can't register new account 3rd"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify user blank field Password can't register new account 3rd"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify user blank field Password can't register new account 3rd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f8f7d8dc114c44e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185681497,
+        "stop" : 1570185682085,
+        "duration" : 588
+      }
+    }, {
+      "uid" : "15b0b1f50d94a98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185555553,
+        "stop" : 1570185556083,
+        "duration" : 530
+      }
+    }, {
+      "uid" : "474bc61bbc8757be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570185065528,
+        "stop" : 1570185066046,
+        "duration" : 518
+      }
+    }, {
+      "uid" : "9e3e2014b94b08b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570184979866,
+        "stop" : 1570184980516,
+        "duration" : 650
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e1e57fbce09ecb9a.json",
+  "parameterValues" : [ "chrome" ]
+}
