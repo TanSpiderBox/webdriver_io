@@ -1,0 +1,31 @@
+[ {
+  "uid" : "de244c7f18d72291",
+  "name" : "Then User can login system",
+  "time" : {
+    "start" : 1570090687286,
+    "stop" : 1570090687287,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1430be4786bc4e27",
+  "name" : "When User input all valid infomation",
+  "time" : {
+    "start" : 1570090685708,
+    "stop" : 1570090687286,
+    "duration" : 1578
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d878d75fe763c5a3",
+  "name" : "Given User Open website MMAP",
+  "time" : {
+    "start" : 1570090683194,
+    "stop" : 1570090685708,
+    "duration" : 2514
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

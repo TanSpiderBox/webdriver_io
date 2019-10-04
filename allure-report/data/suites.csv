@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Oct 03 15:18:07 ICT 2019","Thu Oct 03 15:18:07 ICT 2019","1","","Login: Verify user can login system","","Login: Verify user can login system","Then User can login system","Then User can login system",""
+"passed","Thu Oct 03 15:18:05 ICT 2019","Thu Oct 03 15:18:07 ICT 2019","1578","","Login: Verify user can login system","","Login: Verify user can login system","When User input all valid infomation","When User input all valid infomation",""
+"passed","Thu Oct 03 15:18:03 ICT 2019","Thu Oct 03 15:18:05 ICT 2019","2514","","Login: Verify user can login system","","Login: Verify user can login system","Given User Open website MMAP","Given User Open website MMAP",""

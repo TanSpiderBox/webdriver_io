@@ -1,0 +1,72 @@
+{
+  "uid" : "98b9e60d5e3d8031",
+  "name" : "When User input all valid infomation",
+  "fullName" : "Login: Verify user can login system.When User input all valid infomation",
+  "historyId" : "5c85da4a13f5bc7e4b837e85cc6f58a3",
+  "time" : {
+    "start" : 1570090112614,
+    "stop" : 1570090114259,
+    "duration" : 1645
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8ad659613045d67a",
+      "name" : "Screenshot",
+      "source" : "8ad659613045d67a.png",
+      "type" : "image/png",
+      "size" : 54024
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User input all valid infomation"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify user can login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "98b9e60d5e3d8031.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,48 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Login: Verify user can login system",
+    "children" : [ {
+      "name" : "Given User Open website MMAP",
+      "uid" : "d878d75fe763c5a3",
+      "parentUid" : "b81ec5a359231db01e5ff1ea713e1de3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570090683194,
+        "stop" : 1570090685708,
+        "duration" : 2514
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "When User input all valid infomation",
+      "uid" : "1430be4786bc4e27",
+      "parentUid" : "b81ec5a359231db01e5ff1ea713e1de3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570090685708,
+        "stop" : 1570090687286,
+        "duration" : 1578
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "Then User can login system",
+      "uid" : "de244c7f18d72291",
+      "parentUid" : "b81ec5a359231db01e5ff1ea713e1de3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570090687286,
+        "stop" : 1570090687287,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "b81ec5a359231db01e5ff1ea713e1de3"
+  } ]
+}
