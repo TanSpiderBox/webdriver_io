@@ -1,0 +1,56 @@
+{
+  "uid" : "b37460ffcf001595",
+  "name" : "Then User can login succesfull",
+  "fullName" : "Forgot Password: Verify User can change password and login system success.Then User can login succesfull",
+  "historyId" : "aed660fc9d5ee3094e5838604548362e",
+  "time" : {
+    "start" : 1570445238324,
+    "stop" : 1570445238329,
+    "duration" : 5
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User can change password and login system success"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User can change password and login system success"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can login succesfull"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User can change password and login system success"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b37460ffcf001595.json",
+  "parameterValues" : [ "chrome" ]
+}

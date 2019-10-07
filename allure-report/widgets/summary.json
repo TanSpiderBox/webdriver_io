@@ -4,17 +4,17 @@
   "statistic" : {
     "failed" : 0,
     "broken" : 0,
-    "skipped" : 0,
-    "passed" : 45,
+    "skipped" : 1,
+    "passed" : 2,
     "unknown" : 0,
-    "total" : 45
+    "total" : 3
   },
   "time" : {
-    "start" : 1570177918333,
-    "stop" : 1570185888733,
-    "duration" : 7970400,
-    "minDuration" : 8,
-    "maxDuration" : 5312,
-    "sumDuration" : 32678
+    "start" : 1570445749093,
+    "stop" : 1570445759855,
+    "duration" : 10762,
+    "minDuration" : 4,
+    "maxDuration" : 7455,
+    "sumDuration" : 10762
   }
 }

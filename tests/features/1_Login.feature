@@ -4,32 +4,32 @@ Feature: Login
   Background:
     Given User Open website MMAP
 
-  @TestCass003
-  Scenario: Verify user blank 2 field and can't login system
+  @TestCass002
+  Scenario: Verify User blank 2 field and can't login system 1st
     When User blank 2 field
     Then User can't login system 1st
 
-  @TestCass004
-  Scenario: Verify user blank email field and can't login system
+  @TestCass003
+  Scenario: Verify User blank email field and can't login system 2nd
     When User blank email field
     Then User can't login system 2nd
 
-  @TestCass005
-  Scenario: Verify user blank password field and can't login system
+  @TestCass004
+  Scenario: Verify User blank password field and can't login system 3rd
     When User blank password field
     Then User can't login system 3rd
 
-  @TestCass006
-  Scenario: Verify user input incorrect email and can't login system
+  @TestCass005
+  Scenario: Verify User input incorrect email and can't login system 4th
     When User input incorrect email
     Then User can't login system 4th
 
-  @TestCass007
-  Scenario: Verify user input incorrect password can't login system
+  @TestCass006
+  Scenario: Verify User input incorrect password can't login system 5th
     When User input incorrect password field
     Then User can't login system 5th
 
-  @TestCass002
-  Scenario: Verify user can login system
+  @TestCass007
+  Scenario: Verify User can login system
     When User input correct email and password
-    Then User can login system
+    Then User can login succesfull

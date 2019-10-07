@@ -1,0 +1,130 @@
+{
+  "uid" : "69168e051bc3d78b",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Forgot Password: Verify User can change password and login system success.Given User Open website MMAP",
+  "historyId" : "22fa0e45e2f975af159acdaf3e1a6bf9",
+  "time" : {
+    "start" : 1570445749093,
+    "stop" : 1570445752396,
+    "duration" : 3303
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User can change password and login system success"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User can change password and login system success"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User can change password and login system success"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "452700db439be1f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570445599493,
+        "stop" : 1570445603045,
+        "duration" : 3552
+      }
+    }, {
+      "uid" : "61796ca1b6881f81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570445515924,
+        "stop" : 1570445521532,
+        "duration" : 5608
+      }
+    }, {
+      "uid" : "d64bbda9bfdfca34",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570445458868,
+        "stop" : 1570445464152,
+        "duration" : 5284
+      }
+    }, {
+      "uid" : "27c8cde741e7770a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570445386608,
+        "stop" : 1570445391814,
+        "duration" : 5206
+      }
+    }, {
+      "uid" : "61b3a055595020b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570445274624,
+        "stop" : 1570445279899,
+        "duration" : 5275
+      }
+    }, {
+      "uid" : "46df99aa8e5e85dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570445233514,
+        "stop" : 1570445236143,
+        "duration" : 2629
+      }
+    }, {
+      "uid" : "4f82e7c317801105",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570445111191,
+        "stop" : 1570445116406,
+        "duration" : 5215
+      }
+    }, {
+      "uid" : "1fdeb7a459998986",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570444906404,
+        "stop" : 1570444909155,
+        "duration" : 2751
+      }
+    }, {
+      "uid" : "d6b64ea58dbffee4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1570444835243,
+        "stop" : 1570444840573,
+        "duration" : 5330
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "69168e051bc3d78b.json",
+  "parameterValues" : [ "chrome" ]
+}
