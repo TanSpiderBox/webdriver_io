@@ -1,0 +1,58 @@
+{
+  "uid" : "926cc80cad7cb6af",
+  "name" : "Then User can't login system 1st",
+  "fullName" : "Login: Verify User blank 2 field and can't login system 1st.Then User can't login system 1st",
+  "historyId" : "1c3c48a016c0d072e847ff5eafad372b",
+  "time" : {
+    "start" : 1570521850875,
+    "stop" : 1570521850902,
+    "duration" : 27
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify User blank 2 field and can't login system 1st"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify User blank 2 field and can't login system 1st"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't login system 1st"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify User blank 2 field and can't login system 1st"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "926cc80cad7cb6af.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "a0b50ecc9a086a70",
+  "name" : "When User input doesn't exisiting email",
+  "fullName" : "Forgot Password: Verify User can't request new password 2nd.When User input doesn't exisiting email",
+  "historyId" : "10d7283fc0413a1fd6cc373996231704",
+  "time" : {
+    "start" : 1570521864942,
+    "stop" : 1570521865460,
+    "duration" : 518
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User can't request new password 2nd"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User can't request new password 2nd"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User input doesn't exisiting email"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User can't request new password 2nd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a0b50ecc9a086a70.json",
+  "parameterValues" : [ "chrome" ]
+}

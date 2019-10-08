@@ -1,0 +1,58 @@
+{
+  "uid" : "f86aa65a5563808",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Register: Verify User input Password don't match and can't register new account 6th.Given User Open website MMAP",
+  "historyId" : "2e9398c02b1e563cb5bfe5a214cc8ac8",
+  "time" : {
+    "start" : 1570521859723,
+    "stop" : 1570521860448,
+    "duration" : 725
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f86aa65a5563808.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "f9e66f8d4d5453cb",
+  "name" : "When User blank email field request",
+  "fullName" : "Forgot Password: Verify User blank email field and can't request new password.When User blank email field request",
+  "historyId" : "5c0b360780ca06197db7ba656db227c1",
+  "time" : {
+    "start" : 1570521854273,
+    "stop" : 1570521859897,
+    "duration" : 5624
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User blank email field and can't request new password"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User blank email field and can't request new password"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User blank email field request"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User blank email field and can't request new password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f9e66f8d4d5453cb.json",
+  "parameterValues" : [ "chrome" ]
+}

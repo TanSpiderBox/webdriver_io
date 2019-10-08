@@ -1,0 +1,58 @@
+{
+  "uid" : "3406212465ec1c4b",
+  "name" : "When User blank password confirm",
+  "fullName" : "Forgot Password: Verify User can't change password 3rd.When User blank password confirm",
+  "historyId" : "dba8c3e3e596bd02a926e92cad680841",
+  "time" : {
+    "start" : 1570521894797,
+    "stop" : 1570521895406,
+    "duration" : 609
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User can't change password 3rd"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User can't change password 3rd"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User blank password confirm"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User can't change password 3rd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3406212465ec1c4b.json",
+  "parameterValues" : [ "chrome" ]
+}

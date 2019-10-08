@@ -1,0 +1,58 @@
+{
+  "uid" : "b8d5ecdad81a859a",
+  "name" : "When User blank password field",
+  "fullName" : "Login: Verify User blank password field and can't login system 3rd.When User blank password field",
+  "historyId" : "2250f33dfed989b3bae60315c69f655f",
+  "time" : {
+    "start" : 1570521852756,
+    "stop" : 1570521853321,
+    "duration" : 565
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify User blank password field and can't login system 3rd"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify User blank password field and can't login system 3rd"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User blank password field"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify User blank password field and can't login system 3rd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b8d5ecdad81a859a.json",
+  "parameterValues" : [ "chrome" ]
+}

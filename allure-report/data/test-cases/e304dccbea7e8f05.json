@@ -1,0 +1,58 @@
+{
+  "uid" : "e304dccbea7e8f05",
+  "name" : "Then User can't change password 1st",
+  "fullName" : "Forgot Password: Verify User can't change password 1st.Then User can't change password 1st",
+  "historyId" : "f386a01b9bd2c8ed3482de3793f96740",
+  "time" : {
+    "start" : 1570521894281,
+    "stop" : 1570521894300,
+    "duration" : 19
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User can't change password 1st"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User can't change password 1st"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't change password 1st"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User can't change password 1st"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e304dccbea7e8f05.json",
+  "parameterValues" : [ "chrome" ]
+}

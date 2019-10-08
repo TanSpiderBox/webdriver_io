@@ -1,0 +1,58 @@
+{
+  "uid" : "8d14b8d1d308ce16",
+  "name" : "When User input password and password confirm don't match",
+  "fullName" : "Forgot Password: Verify User can't change password 6th.When User input password and password confirm don't match",
+  "historyId" : "d42a4a39f168449ef7890978617c2885",
+  "time" : {
+    "start" : 1570521896662,
+    "stop" : 1570521897289,
+    "duration" : 627
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User can't change password 6th"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User can't change password 6th"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User input password and password confirm don't match"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User can't change password 6th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8d14b8d1d308ce16.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1570521857512' stop='1570521859717'>
+    <name>Register: Verify User don't select User Role and can't register new account 5th</name>
+    <title>Register: Verify User don't select User Role and can't register new account 5th</title>
+    <test-cases>
+        <test-case start='1570521857512' status='passed' stop='1570521858009'>
+            <name>Given User Open website MMAP</name>
+            <title>Given User Open website MMAP</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1570521858009' status='passed' stop='1570521859701'>
+            <name>When User don't select User Role</name>
+            <title>When User don't select User Role</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1570521859701' status='passed' stop='1570521859716'>
+            <name>Then User can't register new account 5th</name>
+            <title>Then User can't register new account 5th</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

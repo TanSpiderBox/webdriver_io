@@ -1,0 +1,58 @@
+{
+  "uid" : "408f4acbf65f3754",
+  "name" : "When User blank password",
+  "fullName" : "Forgot Password: Verify User can't change password 2nd.When User blank password",
+  "historyId" : "4f07a49399252f9b5607b21b781b9d0f",
+  "time" : {
+    "start" : 1570521894306,
+    "stop" : 1570521894782,
+    "duration" : 476
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User can't change password 2nd"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User can't change password 2nd"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User blank password"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User can't change password 2nd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "408f4acbf65f3754.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "1a07872c9002732d",
+  "name" : "When User input password to short and blank password confirm",
+  "fullName" : "Forgot Password: Verify User can't change password 4th.When User input password to short and blank password confirm",
+  "historyId" : "4a36ff4c6f6d53909518c282c2f3e2fb",
+  "time" : {
+    "start" : 1570521895425,
+    "stop" : 1570521895969,
+    "duration" : 544
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User can't change password 4th"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User can't change password 4th"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User input password to short and blank password confirm"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User can't change password 4th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1a07872c9002732d.json",
+  "parameterValues" : [ "chrome" ]
+}

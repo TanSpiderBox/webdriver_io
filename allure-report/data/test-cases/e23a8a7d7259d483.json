@@ -1,0 +1,58 @@
+{
+  "uid" : "e23a8a7d7259d483",
+  "name" : "When User don't select User Role",
+  "fullName" : "Register: Verify User don't select User Role and can't register new account 5th.When User don't select User Role",
+  "historyId" : "185c9d78e9b2920d33f6a12fef12ff48",
+  "time" : {
+    "start" : 1570521858009,
+    "stop" : 1570521859701,
+    "duration" : 1692
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User don't select User Role and can't register new account 5th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User don't select User Role and can't register new account 5th"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User don't select User Role"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User don't select User Role and can't register new account 5th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e23a8a7d7259d483.json",
+  "parameterValues" : [ "chrome" ]
+}

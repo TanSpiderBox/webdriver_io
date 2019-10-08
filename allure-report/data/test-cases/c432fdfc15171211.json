@@ -1,0 +1,58 @@
+{
+  "uid" : "c432fdfc15171211",
+  "name" : "Then User can't register new account 7th",
+  "fullName" : "Register: Verify User input Existing Email and can't register new account 7th.Then User can't register new account 7th",
+  "historyId" : "87dfa438363b68e34d02985049e440d",
+  "time" : {
+    "start" : 1570521864067,
+    "stop" : 1570521864090,
+    "duration" : 23
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't register new account 7th"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c432fdfc15171211.json",
+  "parameterValues" : [ "chrome" ]
+}

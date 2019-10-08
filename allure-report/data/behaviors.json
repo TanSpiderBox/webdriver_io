@@ -3,39 +3,871 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "Given User Open website MMAP",
-    "uid" : "69168e051bc3d78b",
+    "uid" : "a9f6ddc43e2eb9a9",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1570445749093,
-      "stop" : 1570445752396,
-      "duration" : 3303
+      "start" : 1570521847160,
+      "stop" : 1570521850416,
+      "duration" : 3256
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "chrome" ]
   }, {
-    "name" : "When User input valid password and password confirm",
-    "uid" : "7c143b4c27a3a4d0",
+    "name" : "Given User Open website MMAP",
+    "uid" : "5859916f1dbe72c8",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1570445752396,
-      "stop" : 1570445759851,
-      "duration" : 7455
+      "start" : 1570521847181,
+      "stop" : 1570521850942,
+      "duration" : 3761
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "481552b146b3a79a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521847186,
+      "stop" : 1570521854273,
+      "duration" : 7087
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank 2 field",
+    "uid" : "8e72544ff2467a9e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521850416,
+      "stop" : 1570521850875,
+      "duration" : 459
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't login system 1st",
+    "uid" : "926cc80cad7cb6af",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521850875,
+      "stop" : 1570521850902,
+      "duration" : 27
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "d1a5c1da297c6983",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521850913,
+      "stop" : 1570521851453,
+      "duration" : 540
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank all all field",
+    "uid" : "d0588a3f61a018cf",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521850942,
+      "stop" : 1570521851858,
+      "duration" : 916
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank email field",
+    "uid" : "dcefff7f7452a338",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521851453,
+      "stop" : 1570521852198,
+      "duration" : 745
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't register new account 1st",
+    "uid" : "c903c1f1be7db349",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521851858,
+      "stop" : 1570521851924,
+      "duration" : 66
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "b5e4928e75c20c4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521851935,
+      "stop" : 1570521852541,
+      "duration" : 606
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't login system 2nd",
+    "uid" : "5d3f7daaafca84c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521852199,
+      "stop" : 1570521852216,
+      "duration" : 17
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "511c10fec64ed7f4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521852219,
+      "stop" : 1570521852755,
+      "duration" : 536
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank First Name",
+    "uid" : "33623c8c24ef906f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521852542,
+      "stop" : 1570521853858,
+      "duration" : 1316
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank password field",
+    "uid" : "b8d5ecdad81a859a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521852756,
+      "stop" : 1570521853321,
+      "duration" : 565
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't login system 3rd",
+    "uid" : "1d42f52d1a08ff0c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521853321,
+      "stop" : 1570521853368,
+      "duration" : 47
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "72b13e10889d5745",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521853372,
+      "stop" : 1570521853951,
+      "duration" : 579
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't register new account 2nd",
+    "uid" : "a1523fb68be944f9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521853858,
+      "stop" : 1570521853900,
+      "duration" : 42
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "c13204f948a6d431",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521853908,
+      "stop" : 1570521854488,
+      "duration" : 580
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input incorrect email",
+    "uid" : "8df1d6937273d5fe",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521853951,
+      "stop" : 1570521855045,
+      "duration" : 1094
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank email field request",
+    "uid" : "f9e66f8d4d5453cb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521854273,
+      "stop" : 1570521859897,
+      "duration" : 5624
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank Password",
+    "uid" : "1c35e68dddee3dd3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521854488,
+      "stop" : 1570521855671,
+      "duration" : 1183
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't login system 4th",
+    "uid" : "d8e4982382918a92",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521855045,
+      "stop" : 1570521855059,
+      "duration" : 14
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "6298f2805371dd14",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521855068,
+      "stop" : 1570521855572,
+      "duration" : 504
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input incorrect password field",
+    "uid" : "da3186f1bfcb0072",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521855572,
+      "stop" : 1570521856562,
+      "duration" : 990
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't register new account 3rd",
+    "uid" : "1464fcbeb485076a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521855672,
+      "stop" : 1570521855684,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "b4bb2f96b38d6dae",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521855688,
+      "stop" : 1570521856273,
+      "duration" : 585
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank Confirm Password",
+    "uid" : "ffcfc14f90ba4f1c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521856273,
+      "stop" : 1570521857490,
+      "duration" : 1217
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't login system 5th",
+    "uid" : "ac40e163791e6cdb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521856563,
+      "stop" : 1570521856578,
+      "duration" : 15
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "617cda3f2a82881d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521856581,
+      "stop" : 1570521857127,
+      "duration" : 546
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input correct email and password",
+    "uid" : "8f04f47f89476786",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521857127,
+      "stop" : 1570521858543,
+      "duration" : 1416
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't register new account 4th",
+    "uid" : "fa0132574d58457a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521857490,
+      "stop" : 1570521857506,
+      "duration" : 16
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "85bb6135a83eb1c3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521857512,
+      "stop" : 1570521858009,
+      "duration" : 497
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User don't select User Role",
+    "uid" : "e23a8a7d7259d483",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521858009,
+      "stop" : 1570521859701,
+      "duration" : 1692
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "chrome" ]
   }, {
     "name" : "Then User can login succesfull",
-    "uid" : "a8771c47e3e71856",
+    "uid" : "6d108a7f63d52e6c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
+    "status" : "passed",
     "time" : {
-      "start" : 1570445759851,
-      "stop" : 1570445759855,
-      "duration" : 4
+      "start" : 1570521858544,
+      "stop" : 1570521858595,
+      "duration" : 51
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't register new account 5th",
+    "uid" : "d35b26da3b02d5fd",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521859701,
+      "stop" : 1570521859716,
+      "duration" : 15
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "f86aa65a5563808",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521859723,
+      "stop" : 1570521860448,
+      "duration" : 725
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't request new password 1st",
+    "uid" : "45e72b4b89131edd",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521859898,
+      "stop" : 1570521864930,
+      "duration" : 5032
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input Password don't match",
+    "uid" : "2e88cad4692c62ac",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521860448,
+      "stop" : 1570521861985,
+      "duration" : 1537
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't register new account 6th",
+    "uid" : "47a6dfd13386d914",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521861985,
+      "stop" : 1570521862000,
+      "duration" : 15
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "92f7ceff9f7ca61d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521862005,
+      "stop" : 1570521862494,
+      "duration" : 489
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input Existing Email",
+    "uid" : "954688a284a68766",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521862495,
+      "stop" : 1570521864067,
+      "duration" : 1572
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't register new account 7th",
+    "uid" : "c432fdfc15171211",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521864067,
+      "stop" : 1570521864090,
+      "duration" : 23
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "9127133310819d43",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521864097,
+      "stop" : 1570521864609,
+      "duration" : 512
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input Password is too short",
+    "uid" : "f35a4e8a13402396",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521864609,
+      "stop" : 1570521865802,
+      "duration" : 1193
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input doesn't exisiting email",
+    "uid" : "a0b50ecc9a086a70",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521864942,
+      "stop" : 1570521865460,
+      "duration" : 518
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't request new password 2nd",
+    "uid" : "c8141f665cb2d88",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521865460,
+      "stop" : 1570521870477,
+      "duration" : 5017
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't register new account 8th",
+    "uid" : "1fd6cc5ec2cc2f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521865802,
+      "stop" : 1570521865825,
+      "duration" : 23
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "f60c92910df24059",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521865831,
+      "stop" : 1570521866357,
+      "duration" : 526
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input all valid infomation",
+    "uid" : "73485d8ea1d964b6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521866357,
+      "stop" : 1570521867881,
+      "duration" : 1524
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User create account successfull",
+    "uid" : "98bf49ae7cbd96da",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521867882,
+      "stop" : 1570521867901,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Given User Open website MMAP",
+    "uid" : "a7146ed6b2d8dfe5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521867904,
+      "stop" : 1570521868411,
+      "duration" : 507
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input correct email and password",
+    "uid" : "3977fb36c932cfd3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521868412,
+      "stop" : 1570521869708,
+      "duration" : 1296
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can login succesfull",
+    "uid" : "6be41ddf50f77114",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521869708,
+      "stop" : 1570521869722,
+      "duration" : 14
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input exisiting email request",
+    "uid" : "24bbbb67edb78b88",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521870480,
+      "stop" : 1570521876946,
+      "duration" : 6466
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can request new password",
+    "uid" : "fa700eab85b3cd48",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521876947,
+      "stop" : 1570521881994,
+      "duration" : 5047
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank password and password confirm",
+    "uid" : "805e1445050aa51c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521881996,
+      "stop" : 1570521894281,
+      "duration" : 12285
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't change password 1st",
+    "uid" : "e304dccbea7e8f05",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521894281,
+      "stop" : 1570521894300,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank password",
+    "uid" : "408f4acbf65f3754",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521894306,
+      "stop" : 1570521894782,
+      "duration" : 476
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't change password 2nd",
+    "uid" : "24cab1f166e0e4bc",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521894782,
+      "stop" : 1570521894794,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User blank password confirm",
+    "uid" : "3406212465ec1c4b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521894797,
+      "stop" : 1570521895406,
+      "duration" : 609
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't change password 3rd",
+    "uid" : "44f9c6372f5ec0a7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521895406,
+      "stop" : 1570521895422,
+      "duration" : 16
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input password to short and blank password confirm",
+    "uid" : "1a07872c9002732d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521895425,
+      "stop" : 1570521895969,
+      "duration" : 544
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't change password 4th",
+    "uid" : "11e11f2c21441eee",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521895969,
+      "stop" : 1570521896002,
+      "duration" : 33
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input password and password confirm to short",
+    "uid" : "347cd0a53c3d5ba8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521896005,
+      "stop" : 1570521896643,
+      "duration" : 638
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't change password 5th",
+    "uid" : "b6c625f0eb26de79",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521896643,
+      "stop" : 1570521896660,
+      "duration" : 17
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "When User input password and password confirm don't match",
+    "uid" : "8d14b8d1d308ce16",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521896662,
+      "stop" : 1570521897289,
+      "duration" : 627
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Then User can't change password 6th",
+    "uid" : "3a8b5fee38ae6aad",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1570521897289,
+      "stop" : 1570521897300,
+      "duration" : 11
     },
     "flaky" : false,
     "newFailed" : false,

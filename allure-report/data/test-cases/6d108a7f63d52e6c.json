@@ -1,0 +1,58 @@
+{
+  "uid" : "6d108a7f63d52e6c",
+  "name" : "Then User can login succesfull",
+  "fullName" : "Login: Verify User can login system.Then User can login succesfull",
+  "historyId" : "4b485491dcbd1e2c19831f0790bf1b1",
+  "time" : {
+    "start" : 1570521858544,
+    "stop" : 1570521858595,
+    "duration" : 51
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify User can login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify User can login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can login succesfull"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify User can login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6d108a7f63d52e6c.json",
+  "parameterValues" : [ "chrome" ]
+}

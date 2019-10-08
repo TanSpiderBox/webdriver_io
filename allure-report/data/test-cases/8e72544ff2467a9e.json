@@ -1,0 +1,58 @@
+{
+  "uid" : "8e72544ff2467a9e",
+  "name" : "When User blank 2 field",
+  "fullName" : "Login: Verify User blank 2 field and can't login system 1st.When User blank 2 field",
+  "historyId" : "b5c0e7931a8216fd6f287925df86abe7",
+  "time" : {
+    "start" : 1570521850416,
+    "stop" : 1570521850875,
+    "duration" : 459
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify User blank 2 field and can't login system 1st"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify User blank 2 field and can't login system 1st"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User blank 2 field"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify User blank 2 field and can't login system 1st"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8e72544ff2467a9e.json",
+  "parameterValues" : [ "chrome" ]
+}

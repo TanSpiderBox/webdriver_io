@@ -1,0 +1,58 @@
+{
+  "uid" : "8f04f47f89476786",
+  "name" : "When User input correct email and password",
+  "fullName" : "Login: Verify User can login system.When User input correct email and password",
+  "historyId" : "b235ec3264d098026783cc7650eb5bca",
+  "time" : {
+    "start" : 1570521857127,
+    "stop" : 1570521858543,
+    "duration" : 1416
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Login: Verify User can login system"
+  }, {
+    "name" : "testClass",
+    "value" : "Login: Verify User can login system"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User input correct email and password"
+  }, {
+    "name" : "package",
+    "value" : "Login: Verify User can login system"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8f04f47f89476786.json",
+  "parameterValues" : [ "chrome" ]
+}

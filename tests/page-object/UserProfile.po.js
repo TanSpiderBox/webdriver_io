@@ -12,3 +12,4 @@ const UserProfileObject = {
 }
 
 export { UserProfileObject };
+

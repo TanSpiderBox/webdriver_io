@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1570521847178' stop='1570521864933'>
+    <name>Forgot Password: Verify User blank email field and can't request new password</name>
+    <title>Forgot Password: Verify User blank email field and can't request new password</title>
+    <test-cases>
+        <test-case start='1570521847186' status='passed' stop='1570521854273'>
+            <name>Given User Open website MMAP</name>
+            <title>Given User Open website MMAP</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1570521854273' status='passed' stop='1570521859897'>
+            <name>When User blank email field request</name>
+            <title>When User blank email field request</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1570521859898' status='passed' stop='1570521864930'>
+            <name>Then User can't request new password 1st</name>
+            <title>Then User can't request new password 1st</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

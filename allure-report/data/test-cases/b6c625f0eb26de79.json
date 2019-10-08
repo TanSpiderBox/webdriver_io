@@ -1,0 +1,58 @@
+{
+  "uid" : "b6c625f0eb26de79",
+  "name" : "Then User can't change password 5th",
+  "fullName" : "Forgot Password: Verify User can't change password 5th.Then User can't change password 5th",
+  "historyId" : "61f1c74a39e3d2650ee3389a83186ff8",
+  "time" : {
+    "start" : 1570521896643,
+    "stop" : 1570521896660,
+    "duration" : 17
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User can't change password 5th"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User can't change password 5th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't change password 5th"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User can't change password 5th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b6c625f0eb26de79.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "5859916f1dbe72c8",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Register: Verify User blank all field and can't register new account 1st.Given User Open website MMAP",
+  "historyId" : "ed1dc26e3cbcf9727741686cf7ba200e",
+  "time" : {
+    "start" : 1570521847181,
+    "stop" : 1570521850942,
+    "duration" : 3761
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User blank all field and can't register new account 1st"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User blank all field and can't register new account 1st"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User blank all field and can't register new account 1st"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5859916f1dbe72c8.json",
+  "parameterValues" : [ "chrome" ]
+}

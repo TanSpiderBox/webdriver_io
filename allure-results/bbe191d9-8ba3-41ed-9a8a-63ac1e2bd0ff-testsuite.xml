@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1570521865830' stop='1570521867901'>
+    <name>Register: Verify User can register new account</name>
+    <title>Register: Verify User can register new account</title>
+    <test-cases>
+        <test-case start='1570521865831' status='passed' stop='1570521866357'>
+            <name>Given User Open website MMAP</name>
+            <title>Given User Open website MMAP</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1570521866357' status='passed' stop='1570521867881'>
+            <name>When User input all valid infomation</name>
+            <title>When User input all valid infomation</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1570521867882' status='passed' stop='1570521867901'>
+            <name>Then User create account successfull</name>
+            <title>Then User create account successfull</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

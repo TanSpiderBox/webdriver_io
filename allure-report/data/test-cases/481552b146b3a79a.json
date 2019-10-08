@@ -1,0 +1,58 @@
+{
+  "uid" : "481552b146b3a79a",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Forgot Password: Verify User blank email field and can't request new password.Given User Open website MMAP",
+  "historyId" : "85c7470c1a5d912889531e88bc596358",
+  "time" : {
+    "start" : 1570521847186,
+    "stop" : 1570521854273,
+    "duration" : 7087
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-2"
+  }, {
+    "name" : "suite",
+    "value" : "Forgot Password: Verify User blank email field and can't request new password"
+  }, {
+    "name" : "testClass",
+    "value" : "Forgot Password: Verify User blank email field and can't request new password"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Forgot Password: Verify User blank email field and can't request new password"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "481552b146b3a79a.json",
+  "parameterValues" : [ "chrome" ]
+}

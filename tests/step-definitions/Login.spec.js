@@ -56,5 +56,5 @@ When("User input correct email and password", () => {
     $(LoginObjects.btn_submit).click();
 })
 Then("User can login succesfull", () => {
-    assert.isObject($(LoginSuccessObjects.lbl_success_login), LoginSuccessMessage.SuccessMessage);
+    assert.isObject($(LoginSuccessObjects.lbl_success_login), LoginSuccessMessage.login_success);
 })
