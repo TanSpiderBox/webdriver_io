@@ -6,6 +6,7 @@ Feature: Register
 
   @TestCase008
   Scenario: Verify User blank all field and can't register new account 1st
+
     When User blank all all field
     Then User can't register new account 1st
 
