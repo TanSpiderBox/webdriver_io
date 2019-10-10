@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1570682372838' stop='1570682388019'>
+    <name>Forgot Password: Verify User input password and password confirm to short and can't change password 5th</name>
+    <title>Forgot Password: Verify User input password and password confirm to short and can't change password 5th</title>
+    <test-cases>
+        <test-case start='1570682372839' status='broken' stop='1570682388016'>
+            <name>When User input password and password confirm to short</name>
+            <title>When User input password and password confirm to short</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call setValue on element with selector "input[id="user_password"]" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "input[id="user_password"]" because element wasn't found
+                    at implicitWait (D:\WebdriverIO\node_modules\@wdio\runner\node_modules\webdriverio\build\utils\implicitWait.js:22:13)
+                    at Element.runCommandWithHooks (D:\WebdriverIO\node_modules\@wdio\sync\build\wrapCommand.js:56:22)
+                    at Element.wrapCommandFn (D:\WebdriverIO\node_modules\@wdio\sync\build\wrapCommand.js:33:40)
+                    at Element.elementErrorHandlerCallback (D:\WebdriverIO\node_modules\@wdio\runner\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at World.setValue (D:\WebdriverIO\tests\step-definitions/ForgotPassword.spec.js:93:36)
+                    at World.executeSync (D:\WebdriverIO\node_modules\@wdio\sync\build\index.js:44:18)
+                    at D:\WebdriverIO\node_modules\@wdio\sync\build\index.js:102:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1570682388016' status='pending' stop='1570682388017'>
+            <name>Then User can't change password 5th</name>
+            <title>Then User can't change password 5th</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

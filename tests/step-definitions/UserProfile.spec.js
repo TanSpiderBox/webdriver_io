@@ -1,115 +1,95 @@
 import { Given, When, Then } from "cucumber"
 import { assert } from "chai"
 import {} from "../data/Data_UserProfile"
-import {} from "../page-object/UserProfile.po"
+import { ProfileObject, UserProfleObject, UserProfileValidation } from "../page-object/UserProfile.po"
 
 /* TestCase028 */
-
-When('', () => {
-
+When('User select submenu User Profile', () => {
+    $(ProfileObject.btn_user).click()
+    $(ProfileObject.btn_userAccount).click()
 })
 
-Then('', () => {
-
+Then('System display User Profile Screen with all correct information of user', () => {
+    assert.isObject($(UserProfileValidation.user_namesubscription),)
+    assert.isObject($(UserProfileValidation.user_email),)
+    assert.isObject($(UserProfileValidation.user_errorpwd),)
 })
 
 /* TestCase029 */
-Given('', () => {
-
+When('User input valid all password infomation', () => {
+    $(UserProfleObject.txt_changePw).click();
+    $(UserProfleObject.txt_currentpwd).setValue();
+    $(UserProfleObject.txt_newpwd).setValue();
+    $(UserProfleObject.txt_confpwd).setValue();
+    $(UserProfleObject.btn_pwdsub).click();
 })
 
-When('', () => {
-
-})
-
-Then('', () => {
-
+Then('User change password succesful', () => {
+    assert.isObject($(UserProfileValidation.user_namesubscription),);
 })
 
 /* TestCase030 */
-Given('', () => {
-
+When('User input email and new password', () => {
+    $(ProfileObject.btn_user).click();
+    $(ProfileObject.lbl_signOut).click();
+    
 })
 
-When('', () => {
-
-})
-
-Then('', () => {
+Then('User login system successfull with new password', () => {
 
 })
 
 /* TestCase031 */
-Given('', () => {
+When('User input incorrect old password', () => {
 
 })
 
-When('', () => {
-
-})
-
-Then('', () => {
+Then('User can\'t change password in User Information screen', () => {
 
 })
 
 /* TestCase032 */
-Given('', () => {
+When('User input doesn\'t match new password', () => {
 
 })
 
-When('', () => {
-
-})
-
-Then('', () => {
+Then('User can\'t change password in User Information screen 2nd', () => {
 
 })
 
 /* TestCase033 */
-Given('', () => {
+When('User clicks button pricing', () => {
 
 })
 
-When('', () => {
-
-})
-
-Then('', () => {
+Then('System move to subscriptions page', () => {
 
 })
 
 /* TestCase034 */
-Given('', () => {
+When('User clicks button Transaction History', () => {
 
 })
 
-When('', () => {
-
-})
-
-Then('', () => {
+Then('System move to billing information page', () => {
 
 })
 
 /* TestCase035 */
-Given('', () => {
+When('User drag and drop image', () => {
 
 })
 
-When('', () => {
-
-})
-
-Then('', () => {
+Then('User can update new image 1st', () => {
 
 })
 
 /* TestCase036 */
-Given('', () => {
+Given('User browse to folder and select image', () => {
 
 })
 
-When('', () => {
+When('User can update new image 2nd', () => {
 
 })
 

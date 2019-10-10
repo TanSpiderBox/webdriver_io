@@ -1,7 +1,6 @@
 Feature: Register
-  As a User i wan check all case of Feature Register
 
-  Background:
+    As a User i wan check all case of Feature Register
     Given User Open website MMAP
 
   @TestCase008

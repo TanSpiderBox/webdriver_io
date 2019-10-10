@@ -2,8 +2,6 @@ Feature: Forgot Password
 
     As a user I want check all case of Feature Forgot Password
 
-    Background:
-
     @TestCase018
     Scenario: Verify User blank email field and can't request new password
         Given User Open website MMAP
