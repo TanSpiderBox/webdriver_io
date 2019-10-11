@@ -1,6 +1,7 @@
 Feature: Login
 
-    As a User I want check all case of Feature Login
+  As a User I want check all case of Feature Login
+  Background:
     Given User Open website MMAP
 
   @TestCass002

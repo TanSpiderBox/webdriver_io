@@ -1,25 +1,25 @@
 Feature: User Profile
 
-      As a user I want check all case of Feature User Profile
-
-      Given User Open website MMAP
-      When User input correct email and password
-      Then User can login succesfull
+   As a user I want check all case of Feature User Profile
+   # Background:
 
    @TestCase028
    Scenario: Verify system display correct User Information
+      Given  User Open website MMAP
+      When User input correct email and password
+      Then User can login succesfull
       When User select submenu User Profile
       Then System display User Profile Screen with all correct information of user
 
-   @TestCase029
-   Scenario: Verify User can change password in User Information screen
-      When User input valid all password infomation
-      Then User change password succesful
+   # @TestCase029
+   # Scenario: Verify User can change password in User Information screen
+   #    When User input valid all password infomation
+   #    Then User change password succesful
 
-   @TestCase030
-   Scenario: Verify User can login system with new password
-      When User input email and new password
-      Then User login system successfull with new password
+   # @TestCase030
+   # Scenario: Verify User can login system with new password
+   #    When User input email and new password
+   #    Then User login system successfull with new password
 
    @TestCase031
    Scenario: Verify User input inccorect old password and can't change password in User Information screen 1st

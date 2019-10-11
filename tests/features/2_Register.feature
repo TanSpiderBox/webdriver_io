@@ -1,7 +1,8 @@
 Feature: Register
 
     As a User i wan check all case of Feature Register
-    Given User Open website MMAP
+    Background: 
+      Given User Open website MMAP
 
   @TestCase008
   Scenario: Verify User blank all field and can't register new account 1st
