@@ -1,0 +1,58 @@
+{
+  "uid" : "b2c69f2cf05d3ce3",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Register: Verify User input Existing Email and can't register new account 7th.Given User Open website MMAP",
+  "historyId" : "9fd95d9e274f2590c7041bb092eaeb1e",
+  "time" : {
+    "start" : 1571038979195,
+    "stop" : 1571038979724,
+    "duration" : 529
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User input Existing Email and can't register new account 7th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b2c69f2cf05d3ce3.json",
+  "parameterValues" : [ "chrome" ]
+}

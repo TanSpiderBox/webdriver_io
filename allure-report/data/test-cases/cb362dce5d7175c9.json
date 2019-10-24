@@ -1,0 +1,58 @@
+{
+  "uid" : "cb362dce5d7175c9",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "Register: Verify User can register new account.Given User Open website MMAP",
+  "historyId" : "9a79474368eb924ccd4b842aaa1d69f0",
+  "time" : {
+    "start" : 1571038983160,
+    "stop" : 1571038983691,
+    "duration" : 531
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User can register new account"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User can register new account"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User can register new account"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cb362dce5d7175c9.json",
+  "parameterValues" : [ "chrome" ]
+}

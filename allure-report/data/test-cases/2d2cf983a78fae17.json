@@ -1,0 +1,154 @@
+{
+  "uid" : "2d2cf983a78fae17",
+  "name" : "Then User can update new image 2nd",
+  "fullName" : "User Profile: Verify User can browse to upload.Then User can update new image 2nd",
+  "historyId" : "cd3a3021db3ecff45c54ff6befcba25f",
+  "time" : {
+    "start" : 1571026342402,
+    "stop" : 1571026342402,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify User can browse to upload"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify User can browse to upload"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can update new image 2nd"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify User can browse to upload"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "33c0ec1e395800a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025351694,
+        "stop" : 1571025351695,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3fd120a2add11377",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025252797,
+        "stop" : 1571025252798,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "63777b3f5f8f3a95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025218261,
+        "stop" : 1571025218261,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fbd25dc54d1d7a89",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025171915,
+        "stop" : 1571025171915,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b0d4006978e816fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025134966,
+        "stop" : 1571025134967,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3e0d81743b3ebcf8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024975252,
+        "stop" : 1571024975252,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b6f974e339c734df",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023558496,
+        "stop" : 1571023558496,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "835c0f0ec8b1c79f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023449856,
+        "stop" : 1571023449857,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f3c1dbc783e70c7b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023351271,
+        "stop" : 1571023351271,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "23f07ac47b8ba507",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023014967,
+        "stop" : 1571023014967,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7b2bf05d71ac2769",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571022795775,
+        "stop" : 1571022795775,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ad4e23c54c08fbf6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571022710998,
+        "stop" : 1571022710999,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2d2cf983a78fae17.json",
+  "parameterValues" : [ "chrome" ]
+}

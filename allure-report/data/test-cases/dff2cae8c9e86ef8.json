@@ -1,0 +1,58 @@
+{
+  "uid" : "dff2cae8c9e86ef8",
+  "name" : "When User blank all all field",
+  "fullName" : "Register: Verify User blank all field and can't register new account 1st.When User blank all all field",
+  "historyId" : "4e77c544945d5e1cf092562a82b7dc6e",
+  "time" : {
+    "start" : 1571038967218,
+    "stop" : 1571038967958,
+    "duration" : 740
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User blank all field and can't register new account 1st"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User blank all field and can't register new account 1st"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User blank all all field"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User blank all field and can't register new account 1st"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dff2cae8c9e86ef8.json",
+  "parameterValues" : [ "chrome" ]
+}

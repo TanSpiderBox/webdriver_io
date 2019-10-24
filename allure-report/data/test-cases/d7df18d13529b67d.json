@@ -1,0 +1,58 @@
+{
+  "uid" : "d7df18d13529b67d",
+  "name" : "Then User can't register new account 6th",
+  "fullName" : "Register: Verify User input Password don't match and can't register new account 6th.Then User can't register new account 6th",
+  "historyId" : "6e2c7851a21886cf2712ff7791a476a1",
+  "time" : {
+    "start" : 1571038979175,
+    "stop" : 1571038979188,
+    "duration" : 13
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't register new account 6th"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User input Password don't match and can't register new account 6th"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d7df18d13529b67d.json",
+  "parameterValues" : [ "chrome" ]
+}

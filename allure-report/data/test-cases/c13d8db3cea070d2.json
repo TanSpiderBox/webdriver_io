@@ -1,0 +1,194 @@
+{
+  "uid" : "c13d8db3cea070d2",
+  "name" : "Then User can't change password in User Information screen 2nd",
+  "fullName" : "User Profile: Verify User input doesn't match new password and can't change password in User Information screen 2nd.Then User can't change password in User Information screen 2nd",
+  "historyId" : "30123010b6d7f64857bfeea30299fe8b",
+  "time" : {
+    "start" : 1571026334775,
+    "stop" : 1571026334786,
+    "duration" : 11
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify User input doesn't match new password and can't change password in User Information screen 2nd"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify User input doesn't match new password and can't change password in User Information screen 2nd"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't change password in User Information screen 2nd"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify User input doesn't match new password and can't change password in User Information screen 2nd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "91f10bc9cc223016",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025344216,
+        "stop" : 1571025344228,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "cb5c0659166e3dec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025245126,
+        "stop" : 1571025245138,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "fc7aadad5826cb5e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025209874,
+        "stop" : 1571025209887,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "b1f17988397745c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025164112,
+        "stop" : 1571025164127,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "cb60d5846053f0c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025126883,
+        "stop" : 1571025126895,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "91b953fc6e949d86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024967131,
+        "stop" : 1571024967142,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "b50666fb91d8a3b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024926427,
+        "stop" : 1571024926445,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "28188f126ee0a3e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024901880,
+        "stop" : 1571024901893,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "d6bdfbd211cb6548",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024722803,
+        "stop" : 1571024722817,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "40e1946e329cb9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024657286,
+        "stop" : 1571024657300,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "d2040b289d487b24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024638836,
+        "stop" : 1571024638853,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "80ea4318d02b0ca3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571023557973,
+        "stop" : 1571023557993,
+        "duration" : 20
+      }
+    }, {
+      "uid" : "9102782fc4c07a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571023449439,
+        "stop" : 1571023449452,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "d6da0b50192cc8ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571023340800,
+        "stop" : 1571023340814,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "b09fe505da47852a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571023004627,
+        "stop" : 1571023004639,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "c47a937d56418fa9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571022795295,
+        "stop" : 1571022795308,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "1abfb4132a1b733c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571022710417,
+        "stop" : 1571022710431,
+        "duration" : 14
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c13d8db3cea070d2.json",
+  "parameterValues" : [ "chrome" ]
+}

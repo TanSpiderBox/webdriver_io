@@ -1,0 +1,56 @@
+{
+  "uid" : "42b7aecacb10e3ef",
+  "name" : "When User clicks button Transaction History",
+  "fullName" : "User Profile: Verify User clicks button Transaction History system will move to billing information page.When User clicks button Transaction History",
+  "historyId" : "b318ebddf7e452030bfe57b384341f38",
+  "time" : {
+    "start" : 1571025346469,
+    "stop" : 1571025349058,
+    "duration" : 2589
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify User clicks button Transaction History system will move to billing information page"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify User clicks button Transaction History system will move to billing information page"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User clicks button Transaction History"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify User clicks button Transaction History system will move to billing information page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "42b7aecacb10e3ef.json",
+  "parameterValues" : [ "chrome" ]
+}

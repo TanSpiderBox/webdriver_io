@@ -1,0 +1,56 @@
+{
+  "uid" : "31c24c24b00094d2",
+  "name" : "Then System display User Profile Screen with all correct information of user",
+  "fullName" : "User Profile: Verify system display correct User Information.Then System display User Profile Screen with all correct information of user",
+  "historyId" : "453b61d9035891f9b63967d53a275ce1",
+  "time" : {
+    "start" : 1571025241710,
+    "stop" : 1571025243745,
+    "duration" : 2035
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify system display correct User Information"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify system display correct User Information"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then System display User Profile Screen with all correct information of user"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify system display correct User Information"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "31c24c24b00094d2.json",
+  "parameterValues" : [ "chrome" ]
+}

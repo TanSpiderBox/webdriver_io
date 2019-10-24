@@ -1,0 +1,56 @@
+{
+  "uid" : "100af2e3421f8003",
+  "name" : "Given User Open website MMAP",
+  "fullName" : "User Profile: Verify system display correct User Information.Given User Open website MMAP",
+  "historyId" : "755cace494224cb86aa0e02e390e6751",
+  "time" : {
+    "start" : 1571025202058,
+    "stop" : 1571025204649,
+    "duration" : 2591
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify system display correct User Information"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify system display correct User Information"
+  }, {
+    "name" : "testMethod",
+    "value" : "Given User Open website MMAP"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify system display correct User Information"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "100af2e3421f8003.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "783cb0ac35912fcf",
+  "name" : "When User blank Password",
+  "fullName" : "Register: Verify User blank field Password can't register new account 3rd.When User blank Password",
+  "historyId" : "e6d3e59e3dea37c8923c95e6d1f36cce",
+  "time" : {
+    "start" : 1571038970267,
+    "stop" : 1571038971753,
+    "duration" : 1486
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User blank field Password can't register new account 3rd"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User blank field Password can't register new account 3rd"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User blank Password"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User blank field Password can't register new account 3rd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "783cb0ac35912fcf.json",
+  "parameterValues" : [ "chrome" ]
+}

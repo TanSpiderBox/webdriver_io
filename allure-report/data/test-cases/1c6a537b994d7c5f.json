@@ -1,0 +1,56 @@
+{
+  "uid" : "1c6a537b994d7c5f",
+  "name" : "Then User change password succesful",
+  "fullName" : "User Profile: Verify User can change password in User Information screen.Then User change password succesful",
+  "historyId" : "a379af5d6b7b6ced0646bfff1b918c25",
+  "time" : {
+    "start" : 1571025352674,
+    "stop" : 1571025354689,
+    "duration" : 2015
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify User can change password in User Information screen"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify User can change password in User Information screen"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User change password succesful"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify User can change password in User Information screen"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1c6a537b994d7c5f.json",
+  "parameterValues" : [ "chrome" ]
+}

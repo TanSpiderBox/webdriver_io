@@ -15,6 +15,7 @@
     "@babel/preset-env": "^7.6.2",
     "@babel/register": "^7.6.2",
     "@wdio/allure-reporter": "^5.13.2",
+    "@wdio/appium-service": "^5.13.2",
     "@wdio/cli": "^5.14.2",
     "@wdio/cucumber-framework": "^5.14.3",
     "@wdio/jasmine-framework": "^5.14.3",
@@ -24,12 +25,15 @@
     "@wdio/sync": "^5.14.3",
     "chromedriver": "^77.0.0",
     "cucumber": "^5.1.0",
+    "wdio-appium-service": "^0.2.3",
     "wdio-chromedriver-service": "^5.0.2",
     "webdriverio": "^5.14.0"
   },
   "dependencies": {
+    "appium": "^1.15.1",
     "assert": "^2.0.0",
     "chai": "^4.2.0",
+    "wd": "^1.11.4",
     "wdio-selenium-standalone-service": "0.0.12"
   }
 }

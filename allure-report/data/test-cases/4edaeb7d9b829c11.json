@@ -1,0 +1,56 @@
+{
+  "uid" : "4edaeb7d9b829c11",
+  "name" : "When User input doesn't match new password",
+  "fullName" : "User Profile: Verify User input doesn't match new password and can't change password in User Information screen 2nd.When User input doesn't match new password",
+  "historyId" : "a5c7bba9a6a5d15ebc926508698f187c",
+  "time" : {
+    "start" : 1571024638466,
+    "stop" : 1571024638836,
+    "duration" : 370
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify User input doesn't match new password and can't change password in User Information screen 2nd"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify User input doesn't match new password and can't change password in User Information screen 2nd"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User input doesn't match new password"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify User input doesn't match new password and can't change password in User Information screen 2nd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4edaeb7d9b829c11.json",
+  "parameterValues" : [ "chrome" ]
+}

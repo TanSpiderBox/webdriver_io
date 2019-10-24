@@ -1,0 +1,58 @@
+{
+  "uid" : "1273e99241d8a747",
+  "name" : "Then User can't register new account 3rd",
+  "fullName" : "Register: Verify User blank field Password can't register new account 3rd.Then User can't register new account 3rd",
+  "historyId" : "b1fcfedd378d2f9f9356ab69f89c433",
+  "time" : {
+    "start" : 1571038971753,
+    "stop" : 1571038971762,
+    "duration" : 9
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User blank field Password can't register new account 3rd"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User blank field Password can't register new account 3rd"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can't register new account 3rd"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User blank field Password can't register new account 3rd"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1273e99241d8a747.json",
+  "parameterValues" : [ "chrome" ]
+}

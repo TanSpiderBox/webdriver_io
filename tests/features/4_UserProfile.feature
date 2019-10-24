@@ -11,16 +11,6 @@ Feature: User Profile
       When User select submenu User Profile
       Then System display User Profile Screen with all correct information of user
 
-   # @TestCase029
-   # Scenario: Verify User can change password in User Information screen
-   #    When User input valid all password infomation
-   #    Then User change password succesful
-
-   # @TestCase030
-   # Scenario: Verify User can login system with new password
-   #    When User input email and new password
-   #    Then User login system successfull with new password
-
    @TestCase031
    Scenario: Verify User input inccorect old password and can't change password in User Information screen 1st
       When User input incorrect old password
@@ -41,12 +31,22 @@ Feature: User Profile
       When User clicks button Transaction History
       Then System move to billing information page
 
-   @Testcase035
-   Scenario: Verify User can drag and drop  an image
-      When User drag and drop image
-      Then User can update new image 1st
+   # # @Testcase035
+   # # Scenario: Verify User can drag and drop  an image
+   # #    When User drag and drop image
+   # #    Then User can update new image 1st
 
    @Testcase036
    Scenario: Verify User can browse to upload
       When User browse to folder and select image
       Then User can update new image 2nd
+
+   @TestCase029
+   Scenario: Verify User can change password in User Information screen
+      When User input valid all password infomation
+      Then User change password succesful
+
+   @TestCase030
+   Scenario: Verify User can login system with new password
+      When User input email and new password
+      Then User login system successfull with new password

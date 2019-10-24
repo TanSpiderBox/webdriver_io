@@ -1,0 +1,56 @@
+{
+  "uid" : "6c1b1321bae1d5e",
+  "name" : "When User input valid all password infomation",
+  "fullName" : "User Profile: Verify User can change password in User Information screen.When User input valid all password infomation",
+  "historyId" : "5a66bfd5cfa7af5539eaa7e2a427471e",
+  "time" : {
+    "start" : 1571025134970,
+    "stop" : 1571025135928,
+    "duration" : 958
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify User can change password in User Information screen"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify User can change password in User Information screen"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User input valid all password infomation"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify User can change password in User Information screen"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6c1b1321bae1d5e.json",
+  "parameterValues" : [ "chrome" ]
+}

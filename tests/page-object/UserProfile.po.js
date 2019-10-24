@@ -7,7 +7,7 @@ const ProfileObject = {
     btn_billing: '//*[text()="Billing Information"]',
     btn_inter: '//*[text()="Integrations"]',
     btn_userProfile: '//*[text()="User Profile"]',
-    lbl_signOut: '//*[contains(@href,"/users/sign_out")]',
+    btn_signOut: '//*[contains(@href,"/sign_out")]',
     btn_subuserprofile: '//*[@id="bd-profile-nav"]/a[text()="User Profile"]',
     btn_avata: '//*[contains(@class,"avatar editable")]',
     btn_upavata: 'input[id="user_avatar"]',
@@ -22,9 +22,9 @@ const UserProfleObject = {
     txt_confpwd: 'input[id="user_password_confirmation"]',
     btn_pwdsub: 'button[type="submit"]',
     lbl_updatesucc: '//*[@data-toggle=".sub-info"]',
-    btn_pwdback: '//*[contains(@class,"btn btn-arrow rounded-circle acreage-40")]',
-    btn_linksub: '(//*[contains(@class,"btn")]/img)[1]',
-    btn_linkbill: '(//*[contains(@class,"btn")]/img)[2]',
+    btn_pwdback: '(//*[contains(@href,"/edit")])[3]',
+    btn_linksub: '(//*[contains(@href,"/pricing")])[3]',
+    btn_linkbill: '(//*[contains(@href,"/billing")])[3]',
 }
 
 const UserProfileValidation = {

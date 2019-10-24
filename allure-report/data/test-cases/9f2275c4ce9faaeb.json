@@ -1,0 +1,185 @@
+{
+  "uid" : "9f2275c4ce9faaeb",
+  "name" : "When User clicks button pricing",
+  "fullName" : "User Profile: Verify User clicks button pricing system will move to subscriptions page.When User clicks button pricing",
+  "historyId" : "253d0fbe55547fb26128c4fd1238f577",
+  "time" : {
+    "start" : 1571026334789,
+    "stop" : 1571026334989,
+    "duration" : 200
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify User clicks button pricing system will move to subscriptions page"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify User clicks button pricing system will move to subscriptions page"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User clicks button pricing"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify User clicks button pricing system will move to subscriptions page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "45be13b51fefa02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025344232,
+        "stop" : 1571025344455,
+        "duration" : 223
+      }
+    }, {
+      "uid" : "9dcde94b725f4dd9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025245141,
+        "stop" : 1571025245322,
+        "duration" : 181
+      }
+    }, {
+      "uid" : "eaab6d7873ada1f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025209890,
+        "stop" : 1571025210091,
+        "duration" : 201
+      }
+    }, {
+      "uid" : "b90a336f4c88424f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025164135,
+        "stop" : 1571025164361,
+        "duration" : 226
+      }
+    }, {
+      "uid" : "352f064c74b1acd5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025126908,
+        "stop" : 1571025127126,
+        "duration" : 218
+      }
+    }, {
+      "uid" : "708c970b63c58c8e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024967145,
+        "stop" : 1571024967348,
+        "duration" : 203
+      }
+    }, {
+      "uid" : "b1bdfff31e5889df",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024926448,
+        "stop" : 1571024926666,
+        "duration" : 218
+      }
+    }, {
+      "uid" : "c9fb4a495b67b8da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024901896,
+        "stop" : 1571024902116,
+        "duration" : 220
+      }
+    }, {
+      "uid" : "ed3895e56fd8fb3d",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <img src=\"/assets/back_green-6138e6aee054bc6cccaff4960ead5c9add835d6107392df2ac1140735a2ecc65.svg\"> is not clickable at point (1219, 611). Other element would receive the click: <a class=\"btn btn-arrow rounded-circle acreage-40\" href=\"/users/8/edit\">...</a>\n                  (Session info: chrome=77.0.3865.90)",
+      "time" : {
+        "start" : 1571024722820,
+        "stop" : 1571024722928,
+        "duration" : 108
+      }
+    }, {
+      "uid" : "e65d3eb6cdba6db2",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <img src=\"/assets/back_green-6138e6aee054bc6cccaff4960ead5c9add835d6107392df2ac1140735a2ecc65.svg\"> is not clickable at point (1219, 611). Other element would receive the click: <a class=\"btn btn-arrow rounded-circle acreage-40\" href=\"/users/8/edit\">...</a>\n                  (Session info: chrome=77.0.3865.90)",
+      "time" : {
+        "start" : 1571023557997,
+        "stop" : 1571023558108,
+        "duration" : 111
+      }
+    }, {
+      "uid" : "d8b3474573bfe1ed",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <img src=\"/assets/back_green-6138e6aee054bc6cccaff4960ead5c9add835d6107392df2ac1140735a2ecc65.svg\"> is not clickable at point (1219, 611). Other element would receive the click: <a class=\"btn btn-arrow rounded-circle acreage-40\" href=\"/users/8/edit\">...</a>\n                  (Session info: chrome=77.0.3865.90)",
+      "time" : {
+        "start" : 1571023449455,
+        "stop" : 1571023449554,
+        "duration" : 99
+      }
+    }, {
+      "uid" : "21b3b7cebd507944",
+      "status" : "broken",
+      "statusDetails" : "Can't call click on element with selector \"//*[contains(@href,\"/pricing\")]/img\" because element wasn't found",
+      "time" : {
+        "start" : 1571023340817,
+        "stop" : 1571023350837,
+        "duration" : 10020
+      }
+    }, {
+      "uid" : "949e7c0ecc409f9b",
+      "status" : "broken",
+      "statusDetails" : "Can't call click on element with selector \"//*[contains(@href,\"/pricing\")]/img\" because element wasn't found",
+      "time" : {
+        "start" : 1571023004647,
+        "stop" : 1571023014671,
+        "duration" : 10024
+      }
+    }, {
+      "uid" : "9f903f5da20660e3",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <img src=\"/assets/back_green-6138e6aee054bc6cccaff4960ead5c9add835d6107392df2ac1140735a2ecc65.svg\"> is not clickable at point (1219, 611). Other element would receive the click: <a class=\"btn btn-arrow rounded-circle acreage-40\" href=\"/users/8/edit\">...</a>\n                  (Session info: chrome=77.0.3865.90)",
+      "time" : {
+        "start" : 1571022795310,
+        "stop" : 1571022795444,
+        "duration" : 134
+      }
+    }, {
+      "uid" : "16a454cad25b29d8",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <img src=\"/assets/back_green-6138e6aee054bc6cccaff4960ead5c9add835d6107392df2ac1140735a2ecc65.svg\"> is not clickable at point (1219, 611). Other element would receive the click: <a class=\"btn btn-arrow rounded-circle acreage-40\" href=\"/users/8/edit\">...</a>\n                  (Session info: chrome=77.0.3865.90)",
+      "time" : {
+        "start" : 1571022710482,
+        "stop" : 1571022710614,
+        "duration" : 132
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9f2275c4ce9faaeb.json",
+  "parameterValues" : [ "chrome" ]
+}

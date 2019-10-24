@@ -1,0 +1,58 @@
+{
+  "uid" : "579283943c74a9f6",
+  "name" : "Then User can login succesfull",
+  "fullName" : "Register: Verify User can login system with new account register.Then User can login succesfull",
+  "historyId" : "f5e2daa3ebc5b349dceba2a3d6c592e6",
+  "time" : {
+    "start" : 1571038987507,
+    "stop" : 1571038987522,
+    "duration" : 15
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Register: Verify User can login system with new account register"
+  }, {
+    "name" : "testClass",
+    "value" : "Register: Verify User can login system with new account register"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then User can login succesfull"
+  }, {
+    "name" : "package",
+    "value" : "Register: Verify User can login system with new account register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "579283943c74a9f6.json",
+  "parameterValues" : [ "chrome" ]
+}

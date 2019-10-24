@@ -1,0 +1,58 @@
+{
+  "uid" : "ed3895e56fd8fb3d",
+  "name" : "When User clicks button pricing",
+  "fullName" : "User Profile: Verify User clicks button pricing system will move to subscriptions page.When User clicks button pricing",
+  "historyId" : "253d0fbe55547fb26128c4fd1238f577",
+  "time" : {
+    "start" : 1571024722820,
+    "stop" : 1571024722928,
+    "duration" : 108
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element click intercepted: Element <img src=\"/assets/back_green-6138e6aee054bc6cccaff4960ead5c9add835d6107392df2ac1140735a2ecc65.svg\"> is not clickable at point (1219, 611). Other element would receive the click: <a class=\"btn btn-arrow rounded-circle acreage-40\" href=\"/users/8/edit\">...</a>\n                  (Session info: chrome=77.0.3865.90)",
+  "statusTrace" : "element click intercepted: Element <img src=\"/assets/back_green-6138e6aee054bc6cccaff4960ead5c9add835d6107392df2ac1140735a2ecc65.svg\"> is not clickable at point (1219, 611). Other element would receive the click: <a class=\"btn btn-arrow rounded-circle acreage-40\" href=\"/users/8/edit\">...</a>\n                  (Session info: chrome=77.0.3865.90)\n                    at getErrorFromResponseBody (D:\\WebdriverIO\\node_modules\\@wdio\\runner\\node_modules\\webdriver\\build\\utils.js:175:10)\n                    at Request._callback (D:\\WebdriverIO\\node_modules\\@wdio\\runner\\node_modules\\webdriver\\build\\request.js:110:64)\n                    at Request.self.callback (D:\\WebdriverIO\\node_modules\\request\\request.js:185:22)\n                    at Request.<anonymous> (D:\\WebdriverIO\\node_modules\\request\\request.js:1161:10)\n                    at IncomingMessage.<anonymous> (D:\\WebdriverIO\\node_modules\\request\\request.js:1083:12)\n                    at endReadableNT (_stream_readable.js:1145:12)\n                    at Element.runCommandWithHooks (D:\\WebdriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:56:22)\n                    at Element.wrapCommandFn (D:\\WebdriverIO\\node_modules\\@wdio\\sync\\build\\wrapCommand.js:33:40)\n                    at Element.elementErrorHandlerCallback (D:\\WebdriverIO\\node_modules\\@wdio\\runner\\node_modules\\webdriverio\\build\\middlewares.js:40:8)\n                    at World.click (D:\\WebdriverIO\\tests\\step-definitions/UserProfile.spec.js:49:37)\n                    at World.executeSync (D:\\WebdriverIO\\node_modules\\@wdio\\sync\\build\\index.js:44:18)\n                    at D:\\WebdriverIO\\node_modules\\@wdio\\sync\\build\\index.js:102:70",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify User clicks button pricing system will move to subscriptions page"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify User clicks button pricing system will move to subscriptions page"
+  }, {
+    "name" : "testMethod",
+    "value" : "When User clicks button pricing"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify User clicks button pricing system will move to subscriptions page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ed3895e56fd8fb3d.json",
+  "parameterValues" : [ "chrome" ]
+}

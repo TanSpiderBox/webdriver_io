@@ -1,0 +1,162 @@
+{
+  "uid" : "80c024260990d0c0",
+  "name" : "Then System move to billing information page",
+  "fullName" : "User Profile: Verify User clicks button Transaction History system will move to billing information page.Then System move to billing information page",
+  "historyId" : "e4bacdec648bec7dab63a2f233f1d947",
+  "time" : {
+    "start" : 1571026339823,
+    "stop" : 1571026342206,
+    "duration" : 2383
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify User clicks button Transaction History system will move to billing information page"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify User clicks button Transaction History system will move to billing information page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then System move to billing information page"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify User clicks button Transaction History system will move to billing information page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7b4cacdba4f72c3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025349058,
+        "stop" : 1571025351478,
+        "duration" : 2420
+      }
+    }, {
+      "uid" : "d4c21a46e0804130",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025249959,
+        "stop" : 1571025252557,
+        "duration" : 2598
+      }
+    }, {
+      "uid" : "55dde65084178107",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025215489,
+        "stop" : 1571025218050,
+        "duration" : 2561
+      }
+    }, {
+      "uid" : "4d026b3f4f72fa9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025169097,
+        "stop" : 1571025171677,
+        "duration" : 2580
+      }
+    }, {
+      "uid" : "a1e9ea37981411ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025132339,
+        "stop" : 1571025134763,
+        "duration" : 2424
+      }
+    }, {
+      "uid" : "e315e57e1ee0a259",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024972389,
+        "stop" : 1571024974999,
+        "duration" : 2610
+      }
+    }, {
+      "uid" : "2a92629a6c2bd385",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024931898,
+        "stop" : 1571024934485,
+        "duration" : 2587
+      }
+    }, {
+      "uid" : "2f6fa6e28afa8d22",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023558274,
+        "stop" : 1571023558274,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8d5dd2356ec0687f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023449719,
+        "stop" : 1571023449719,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "af62d93bd4fd2add",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023351081,
+        "stop" : 1571023351082,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cf738591929ebc3b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023014839,
+        "stop" : 1571023014839,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9d9e2ef07f9442a7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571022795626,
+        "stop" : 1571022795626,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "fe9074551a31c182",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571022710802,
+        "stop" : 1571022710803,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "80c024260990d0c0.json",
+  "parameterValues" : [ "chrome" ]
+}

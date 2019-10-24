@@ -1,0 +1,178 @@
+{
+  "uid" : "a6749ee6dec1c00f",
+  "name" : "Then System move to subscriptions page",
+  "fullName" : "User Profile: Verify User clicks button pricing system will move to subscriptions page.Then System move to subscriptions page",
+  "historyId" : "ab1a4c820e2a3dd511bcbd77800c86c2",
+  "time" : {
+    "start" : 1571026334989,
+    "stop" : 1571026337015,
+    "duration" : 2026
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "User Profile: Verify User clicks button pricing system will move to subscriptions page"
+  }, {
+    "name" : "testClass",
+    "value" : "User Profile: Verify User clicks button pricing system will move to subscriptions page"
+  }, {
+    "name" : "testMethod",
+    "value" : "Then System move to subscriptions page"
+  }, {
+    "name" : "package",
+    "value" : "User Profile: Verify User clicks button pricing system will move to subscriptions page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5638c0e1df0f57a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025344455,
+        "stop" : 1571025346467,
+        "duration" : 2012
+      }
+    }, {
+      "uid" : "d4ff8e21f60216ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025245322,
+        "stop" : 1571025247350,
+        "duration" : 2028
+      }
+    }, {
+      "uid" : "415cb3a3d8434240",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025210091,
+        "stop" : 1571025212120,
+        "duration" : 2029
+      }
+    }, {
+      "uid" : "f645ea5cf903823b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025164362,
+        "stop" : 1571025166394,
+        "duration" : 2032
+      }
+    }, {
+      "uid" : "331d0e738d740560",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571025127126,
+        "stop" : 1571025129142,
+        "duration" : 2016
+      }
+    }, {
+      "uid" : "d0c781c696fcd38a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024967348,
+        "stop" : 1571024969373,
+        "duration" : 2025
+      }
+    }, {
+      "uid" : "a639a872a6ad8fbb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024926666,
+        "stop" : 1571024928678,
+        "duration" : 2012
+      }
+    }, {
+      "uid" : "29b6eb1efe703ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571024902116,
+        "stop" : 1571024904132,
+        "duration" : 2016
+      }
+    }, {
+      "uid" : "6c36d4e6ef666604",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571024722928,
+        "stop" : 1571024722929,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "609f6570156418bf",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023558108,
+        "stop" : 1571023558108,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "bddd0e0369c0e3cf",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023449554,
+        "stop" : 1571023449555,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1a0dee5f76842763",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023350837,
+        "stop" : 1571023350838,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b0d7b94ba539840a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571023014671,
+        "stop" : 1571023014672,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b3c22b72eb0a68de",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571022795444,
+        "stop" : 1571022795444,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "65f67ea8f20cae15",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1571022710614,
+        "stop" : 1571022710615,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a6749ee6dec1c00f.json",
+  "parameterValues" : [ "chrome" ]
+}
