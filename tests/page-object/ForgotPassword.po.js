@@ -13,7 +13,7 @@ const ConfirmPwdObject = {
     txt_newpwd: 'input[id="user_password"]',
     txt_newpwdconf: 'input[id="user_password_confirmation"]',
     btn_changemypassword: 'input[value="Change my password"]',
-    btn_showcontent: '(//*[contains(@src,"//ssl.gstatic.com/ui/v1/icons/mail/images/cleardot.gif")])[2]'
+    btn_showcontent: 'div[data-tooltip="Show trimmed content"]'
 }
 
 const ForgotPwdMessObject = {

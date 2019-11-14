@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1573185838609' stop='1573185839255'>
+    <name>Forgot Password: Verify User blank password confirm and can't change password 3rd</name>
+    <title>Forgot Password: Verify User blank password confirm and can't change password 3rd</title>
+    <test-cases>
+        <test-case start='1573185838610' status='passed' stop='1573185839235'>
+            <name>When User blank password confirm and input password</name>
+            <title>When User blank password confirm and input password</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1573185839235' status='passed' stop='1573185839255'>
+            <name>Then User can't change password 3rd</name>
+            <title>Then User can't change password 3rd</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

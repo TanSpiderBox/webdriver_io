@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1573185841397' stop='1573185848798'>
+    <name>Forgot Password: Verify User can login with new password</name>
+    <title>Forgot Password: Verify User can login with new password</title>
+    <test-cases>
+        <test-case start='1573185841398' status='passed' stop='1573185843716'>
+            <name>When User input valid password and password confirm</name>
+            <title>When User input valid password and password confirm</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1573185843716' status='passed' stop='1573185848797'>
+            <name>Then User can login succesfull with new password</name>
+            <title>Then User can login succesfull with new password</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

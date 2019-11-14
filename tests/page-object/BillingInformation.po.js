@@ -1,11 +1,16 @@
 // '''Card Information'''
 const BillingInfoObject = {
-    btn_addMore: '//*[contains(text(),"Add more card")]',
-    txt_cardNumber: 'input[id ="card-number-element"]',
+    txt_cardNumber: 'input[aria-label="Credit or debit card number"]',
     txt_cardHolder: 'input[id="card_name"]',
-    txt_expiryDate: 'input[id="card-expiry-element"]',
-    txt_cvc: 'input[id="card-cvc-element"]',
+    txt_expiryDate: 'input[name="exp-date"]',
+    txt_cvc: 'input[name="cvc"]',
     btn_submit: '[name="button"]',
 }
 
-export { BillingInfoObject };
+const BillingVerifi = {
+    stripeverifi = 'div[id="swal2-content"]',
+    cardverifi = '[id="card-errors"]'
+}
+
+
+export { BillingInfoObject, BillingVerifi };

@@ -1,0 +1,8 @@
+(//*[@href="/start_mappings/new"])[1]
+(//*[@href="/start_mappings/new"])[2]
+//a[@href="#new-folder"]
+//*[text()="My maps"]
+input[type=search]
+button[type=submit]
+//*[text()="Synced"]
+//*[text()="Ready to sync"]

@@ -5,6 +5,7 @@ const ProfileObject = {
     btn_userAccount: '//*[text()="Account"]',
     btn_subscription: '//*[text()="Subscription"]',
     btn_billing: '//*[text()="Billing Information"]',
+    btn_managedmember: '//a[@aria-current="page"]',
     btn_inter: '//*[text()="Integrations"]',
     btn_userProfile: '//*[text()="User Profile"]',
     btn_signOut: '//*[contains(@href,"/sign_out")]',

@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1573185840652' stop='1573185841396'>
+    <name>Forgot Password: Verify User input password and password confirm don't match and can't change password 6th</name>
+    <title>Forgot Password: Verify User input password and password confirm don't match and can't change password 6th</title>
+    <test-cases>
+        <test-case start='1573185840652' status='passed' stop='1573185841380'>
+            <name>When User input password and password confirm don't match</name>
+            <title>When User input password and password confirm don't match</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1573185841380' status='passed' stop='1573185841395'>
+            <name>Then User can't change password 6th</name>
+            <title>Then User can't change password 6th</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
