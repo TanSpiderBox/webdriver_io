@@ -16,7 +16,7 @@ const ProfileObject = {
 
 const UserProfleObject = {
     submn_UserProfile: '//*[@id="bd-profile-nav"]/a[text()="User Profile"]',
-    txt_changePw: '//*[contains(@class,"field-editable text")]',
+    txt_changePw: '//*[contains(@href,"change_password")]',
     txt_currentpwd: 'input[id="user_current_password"]',
     txt_email: 'input[id="user_email"]',
     txt_newpwd: 'input[id="user_password"]',
@@ -29,8 +29,10 @@ const UserProfleObject = {
 }
 
 const UserProfileValidation = {
-    user_namesubscription: '//*[@class="mb-0 text-success"]',
-    user_email: '//*[@class="mt-5 mb-3 text-white"]',
+    user_namesubscription: '//div[contains(@class,"text-success")]',
+    user_firstname: '//a[contains(@class,"firstname")]',
+    user_lastname: '//a[contains(@class,"surname")]',
+    user_email: '//*[@class="mb-3 text-white"]',
     user_type: '//*[@class="mt-3 text-white"]',
     user_errorpwd: '//*[@name="user[current_password]"]/following-sibling::div',
     user_errornewpwd: '//*[@name="user[password]"]/following-sibling::div',

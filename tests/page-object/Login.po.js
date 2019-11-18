@@ -5,12 +5,12 @@ const LoginObjects = {
 };
 
 const LoginErrorObjects = {
-    lbl_error_blank: '//*[text()="Please input Email and password to sign in."]',
+    lbl_error_blank: '//*[contains(@class,"invalid-feedback")]',
     lbl_error_inccorect: '//*[contains(@class,"invalid-feedback")]',
 };
 
 const LoginSuccessObjects = {
-    lbl_success_login: '//*[text()=\"Dashboard\"]',
+    lbl_success_login: '//*[text()="Start"]',
 }
 
 export { LoginObjects, LoginErrorObjects, LoginSuccessObjects };

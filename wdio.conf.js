@@ -20,11 +20,11 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        // './tests/features/**/*.feature'
+        './tests/features/**/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
-        // './tests/features/1-Login.feature'
+        // 'path/to/excluded/files'
     ],
     //
     // ============
@@ -48,38 +48,23 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [
-        {
-            maxInstances: 1,
-            browserName: 'safari',
-            platformName: 'iOS',
-            appiumVersion : '1.15.1',
-            deviceName : 'iPhone X',
-            platformVersion : '13.1',
-            // 'appium:deviceName': 'iPhone X',
-            // 'appium:platformVersion': '12.2',
-            // 'appium:orientation': 'PORTRAIT',
-            // 'appium:automationName': 'XCUITest',
-            // 'appium:newCommandTimeout': 240,
-        },
-
+    capabilities: [{
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        // maxInstances: 5,
-        // //
-       {
-            browserName: 'chrome',
-            'goog:chromeOptions': {
-                args: [
-                    'start-maximized'
-                ]
-            },
-            // If outputDir is provided WebdriverIO can capture driver session logs
-            // it is possible to configure which logTypes to include/exclude.
-            // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-            // excludeDriverLogs: ['bugreport', 'server'],
-        }],
+        maxInstances: 5,
+        //
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+            args: [
+                'start-maximized'
+            ]
+        },
+        // If outputDir is provided WebdriverIO can capture driver session logs
+        // it is possible to configure which logTypes to include/exclude.
+        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+        // excludeDriverLogs: ['bugreport', 'server'],
+    }],
     //
     // ===================
     // Test Configurations
@@ -127,7 +112,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver', 'appium'],
+    services: ['chromedriver'],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -143,18 +128,13 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: ['spec', ['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: false,
-        useCucumberStepReporter: false
-    }]],
-
+    reporters: ['spec'],
     //
+    // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
-        requireModule: ['@babel/register'],  // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         require: ['./tests/step-definitions/**/*.js'],        // <string[]> (file/dir) require files before executing features
         backtrace: false,   // <boolean> show full backtrace for errors
+        requireModule: ['@babel/register'],  // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         dryRun: false,      // <boolean> invoke formatters without executing steps
         failFast: false,    // <boolean> abort the run on first failure
         format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
@@ -168,19 +148,6 @@ exports.config = {
         ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
     },
 
-    appium: {
-        args: {
-            // ...
-            command: 'appium',
-            debugLogSpacing: true,
-            platformName: 'iOS',
-            address: '127.0.0.1',
-            commandTimeout: '7200',
-            sessionOverride: true,
-            debugLogSpacing: true
-            // ...
-        }
-    },
     //
     // =====
     // Hooks
@@ -221,41 +188,36 @@ exports.config = {
     // beforeCommand: function (commandName, args) {
     // },
     /**
-     * Hook that gets executed before the suite starts
-     * @param {Object} suite suite details
+     * Runs before a Cucumber feature
      */
-    // beforeSuite: function (suite) {
+    // beforeFeature: function (uri, feature, scenarios) {
     // },
     /**
-     * Function to be executed before a test (in Mocha/Jasmine) starts.
+     * Runs before a Cucumber scenario
      */
-    // beforeTest: function (test, context) {
+    // beforeScenario: function (uri, feature, scenario, sourceLocation) {
     // },
     /**
-     * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
-     * beforeEach in Mocha)
+     * Runs before a Cucumber step
      */
-    // beforeHook: function (test, context) {
+    // beforeStep: function (uri, feature, stepData, context) {
     // },
     /**
-     * Hook that gets executed _after_ a hook within the suite starts (e.g. runs after calling
-     * afterEach in Mocha)
+     * Runs after a Cucumber step
      */
-    // afterHook: function (test, context, { error, result, duration, passed }) {
+    // afterStep: function (uri, feature, { error, result, duration, passed }, stepData, context) {
     // },
     /**
-     * Function to be executed after a test (in Mocha/Jasmine).
+     * Runs after a Cucumber scenario
      */
-    // afterTest: function(test, context, { error, result, duration, passed }) {
+    // afterScenario: function (uri, feature, scenario, result, sourceLocation) {
+    // },
+    /**
+     * Runs after a Cucumber feature
+     */
+    // afterFeature: function (uri, feature, scenarios) {
     // },
 
-
-    /**
-     * Hook that gets executed after the suite has ended
-     * @param {Object} suite suite details
-     */
-    // afterSuite: function (suite) {
-    // },
     /**
      * Runs after a WebdriverIO command gets executed
      * @param {String} commandName hook command name

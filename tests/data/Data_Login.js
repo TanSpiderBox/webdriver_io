@@ -8,10 +8,10 @@ const LoginData = {
 
 const LoginErrorMessage = {
     blank_error: 'Please input Email and password to sign in.',
-    input_error: 'Wrong Email/ password.\nPlease input again.',
+    input_error: 'Wrong Email/ password. Please input again.',
 }
 
 const LoginSuccessMessage = {
-    login_success: 'Dashboard'
+    login_success: 'Start'
 }
 export { LoginData, LoginErrorMessage, LoginSuccessMessage };

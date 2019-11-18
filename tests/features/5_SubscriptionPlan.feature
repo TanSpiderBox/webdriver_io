@@ -6,6 +6,22 @@ Feature: Feature name
         Given Start to type your Given step here
 
     @TestCase0
-    Scenario: Scenario name
-        When Start to type your When step here
-        Then Start to type your Then step here
+    Scenario: Verify system display correct information of Subscription Plan screen
+        When 
+        Then 
+
+
+    @TestCase0
+    Scenario: Verify User can choose new plan
+        When 
+        Then 
+
+    @TestCase0
+    Scenario: Verify User can choose another plan with existing card
+        When 
+        Then 
+
+    @TestCase0
+    Scenario: Verify User can choose another plan with new card information
+        When 
+        Then 

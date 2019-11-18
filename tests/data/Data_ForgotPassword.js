@@ -9,7 +9,7 @@ const ForgotPasswordData = {
 
 const ForgotPasswordMess = {
     mess_nofi1: 'No worries.',
-    mess_nofi2: 'Your new password has been sent to  ',
+    mess_nofi2: 'Your new password has been sent to',
     mess_nofi3: 'tan@spiderbox.design',
     error_notfound: 'Email not found',
     error_blankemail: "Email can't be blank",

@@ -1,4 +1,7 @@
 const UserProfileData = {
+    user_firstname: 'Tan',
+    user_lastname: 'Nguyen',
+    user_type: 'User type: Individual',
     user_email: 'tan@spiderbox.design',
     user_incorrectpwd: '1234567890',
     user_currentpwd: '123456789',

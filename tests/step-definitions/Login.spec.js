@@ -8,7 +8,7 @@ When("User blank 2 field", () => {
     $(LoginObjects.btn_submit).click();
 })
 Then("User can't login system 1st", () => {
-    assert.isObject($(LoginErrorObjects.lbl_error_blank), LoginErrorMessage.blank_error);
+    assert.equal($(LoginErrorObjects.lbl_error_blank).getText(), LoginErrorMessage.blank_error,'');
 })
 
 /* TestCase003 */
@@ -17,7 +17,7 @@ When("User blank email field", () => {
     $(LoginObjects.btn_submit).click();
 })
 Then("User can't login system 2nd", () => {
-    assert.isObject($(LoginErrorObjects.lbl_error_blank), LoginErrorMessage.blank_error);
+    assert.equal($(LoginErrorObjects.lbl_error_blank).getText(), LoginErrorMessage.blank_error,'');
 })
 
 /* TestCase004 */
@@ -26,7 +26,7 @@ When("User blank password field", () => {
     $(LoginObjects.btn_submit).click();
 })
 Then("User can't login system 3rd", () => {
-    assert.isObject($(LoginErrorObjects.lbl_error_blank), LoginErrorMessage.blank_error);
+    assert.equal($(LoginErrorObjects.lbl_error_blank).getText(), LoginErrorMessage.blank_error,'');
 })
 
 /* TestCase005 */
@@ -36,7 +36,7 @@ When("User input incorrect email", () => {
     $(LoginObjects.btn_submit).click();
 })
 Then("User can't login system 4th", () => {
-    assert.isObject($(LoginErrorObjects.lbl_error_inccorect), LoginErrorMessage.input_error);
+    assert.equal($(LoginErrorObjects.lbl_error_inccorect).getText(), LoginErrorMessage.input_error,'');
 })
 
 /* TestCase006 */
@@ -46,7 +46,7 @@ When("User input incorrect password field", () => {
     $(LoginObjects.btn_submit).click();
 })
 Then("User can't login system 5th", () => {
-    assert.isObject($(LoginErrorObjects.lbl_error_inccorect), LoginErrorMessage.input_error);
+    assert.equal($(LoginErrorObjects.lbl_error_inccorect).getText(), LoginErrorMessage.input_error,'');
 })
 
 /* TestCase007 */
@@ -56,5 +56,5 @@ When("User input correct email and password", () => {
     $(LoginObjects.btn_submit).click();
 })
 Then("User can login succesfull", () => {
-    assert.isObject($(LoginSuccessObjects.lbl_success_login), LoginSuccessMessage.login_success);
+    assert.equal($(LoginSuccessObjects.lbl_success_login).getText(), LoginSuccessMessage.login_success,'');
 })
