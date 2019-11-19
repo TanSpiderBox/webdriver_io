@@ -1,7 +1,12 @@
-//*[text()="Invite Members"]
+const ManagedMemberObject = {
+    btn_invite: '//*[text()="Invite Members"]',
 
-input[id=member_email]
+    txt_emailivite: 'input[id=member_email]',
 
-textarea[id=member_message]
+    txt_invitenote: 'textarea[id = member_message]',
 
-button[class="btn btn btn-success"]
+    btn_invitesub: 'button[class= "btn btn btn-success"]',
+}
+
+
+export { ManagedMemberObject }

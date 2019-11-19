@@ -7,13 +7,13 @@ Feature: Feature name
 
     @TestCase0
     Scenario: Verify system display correct information of Billing Information Screen
-        When Start to type your When step here
-        Then Start to type your Then step here
+        When User access Billing Information
+        Then System display correct information of Billing Information Screen
 
      @TestCase0
     Scenario: Verify User can add new card information in Billing Information Screen
-        When Start to type your When step here
-        Then Start to type your Then step here
+        When User input all valid information of card
+        Then User can add new card information in Billing Information Screen
 
      @TestCase0
     Scenario: Verify User input incorrect card information and can't add new card information in Billing Information Screen
