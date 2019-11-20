@@ -20,3 +20,8 @@ Feature: Mapping
     Scenario: Verify User can sync new Unit
         When User input Unit and click button sync
         Then User can sync new Unit
+
+    @TestCasse
+    Scenario: Verify User can start New Mapping
+        When User select unit and start Mapping
+        Then User can create new Mapping
