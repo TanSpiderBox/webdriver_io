@@ -1,7 +1,7 @@
 const RegisData = {
     user_firstName: "Tan",
     user_lastName: "Nguyen",
-    user_email: "45@temp-link.net",
+    user_email: "tan+8@spiderbox.design",
     user_password: "123456789",
 
     user_exisemail: 'tan@spiderbox.design',

@@ -1,6 +1,6 @@
 import { When, Then } from "cucumber";
 import { assert } from 'chai'
-import { MapData } from "../data/Data_Mapping";
+import { MapData, MapSuccess } from "../data/Data_Mapping";
 import { MapObject, MapVerify } from "../page-object/Mapping.po"
 
 /* TestCase002 */
@@ -46,23 +46,22 @@ When("User select unit and start Mapping", () => {
     $(MapObject.btn_Snewmap).click();
 
     $(MapObject.btn_newassetmenttaks).click();
-    $(MapObject.btn_newassetmenttaks).click();
-    $(MapObject.btn_newassetmenttaks).click();
-
+    browser.pause(2000)
     $(MapObject.txt_assetment1).click();
     $(MapObject.txt_assetment1).setValue(MapData.assetment1);
-
-    $(MapObject.txt_assetment2).click();
-    $(MapObject.txt_assetment2).setValue(MapData.assetment2);
-
-    $(MapObject.txt_assetment3).click();
-    $(MapObject.txt_assetment3).setValue(MapData.assetment3);
-
     $(MapObject.txt_references1).click();
 
+    $(MapObject.btn_newassetmenttaks).click();
+    browser.pause(2000)
+    $(MapObject.txt_assetment2).click();
+    $(MapObject.txt_assetment2).setValue(MapData.assetment2);
     $(MapObject.txt_references2).doubleClick();
     $(MapObject.txt_references2).setValue(MapData.references2);
 
+    $(MapObject.btn_newassetmenttaks).click();
+    browser.pause(2000)
+    $(MapObject.txt_assetment3).click();
+    $(MapObject.txt_assetment3).setValue(MapData.assetment3);
     $(MapObject.txt_references3).doubleClick();
     $(MapObject.txt_references3).setValue(MapData.references3);
     $(MapObject.txt_references3).click();
@@ -74,26 +73,26 @@ When("User select unit and start Mapping", () => {
     $(MapObject.drop_rtoassign).click();
     $(MapObject.value_rto).click();
     $(MapObject.txt_mapnote).click();
-    browser.pause(5000)
+    // browser.pause(10000)
     $(MapObject.btn_savsubmit).click();    
-    
     browser.pause(5000)
     $(MapObject.btn_back).click();
-    // $(MapObject.btn_back).click();
 })
 Then("User can create new Mapping", () => {
-    assert.equal($(MapVerify.lbl_mapname).getText(), MapData.map_unit, '');
+    browser.pause(5000)
+    
+    assert.equal($(MapVerify.lbl_mapname).getText(), MapSuccess.verify_mapname, '');
 
-    assert.equal($(MapVerify.lbl_unitrelease).getText(), MapData.map_unit, '');
+    assert.equal($(MapVerify.lbl_unitrelease).getText(), MapSuccess.verify_unitrelease, '');
 
-    assert.equal($(MapVerify.lbl_mapversion).getText(), MapData.map_unit, '');
+    assert.equal($(MapVerify.lbl_mapversion).getText(), MapSuccess.verify_mapversion, '');
 
-    assert.equal($(MapVerify.lbl_maprto).getText(), MapData.map_unit, '');
+    assert.equal($(MapVerify.lbl_maprto).getText(), MapSuccess.verify_maprto, '');
 
-    assert.equal($(MapVerify.lbl_mapnote).getText(), MapData.map_unit, '');
+    assert.equal($(MapVerify.lbl_mapnote).getText(), MapSuccess.verify_mapnote, '');
 
-    assert.equal($(MapVerify.lbl_mapupdate).getText(), MapData.map_unit, '');
-
+    assert.equal($(MapVerify.lbl_mapupdate).getText(), MapSuccess.verify_mapupdate, '');
+    
     $(MapObject.btn_mapdropdown).click();
     $(MapObject.btn_maprm).click();
 

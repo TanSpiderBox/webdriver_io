@@ -26,26 +26,25 @@ Feature: User Profile
       When User input valid all password infomation
       Then User change password succesful
 
-   @Testcase036
-   Scenario: Verify User can browse to upload
-      When User browse to folder and select image
-      Then User can update new image 2nd
-
    @TestCase030
    Scenario: Verify User can login system with new password
       When User input email and new password
       Then User login system successfull with new password
 
+   @Testcase033
+   Scenario: Verify User clicks button pricing system will move to subscriptions page
+      When User clicks button pricing
+      Then System move to subscriptions page
 
-# @Testcase033
-# Scenario: Verify User clicks button pricing system will move to subscriptions page
-#    When User clicks button pricing
-#    Then System move to subscriptions page
+   @Testcase034
+   Scenario: Verify User clicks button Transaction History system will move to billing information page
+      When User clicks button Transaction History
+      Then System move to billing information page
 
-# @Testcase034
-# Scenario: Verify User clicks button Transaction History system will move to billing information page
-#    When User clicks button Transaction History
-#    Then System move to billing information page
+   @Testcase036
+   Scenario: Verify User can browse to upload
+      When User browse to folder and select image
+      Then User can update new image 2nd
 
 # # @Testcase035
 # # Scenario: Verify User can drag and drop  an image

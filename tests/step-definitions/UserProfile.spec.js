@@ -44,6 +44,9 @@ When('User input email and new password', () => {
 
 Then('User login system successfull with new password', () => {
     assert.equal($(LoginSuccessObjects.lbl_success_login).getText(), LoginSuccessMessage.login_success,'');
+    $(ProfileObject.btn_user).click()
+    $(ProfileObject.btn_userAccount).click()
+    $(ProfileObject.btn_userProfile).click()
 })
 
 /* TestCase031 */
@@ -73,7 +76,7 @@ Then('User can\'t change password in User Information screen 2nd', () => {
 
 /* TestCase033 */
 When('User clicks button pricing', () => {
-    $(UserProfleObject.btn_pwdback).click()
+    // $(UserProfleObject.btn_pwdback).click()
     $(UserProfleObject.btn_linksub).click()
     $(UserProfleObject.btn_linksub).click()
 })
@@ -93,18 +96,6 @@ Then('System move to billing information page', () => {
     browser.pause(2000);
     assert.equal($(UserProfileValidation.user_billpage).getText(), UserValidData.user_billpage,'');
     $(ProfileObject.btn_subuserprofile).click();
-})
-
-/* TestCase035 */
-When('User drag and drop image', () => {
-
-    const localPath = 'D:/20190917141505.png';
-    // const remoteFilePath = browser.uploadFile(localPath);
-    $(localPath).dragAndDrop($(ProfileObject.btn_upavata), 1000);
-})
-
-Then('User can update new image 1st', () => {
-
 })
 
 /* TestCase036 */

@@ -31,12 +31,12 @@ const MapObject = {
     value_rto: 'label[class="optgroup "]>input',
     drop_folderassign: 'select[id="folder_ids"]+div>button',
     value_folder: '//span[text()="You "]',
-    btn_savsubmit: 'button[class="swal2-confirm btn btn-success"]',
+    btn_savsubmit: 'div[aria-describedby="swal2-content"]>div:nth-child(3)>button[class="swal2-confirm btn btn-success"]',
     btn_back: 'div[class="d-inline-flex"]>a[href="/units/37379"]',
 
     
-    btn_mapdropdown: 'tr[release-id="53384"]>td:last-child',
-    btn_maprm: 'div[x-placement="top-end"]>a[data-method="delete"]',
+    btn_mapdropdown: 'tbody>tr>td:last-child',
+    btn_maprm: '[class="dropdown-menu dropdown-menu-right mini-dropdown-menu show"]>a',
 
     //Ready To Sync
     btn_RTScourseBSBSS00090: 'div[data-title= "Auditing Skill Set"]>div>button',
@@ -50,11 +50,11 @@ const MapVerify = {
     lbl_header: 'h2[class="text-peach mb-0"]',
     lbl_warmingmess: 'div[class="invalid-feedback"]',
 
-    lbl_mapname: 'tr[release-id="53384"]>td:nth-child(2)>a',
-    lbl_unitrelease: 'tr[release-id="53384"]>td:nth-child(3)',
-    lbl_mapversion: 'tr[release-id="53384"]>td:nth-child(4)',
-    lbl_maprto: 'tr[release-id="53384"]>td:nth-child(5)',
-    lbl_mapnote: 'tr[release-id="53384"]>td:nth-child(6)',
-    lbl_mapupdate: 'tr[release-id="53384"]>td:nth-child(7)',
+    lbl_mapname: 'tbody>tr>td:nth-child(2)>a',
+    lbl_unitrelease: 'tbody>tr>td:nth-child(3)',
+    lbl_mapversion: 'tbody>tr>td:nth-child(4)',
+    lbl_maprto: 'tbody>tr>td:nth-child(5)',
+    lbl_mapnote: 'tbody>tr>td:nth-child(6)',
+    lbl_mapupdate: 'tbody>tr>td:nth-child(7)',
 }
 export { MapObject, MapVerify }

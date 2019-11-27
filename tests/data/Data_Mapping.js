@@ -21,7 +21,12 @@ const MapError = {
 }
 
 const MapSuccess = {
-
+    verify_mapname: 'TestMap',
+    verify_unitrelease: '1',
+    verify_mapversion: '1.1',
+    verify_maprto: '45123',
+    verify_mapnote: 'TestMap',
+    verify_mapupdate: '27/11/2019',
 }
 
-export { MapData };
+export { MapData, MapSuccess };
