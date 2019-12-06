@@ -1,6 +1,6 @@
 const MapObject = {
-    btn_nwsyncs: '(//*[@href="/start_mappings/new"])[1]',
-    btn_strmap: '(//*[@href="/start_mappings/new"])[2]',
+    btn_nwsyncs: '(//*[contains(@href,"/start_mappings/new")])[1]',
+    btn_strmap: '(//*[contains(@href,"/start_mappings/new")])[2]',
     btn_nwfolder: '//a[@href="#new-folder"]',
     btn_mymaps: '//*[text()="My maps"]',
     txt_search: 'span[aria-labelledby="select2-user_sidebar_code-container"]',
@@ -32,7 +32,7 @@ const MapObject = {
     drop_folderassign: 'select[id="folder_ids"]+div>button',
     value_folder: '//span[text()="You "]',
     btn_savsubmit: 'div[aria-describedby="swal2-content"]>div:nth-child(3)>button[class="swal2-confirm btn btn-success"]',
-    btn_back: 'div[class="d-inline-flex"]>a[href="/units/37379"]',
+    btn_back: '//div[@class="d-inline-flex"]/a[contains(@href,"/units")]',
 
     
     btn_mapdropdown: 'tbody>tr>td:last-child',

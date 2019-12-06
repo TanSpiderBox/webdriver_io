@@ -70,8 +70,8 @@ When("User select unit and start Mapping", () => {
     $(MapObject.btn_mapsave).click();
     $(MapObject.txt_mapname).setValue(MapData.mapname);
     $(MapObject.txt_mapnote).setValue(MapData.mapnote);
-    $(MapObject.drop_rtoassign).click();
-    $(MapObject.value_rto).click();
+    // $(MapObject.drop_rtoassign).click();
+    // $(MapObject.value_rto).click();
     $(MapObject.txt_mapnote).click();
     // browser.pause(10000)
     $(MapObject.btn_savsubmit).click();    

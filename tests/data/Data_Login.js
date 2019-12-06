@@ -1,5 +1,6 @@
 const LoginData = {
-    url: "https://staging.app.magicmap.com.au/",
+    url: "http://192.168.1.17:3000/users/sign_in",
+    // url: "https://staging.app.magicmap.com.au/",
     user_email: 'tan@spiderbox.design',
     user_email_incorrect: 'tanbbc@spiderbox.design',
     user_pwd: '123456789',

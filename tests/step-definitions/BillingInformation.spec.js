@@ -25,6 +25,8 @@ Then('System display correct information of Billing Information Screen', () => {
     assert.equal($(BillingVerifi.lbl_amount).getText(), BillingDataVerify.lblamount, '');
     assert.equal($(BillingVerifi.lbl_subscription).getText(), BillingDataVerify.lblsub, '');
     assert.equal($(BillingVerifi.lbl_desnote).getText(), BillingDataVerify.lbldesnote, '');
+    const value = ($(BillingVerifi.lbl_desnote).getText())
+    const exportname = value.writeFile('D:/test.xlxs')
 })
 
 /* TestCase042 */

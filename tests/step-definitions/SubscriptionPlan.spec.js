@@ -18,4 +18,5 @@ Then('System display User Profile Screen with all correct information of user', 
     assert.equal($(UserProfileValidation.user_lastname).getText(),UserProfileData.user_lastname,'')
     assert.equal($(UserProfileValidation.user_email).getText(),UserProfileData.user_email,'')
     assert.equal($(UserProfileValidation.user_type).getText(),UserProfileData.user_type,'')
+
 })

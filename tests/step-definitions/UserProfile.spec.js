@@ -4,6 +4,7 @@ import { UserProfileData, UserErrorData, UserValidData } from "../data/Data_User
 import { ProfileObject, UserProfleObject, UserProfileValidation } from "../page-object/UserProfile.po"
 import { LoginSuccessMessage } from "../data/Data_Login"
 import { LoginSuccessObjects } from "../page-object/Login.po"
+import { writeFile } from "fs"
 
 /* TestCase028 */
 When('User select submenu User Profile', () => {
