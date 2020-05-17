@@ -14,7 +14,8 @@ const ForgotPasswordMess = {
     error_notfound: 'Email not found',
     error_blankemail: "Email can't be blank",
     error_blankpwd: "Password can't be blank",
-    error_pwdshort: "Password is too short (minimum is 6 characters)",
-    error_pwdnotmatch: "Password confirmation doesn't match Password"
+    error_pwdshort: "is too short (minimum is 6 characters)",
+    error_pwdnotmatch: "doesn't match Password"
+
 }
 export { ForgotPasswordData, ForgotPasswordMess }
