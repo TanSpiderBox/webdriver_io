@@ -87,11 +87,11 @@ Then("User can create new Mapping", () => {
 
     assert.equal($(MapVerify.lbl_mapversion).getText(), MapSuccess.verify_mapversion, '');
 
-    assert.equal($(MapVerify.lbl_maprto).getText(), MapSuccess.verify_maprto, '');
+    // assert.equal($(MapVerify.lbl_maprto).getText(), MapSuccess.verify_maprto, '');
 
     assert.equal($(MapVerify.lbl_mapnote).getText(), MapSuccess.verify_mapnote, '');
 
-    assert.equal($(MapVerify.lbl_mapupdate).getText(), MapSuccess.verify_mapupdate, '');
+    // assert.equal($(MapVerify.lbl_mapupdate).getText(), MapSuccess.verify_mapupdate, '');
     
     $(MapObject.btn_mapdropdown).click();
     $(MapObject.btn_maprm).click();

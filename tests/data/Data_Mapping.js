@@ -26,7 +26,7 @@ const MapSuccess = {
     verify_mapversion: '1.1',
     verify_maprto: '45123',
     verify_mapnote: 'TestMap',
-    verify_mapupdate: '27/11/2019',
+    verify_mapupdate: '02 Mar 07:37',
 }
 
 export { MapData, MapSuccess };

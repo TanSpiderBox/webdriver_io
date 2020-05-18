@@ -1,1 +1,4 @@
 node_modules
+allure_report
+allure_result
+debug.log

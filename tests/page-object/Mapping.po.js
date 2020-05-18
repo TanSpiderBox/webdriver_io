@@ -5,12 +5,13 @@ const MapObject = {
     btn_mymaps: '//*[text()="My maps"]',
     txt_search: 'span[aria-labelledby="select2-user_sidebar_code-container"]',
     txt_inputsearch: 'input[type = "search"]',
-    btn_search: 'div[class="d-flex justify-content-center"]>button',
+    btn_search: '//button[contains(@class,"js_start_mapping_submit")]',
     tab_synced: '//*[text()="Synced"]',
     tab_readysync: '//*[text()="Ready to sync"]',
     txt_resultRTO: 'li[aria-label="RTO(s)"]>ul>li',
     txt_resultCourse: 'li[aria-label="Course(s)"]>ul>li:last-child',
     txt_resultUnits: 'li[aria-label="Unit(s)"]>ul>li:last-child',
+    
     //Synced
     btn_Scourse: 'div[id="pills-synced"]>div>div>div>div>button',
     btn_Sunit: 'tr[data-href="/units/37379"]',
@@ -47,7 +48,7 @@ const MapObject = {
 }
 
 const MapVerify = {
-    lbl_header: 'h2[class="text-peach mb-0"]',
+    lbl_header: "//*[contains(@class, 'text-peach mb-0')]",
     lbl_warmingmess: 'div[class="invalid-feedback"]',
 
     lbl_mapname: 'tbody>tr>td:nth-child(2)>a',

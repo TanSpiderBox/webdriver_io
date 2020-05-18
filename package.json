@@ -23,7 +23,7 @@
     "@wdio/mocha-framework": "^5.16.5",
     "@wdio/spec-reporter": "^5.16.5",
     "@wdio/sync": "^5.16.5",
-    "chromedriver": "^77.0.0",
+    "chromedriver": "^80.0.1",
     "cucumber": "^5.1.0",
     "wdio-appium-service": "^0.2.3",
     "wdio-chromedriver-service": "^5.0.2",
