@@ -25,15 +25,15 @@ Feature: Mapping
         When User click button delete RTO don't have maps
         Then User can delete RTO succesfull
 
-    @MP005
-    Scenario: Verify User can sync new Course
-        When User input Course and click button sync
-        Then User can sync new Course
+    # @MP005
+    # Scenario: Verify User can sync new Course
+    #     When User input Course and click button sync
+    #     Then User can sync new Course
 
-    @MP006
-    Scenario: Verify User can add new Maps in Course
-        When User add new map to libary in Course succesfull
-        Then User can add new maps in Course
+    # @MP006
+    # Scenario: Verify User can add new Maps in Course
+    #     When User add new map to libary in Course succesfull
+    #     Then User can add new maps in Course
 
     @MP007
     Scenario: Verify User can sync new Unit

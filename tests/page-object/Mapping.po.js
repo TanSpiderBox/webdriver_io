@@ -3,6 +3,7 @@ const MapObject = {
     btn_addsyncs: '(//*[contains(@href,"/start_mappings/new")])[1]',
     btn_strmap: '(//*[contains(@href,"/start_mappings/new")])[2]',
     btn_sidebar: '//*[@id="sidebar-collapse-wrapper"]/div[1]/button/div',
+    searchbox: '//input[@name="search"]',
 
     btn_nwfolder: '//a[@href="#new-folder"]',
     btn_mymaps: '//*[text()="My maps"]',
@@ -13,8 +14,6 @@ const MapObject = {
     txt_search: 'span[aria-labelledby="select2-user_sidebar_code-container"]',
     txt_inputsearch: 'input[type = "search"]',
     btn_search: 'button[class="btn btn btn-continue position-relative js_start_mapping_submit"]',
-    tab_synced: '//*[contains(@id,"pills-synced-tab")]',
-    tab_readysync: '//*[text()="Ready to sync"]',
     txt_resultRTO: 'li[aria-label="RTO(s)"]>ul>li',
     txt_resultCourse: 'li[aria-label="Course(s)"]>ul>li:last-child',
     txt_resultUnits: 'li[aria-label="Unit(s)"]>ul>li:last-child',
@@ -23,7 +22,7 @@ const MapObject = {
     //Synced
     btn_Scourse: 'div[id="pills-synced"]>div>div>div>div>button',
     btn_Sunit: 'tr[data-href="/units/37379"]',
-    btn_addmaps: '//button[contains(text(),"Add")]',
+    btn_addmaps: '//button[contains(text(),"Add To Library")]',
     btn_continue: '//button[contains(@class,"swal2-confirm")]',
     btn_Snewmap: '//*[contains(@class,"js_new_map")]',
     btn_downloadUnitpack: '//*[contains(@class,"dropdown js_download_pack")]',
@@ -63,13 +62,21 @@ const MapObject = {
     btn_reassign: '(//span[contains(text(),"Rename/Reassign")])[1]',
 
     lbl_maptitle: '(//*[@id="release_name"])[1]',
-    btn_actiondropdown: '/html/body/div[1]/div/div/div/div/div[3]/div[2]/button',
+    btn_actiondropdown: '//div[@class="dropdown"]//button[@data-toggle="dropdown"]//img[contains(@src,"dots")]',
     btn_actiondelete: '//a[@data-method="delete"]/*[text()="Delete"]',
 
     //Ready To Sync
-    btn_RTScourse: '//*[@aria-labelledby="pills-available-tab"]//div[contains(@data-title,"Auditing Skill Set")]',
-    btn_RTScourseSynced: '//*[@id="pills-synced"]//button/div[contains(text(),"BSBSS00090")]',
-    btn_RTSunit: '(//*[@class="btn btn-add js_single_sync"])[1]',
+    selectRTScourse: (codeCourse) => {
+        return "//div[contains(text()," + "'" + codeCourse + "'" + ")]"
+    },
+    selectRTSunit: (unitCode) => {
+        return "//td[contains(text()," + "'" + unitCode + "'" + ")]"
+    },
+    btnAddUnit: '//button[contains(@class,"btn btn-add js_single_sync")]',
+    selectRTO: (codeRTO) =>{
+        return "//*[contains(@aria-filter--value," + "'" + codeRTO + "'" + ")]"
+    },
+    btn_ViewLibary: '//a[@class="btn btn-view-library px-5"]//span[contains(text(),"View Library")]',
     btn_UnitesSynced: '//*[@id="collapse-4613"]/div[3]/table/tbody/tr',
     btn_dropdown: '//*[@id="collapse-4613"]/div[3]/table/tbody/tr/td[8]/button',
     btn_deletemaps: '//*[@id="collapse-4613"]/div[3]/table/tbody/tr/td[8]/div/a[5]',

@@ -35,6 +35,7 @@
     "chai": "^4.2.0",
     "js-base64": "^2.5.2",
     "wd": "^1.11.4",
-    "wdio-selenium-standalone-service": "0.0.12"
+    "wdio-selenium-standalone-service": "0.0.12",
+    "xmlhttprequest": "^1.8.0"
   }
 }

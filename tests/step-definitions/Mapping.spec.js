@@ -18,19 +18,23 @@ Then("User can sync new RTO", () => {
 /* MP002 */
 When("User add new map to libary in RTO succesfull", () => {
     const timeout = 1000
-    $(MapObject.btn_RTScourse).click();
+    $(MapObject.selectRTScourse(MapData.course)).click();
     browser.pause(timeout)
-    $(MapObject.btn_RTSunit).click();
+    $(MapObject.selectRTSunit(MapData.unit)).$(MapObject.btnAddUnit).click();
     browser.pause(timeout)
     $(MapObject.btn_continue).click();
     browser.pause(timeout)
-    $(MapObject.tab_synced).click();
+    $(MapObject.btn_sidebar).click();
     browser.pause(timeout)
-    $(MapObject.btn_RTScourseSynced).click();
+    $(MapObject.searchbox).setValue(MapData.rto);
     browser.pause(timeout)
-    $(MapObject.btn_UnitesSynced).click();
+    $(MapObject.selectRTO(MapData.rto)).click();
     browser.pause(timeout)
+    $(MapObject.selectRTScourse(MapData.course)).click();
+    browser.pause(timeout)
+    $(MapObject.selectRTSunit(MapData.unit)).click();
 
+    browser.pause(timeout)
     $(MapObject.btn_Snewmap).click();
 
     browser.pause(3000)
@@ -94,29 +98,22 @@ When("User click button delete RTO don't have maps", () => {
     const timeout = 2000
     $(MapObject.btn_sidebar).click();
     browser.pause(timeout)
-    $(MapObject.btn_addsyncs).click();
-    $(MapObject.txt_search).click();
-    $(MapObject.txt_inputsearch).setValue(MapData.rto);
-    $(MapObject.txt_resultRTO).click();
-    $(MapObject.btn_search).click();
-
+    $(MapObject.searchbox).setValue(MapData.rto);
     browser.pause(timeout)
-    $(MapObject.tab_synced).click();
+    $(MapObject.selectRTO(MapData.rto)).click();
     browser.pause(timeout)
-    $(MapObject.btn_RTScourseSynced).click();
+    $(MapObject.selectRTScourse(MapData.course)).click();
     browser.pause(timeout)
-    $(MapObject.btn_dropdown).click();
+    $(MapObject.selectRTSunit(MapData.unit)).click();
     browser.pause(timeout)
-    $(MapObject.btn_deletemaps).click();
-    browser.pause(timeout)
+    $(MapObject.btn_delete).click();
 
     $(MapObject.btn_sidebar).click();
     browser.pause(timeout)
-    $(MapObject.btn_addsyncs).click();
-    $(MapObject.txt_search).click();
-    $(MapObject.txt_inputsearch).setValue(MapData.rto);
-    $(MapObject.txt_resultRTO).click();
-    $(MapObject.btn_search).click();
+    $(MapObject.searchbox).setValue(MapData.rto);
+    browser.pause(timeout)
+    $(MapObject.selectRTO(MapData.rto)).click();
+    browser.pause(timeout)
     $(MapObject.btn_delete).click();
 })
 Then("User can delete RTO succesfull", () => {
@@ -208,6 +205,8 @@ Then("User can sync new Unit", () => {
 
 /* MP008 */
 When("User select unit and start Mapping", () => {
+    $(MapObject.btn_addmaps).click();
+    $(MapObject.btn_continue).click();
     $(MapObject.btn_Snewmap).click();
 
     browser.pause(3000)
@@ -396,13 +395,13 @@ When("User click button delete folder don't have maps", () => {
     $(MapObject.btn_delete).click();
 })
 Then("User can delete folder succesfull", () => {
+    const timeout = 1000
     $(MapObject.btn_sidebar).click();
-    browser.pause(1000)
-    $(MapObject.btn_addsyncs).click();
-    $(MapObject.txt_search).click();
-    $(MapObject.txt_inputsearch).setValue(MapData.rto);
-    $(MapObject.txt_resultRTO).click();
-    $(MapObject.btn_search).click();
+    browser.pause(timeout)
+    $(MapObject.searchbox).setValue(MapData.rto);
+    browser.pause(timeout)
+    $(MapObject.selectRTO(MapData.rto)).click();
+    browser.pause(timeout)
     $(MapObject.btn_delete).click();
 })
 
