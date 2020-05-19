@@ -7,16 +7,17 @@ const ForgotPwdObject = {
 const ConfirmPwdObject = {
     txt_emailconf: 'input[type="email"]',
     txt_pwdconf: 'input[type="password"]',
-    btn_contiunue: 'span[class="RveJvd snByac"]',
+    btn_continue: '//span[@class="RveJvd snByac"]',
     lbl_emailconf: '//*[@jscontroller="ZdOxDb"]',
     hyperlink_confi: '//*[text()="Change my password"]',
     txt_newpwd: 'input[id="user_password"]',
     txt_newpwdconf: 'input[id="user_password_confirmation"]',
-    btn_changemypassword: 'input[value="Change my password"]',
+    btn_changemypassword: 'input[value="Change"]',
     btn_showcontent: 'div[data-tooltip="Show trimmed content"]'
 }
 
 const ForgotPwdMessObject = {
+    lbl_invalidfeedback: '//*[@class="invalid-feedback"]',
     lbl_nofi1: '//*[text()="No worries."]',
     lbl_nofi2: '//*[text()="Your new password has been sent to  "]',
     lbl_nofi3: '//*[text()="tan@spiderbox.design"]',

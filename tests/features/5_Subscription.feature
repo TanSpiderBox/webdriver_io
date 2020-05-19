@@ -1,59 +1,68 @@
-Feature: Billing Information
+Feature: Subsription
 
-    @TestCase041
-    Scenario: Verify system display correct information of Billing Information Screen
+    As a User I want check all case of Feature Subscription
+
+    @SB001
+    Scenario: Verify system display correct information of Subscription Plan screen
         Given  User Open website MMAP
         When User input correct email and password
         Then User can login succesfull
-        When User access Billing Information
-        Then System display correct information of Billing Information Screen
+        When User access Subscription
+        Then System display correct information of subscription
 
-    @TestCase042
-    Scenario: Verify User can add new card information in Billing Information Screen
-        When User input all valid information of card
-        Then User can add new card information in Billing Information Screen
 
-    @TestCase043
-    Scenario: Verify User can remove existing card
-        When User click button remove card
-        Then User can remove existing card
-
-    @TestCase044
+    @SB002
     Scenario: Verify User input declined card and can't add new card information in Billing Information Screen
         When User input decline card
-        Then User can't add new card 1st
+        Then User can't add new declined card
 
-    @TestCase045
+    @SB003
     Scenario: Verify User input insufficient funds card and can't add new card information in Billing Information Screen
         When User input insufficient funds card
-        Then User can't add new card 2nd
+        Then User can't add new insufficient funds card
 
-    @TestCase046
+    @SB004
     Scenario: Verify User input lost card information and can't add new card information in Billing Information Screen
         When User input lost card
-        Then User can't add new card 3rd
+        Then User can't add new lost card
 
-    @TestCase047
+    @SB005
     Scenario: Verify User input stolen card and can't add new card information in Billing Information Screen
         When User input stolen card
-        Then User can't add new card 4th
+        Then User can't add new stolen card
 
-    @TestCase048
+    @SB006
     Scenario: Verify User input expired card and can't add new card information in Billing Information Screen
         When User input expired card
-        Then User can't add new card 5th
+        Then User can't add new expired card
 
-    @TestCase049
+    @SB007
     Scenario: Verify User input incorrect cvc card and can't add new card information in Billing Information Screen
         When User input incorrect cvc card
-        Then User can't add new card 6th
+        Then User can't add new incorrect cvc card
 
-      @TestCase050
+    @SB008
     Scenario: Verify User input processing error card and can't add new card information in Billing Information Screen
         When User input processing error card
-        Then User can't add new card 7th
- 
-    @TestCase051
+        Then User can't add new processing error card
+
+    @SB009
     Scenario: Verify User input invalid card number and can't add new card information in Billing Information Screen
         When User input invalid card number
-        Then User can't add new card 8th
+        Then User can't add new invalid card number
+
+    @SB0010
+    Scenario: Verify User can choose new plan
+        When User input all valid information of card
+        Then User can payment succesfull
+
+    @SB0011
+    Scenario: Verify User can cancel subscription
+        When User click button cancel
+        Then User cancel subscription succesfull
+
+    @SB0012
+    Scenario: Verify User can renewal subscription
+        When User click button renewal
+        Then User renewal subscription succesfull
+

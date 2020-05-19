@@ -14,10 +14,17 @@ const MapData = {
     references3: 'Done',
 
     mapname: 'TestMap',
-    mapnote: 'TestMap'
+    mapnote: 'TestMap',
+
+    mapduplicate: 'TestMapDuplicate',
+    noteduplicate: 'TestMapDuplicate',
+
+    maprename: 'TestMapRename',
+    maprenote: 'TestMapRename',
+    foldername: 'Test Folder',
 }
 const MapError = {
-
+    deleteRTO: "You can only delete empty folders/RTO(s)."
 }
 
 const MapSuccess = {
@@ -26,7 +33,7 @@ const MapSuccess = {
     verify_mapversion: '1.1',
     verify_maprto: '45123',
     verify_mapnote: 'TestMap',
-    verify_mapupdate: '02 Mar 07:37',
+    verify_mapupdate: '07 Apr',
 }
 
-export { MapData, MapSuccess };
+export { MapData, MapSuccess, MapError };

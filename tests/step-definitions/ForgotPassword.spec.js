@@ -1,5 +1,6 @@
 import { assert } from 'chai'
-import { When, Then } from 'cucumber'
+import { Base64 } from 'js-base64';
+import { When, Then, JsonFormatter } from 'cucumber'
 import { ForgotPwdObject, ConfirmPwdObject, ForgotPwdMessObject } from '../page-object/ForgotPassword.po';
 import { ForgotPasswordData, ForgotPasswordMess } from '../data/Data_ForgotPassword'
 import { LoginSuccessMessage } from "../data/Data_Login";
@@ -10,6 +11,7 @@ import { LoginSuccessObjects } from "../page-object/Login.po"
 When('User blank email field request', () => {
     $(ForgotPwdObject.btn_forgotpwd).click();
     browser.pause(5000)
+    $(ForgotPwdObject.btn_submit).scrollIntoView();
     $(ForgotPwdObject.btn_submit).click();
 })
 Then('User can\'t request new password 1st', () => {
@@ -20,6 +22,7 @@ Then('User can\'t request new password 1st', () => {
 /* TestCase019 */
 When('User input doesn\'t exisiting email', () => {
     $(ForgotPwdObject.txt_emailforgot).setValue(ForgotPasswordData.user_emailwrong);
+    $(ForgotPwdObject.btn_submit).scrollIntoView();
     $(ForgotPwdObject.btn_submit).click();
 })
 Then('User can\'t request new password 2nd', () => {
@@ -31,6 +34,7 @@ Then('User can\'t request new password 2nd', () => {
 When('User input exisiting email request', () => {
     browser.pause(5000)
     $(ForgotPwdObject.txt_emailforgot).setValue(ForgotPasswordData.user_emailconf);
+    $(ForgotPwdObject.btn_submit).scrollIntoView();
     $(ForgotPwdObject.btn_submit).click();
 })
 Then('User can request new password', () => {
@@ -42,22 +46,45 @@ Then('User can request new password', () => {
 
 /* TestCase021 */
 When('User blank password and password confirm', () => {
-    browser.url(ForgotPasswordData.user_emailLink);
-    $(ConfirmPwdObject.txt_emailconf).setValue(ForgotPasswordData.user_emailconf);
-    $(ConfirmPwdObject.btn_contiunue).click();
-    browser.setTimeout({ 'implicit': 5000 })
-    $(ConfirmPwdObject.txt_pwdconf).setValue(ForgotPasswordData.user_pwdconf);
-    $(ConfirmPwdObject.btn_contiunue).click();
-    $(ConfirmPwdObject.lbl_emailconf).click();
-    $(ConfirmPwdObject.btn_showcontent).click();
-    $(ConfirmPwdObject.hyperlink_confi).click();
-    const url = 'https://staging.app.magicmap.com.au'
-    browser.switchWindow(url);
+    var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
-    $(ConfirmPwdObject.btn_changemypassword).click();
+    var requestToken = new XMLHttpRequest();
+    var urltoken = 'https://accounts.google.com/o/oauth2/token?curl &client_id=935988242274-alvlgld110kedpa92p7jk5hajes7uqq4.apps.googleusercontent.com&client_secret=tyTE9FeCW6ON7pMw6z3RkoCy&refresh_token=1//0gsIqDzubA_c9CgYIARAAGBASNwF-L9Iro0Z974Ii33zB6bHylVHBVzuqb9WmjCqeGlK0VjfZ2G5kq2nftzchnCRfgtuCUacsRHE&grant_type=refresh_token'
+    requestToken.open('POST', urltoken, false)
+    requestToken.send()
+    var responeToken = requestToken.responseText
+    var jsonToken = JSON.parse(responeToken)
+    var token = jsonToken["access_token"];
+
+    var requestEmail = new XMLHttpRequest();
+    var urlgmaillist = 'https://www.googleapis.com/gmail/v1/users/me/messages/'
+    requestEmail.open('GET', urlgmaillist, false)
+    requestEmail.setRequestHeader('Authorization', 'Bearer ' + token);
+    requestEmail.send()
+    var responeEmail = requestEmail.responseText
+    var jsonEmail = JSON.parse(responeEmail)
+    var email = jsonEmail["messages"][0]["id"]
+
+    var requestEmailContent = new XMLHttpRequest();
+    var urlgmailcontent = 'https://www.googleapis.com/gmail/v1/users/me/messages/' + email
+    requestEmailContent.open('GET', urlgmailcontent, false)
+    requestEmailContent.setRequestHeader('Authorization', 'Bearer ' + token);
+    requestEmailContent.send()
+    var responeEmailContent = requestEmailContent.responseText
+    var jsonEmailContent = JSON.parse(responeEmailContent)
+    var emailContent = jsonEmailContent["payload"]["body"]["data"]
+    var emaildecode = Base64.decode(emailContent)
+
+    var hyperlink = $$(emaildecode)["selector"]
+    var link = hyperlink.match(/href="(.*?)"/g)
+    link = "data-123".replace('data-','');
+    console.log(link)
+    // browser.url(link)
+    // browser.switchWindow('https://staging.app.magicmap.com.au/');
+    // $(ConfirmPwdObject.btn_changemypassword).click();
 })
 Then('User can\'t change password 1st', () => {
-    assert.equal($(ForgotPwdMessObject.lbl_blankpwd).getText(), ForgotPasswordMess.error_blankpwd, '');
+    // assert.equal($(ForgotPwdMessObject.lbl_blankpwd).getText(), ForgotPasswordMess.error_blankpwd, '');
 })
 
 /* TestCase022 */
@@ -75,7 +102,7 @@ When('User blank password confirm and input password', () => {
     $(ConfirmPwdObject.btn_changemypassword).click();
 })
 Then('User can\'t change password 3rd', () => {
-    assert.equal($(ForgotPwdMessObject.lbl_pwdnotmatch).getText(), ForgotPasswordMess.error_pwdnotmatch, '');
+    // assert.equal($(ForgotPwdMessObject.lbl_invalidfeedback).getText(), ForgotPasswordMess.error_blankpwd, '');
 })
 
 /* TestCase024 */
@@ -84,8 +111,8 @@ When('User input password to short and blank password confirm', () => {
     $(ConfirmPwdObject.btn_changemypassword).click();
 })
 Then('User can\'t change password 4th', () => {
-    assert.equal($(ForgotPwdMessObject.lbl_pwdshort).getText(), ForgotPasswordMess.error_pwdshort, '');
-    assert.equal($(ForgotPwdMessObject.lbl_pwdnotmatch).getText(), ForgotPasswordMess.error_pwdnotmatch, '');
+    assert.equal($(ForgotPwdMessObject.lbl_invalidfeedback).getText(), ForgotPasswordMess.error_pwdshort, '');
+    // assert.equal($(ForgotPwdMessObject.lbl_pwdnotmatch).getText(), ForgotPasswordMess.error_pwdnotmatch, '');
 })
 
 /* TestCase025 */
@@ -95,7 +122,7 @@ When('User input password and password confirm to short', () => {
     $(ConfirmPwdObject.btn_changemypassword).click();
 })
 Then('User can\'t change password 5th', () => {
-    assert.equal($(ForgotPwdMessObject.lbl_pwdshort).getText(), ForgotPasswordMess.error_pwdshort, '');
+    assert.equal($(ForgotPwdMessObject.lbl_invalidfeedback).getText(), ForgotPasswordMess.error_pwdshort, '');
 })
 
 /* TestCase026 */
@@ -105,7 +132,7 @@ When('User input password and password confirm don\'t match', () => {
     $(ConfirmPwdObject.btn_changemypassword).click();
 })
 Then('User can\'t change password 6th', () => {
-    assert.equal($(ForgotPwdMessObject.lbl_pwdnotmatch).getText(), ForgotPasswordMess.error_pwdnotmatch, '');
+    assert.equal($(ForgotPwdMessObject.lbl_invalidfeedback).getText(), ForgotPasswordMess.error_pwdnotmatch, '');
 })
 
 /* TestCase027 */

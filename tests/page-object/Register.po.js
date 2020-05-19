@@ -19,7 +19,7 @@ const RegisErrorObject = {
 }
 
 const RegisSuccessObject = {
-  lbl_success_regis: '//*[text()="Congratulations!"]'
+  lbl_success_regis: '//div[contains(@class,"onboarding")]/div[text()]'
 }
 
 export { RegisObject, RegisErrorObject, RegisSuccessObject }

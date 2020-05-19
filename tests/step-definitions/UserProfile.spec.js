@@ -8,6 +8,7 @@ import { writeFile } from "fs"
 
 /* TestCase028 */
 When('User select submenu User Profile', () => {
+    browser.pause(2000)
     $(ProfileObject.btn_user).click()
     $(ProfileObject.btn_userAccount).click()
     $(ProfileObject.btn_userProfile).click()
@@ -22,15 +23,16 @@ Then('System display User Profile Screen with all correct information of user', 
 })
 
 /* TestCase029 */
-When('User input valid all password infomation', () => {
+When('User input valid all password information', () => {
     // $(UserProfleObject.txt_changePw).click();
     $(UserProfleObject.txt_currentpwd).setValue(UserProfileData.user_currentpwd);
     $(UserProfleObject.txt_newpwd).setValue(UserProfileData.user_newpwd);
     $(UserProfleObject.txt_confpwd).setValue(UserProfileData.user_confpwd);
-    $(UserProfleObject.btn_pwdsub).click();
+    $(UserProfleObject.btn_pwdsub2).scrollIntoView();
+    $(UserProfleObject.btn_pwdsub2).click();
 })
 
-Then('User change password succesful', () => {
+Then('User change password succesfull', () => {
     assert.equal($(UserProfileValidation.user_namesubscription).getText(), UserValidData.user_updatesuccess,'');
 })
 
@@ -40,6 +42,7 @@ When('User input email and new password', () => {
     $(ProfileObject.btn_signOut).click();
     $(UserProfleObject.txt_email).setValue(UserProfileData.user_email);
     $(UserProfleObject.txt_newpwd).setValue(UserProfileData.user_newpwd);
+    $(UserProfleObject.btn_pwdsub).scrollIntoView();
     $(UserProfleObject.btn_pwdsub).click();
 })
 
@@ -56,7 +59,8 @@ When('User input incorrect old password', () => {
     $(UserProfleObject.txt_currentpwd).setValue(UserProfileData.user_incorrectpwd);
     $(UserProfleObject.txt_newpwd).setValue(UserProfileData.user_newpwd);
     $(UserProfleObject.txt_confpwd).setValue(UserProfileData.user_confpwd);
-    $(UserProfleObject.btn_pwdsub).click();
+    $(UserProfleObject.btn_pwdsub2).scrollIntoView();
+    $(UserProfleObject.btn_pwdsub2).click();
 })
 
 Then('User can\'t change password in User Information screen', () => {
@@ -68,7 +72,8 @@ When('User input doesn\'t match new password', () => {
     $(UserProfleObject.txt_currentpwd).setValue(UserProfileData.user_currentpwd);
     $(UserProfleObject.txt_newpwd).setValue(UserProfileData.user_newpwd);
     $(UserProfleObject.txt_confpwd).setValue(UserProfileData.user_incorrectpwd);
-    $(UserProfleObject.btn_pwdsub).click();
+    $(UserProfleObject.btn_pwdsub2).scrollIntoView();
+    $(UserProfleObject.btn_pwdsub2).click();
 })
 
 Then('User can\'t change password in User Information screen 2nd', () => {
@@ -99,14 +104,15 @@ Then('System move to billing information page', () => {
     $(ProfileObject.btn_subuserprofile).click();
 })
 
-/* TestCase036 */
-When('User browse to folder and select image', () => {
-    $(ProfileObject.btn_avata).click();
-    const localPath = 'D:/test.jpg';
-    const remoteFilePath = browser.uploadFile(localPath);
-    $(ProfileObject.btn_upavata).setValue(remoteFilePath);
-})
+// /* TestCase036 */
+// When('User browse to folder and select image', () => {
+//     $(ProfileObject.btn_avata).click();
+//     // $(ProfileObject.btn_upavata).click();
+//     const localPath = 'D:/newimaged.jpg';
+//     const remoteFilePath = browser.uploadFile(localPath);
+//     $(ProfileObject.btn_upavata).setValue(remoteFilePath);
+// })
 
-Then('User can update new image 2nd', () => {
-    // assert.equal($(UserProfileValidation.user_img))
-})
+// Then('User can update new image 2nd', () => {
+//     // assert.equal($(UserProfileValidation.user_img))
+// })

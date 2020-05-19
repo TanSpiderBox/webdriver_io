@@ -1,85 +1,23 @@
 import { When, Then } from "cucumber"
 import { assert } from "chai"
-import { BillingInfoObject, BillingVerifi } from "../page-object/BillingInformation.po"
 import { ProfileObject } from "../page-object/UserProfile.po"
-import { BillingInfoData, BillingDataVerify } from "../data/Data_BillingInfo"
-import { UserProfileData } from "../data/Data_UserProfile"
+import { SubscriptionData, BillingInfoData, BillingDataVerify } from "../data/Data_Subscriptions"
+import { SubscriptionPlanObject, BillingInfoObject, BillingVerifi } from "../page-object/Subscription.po"
 
-/* TestCase041 */
-When('User access Billing Information', () => {
-    $(ProfileObject.btn_user).click();
-    $(ProfileObject.btn_userAccount).click();
-    browser.pause(1000)
-    $(ProfileObject.btn_billing).click();
+/* SB001 */
+When('User access Subscription', () => {
+    $(ProfileObject.btn_user).click()
+    $(ProfileObject.btn_userAccount).click()
+    $(ProfileObject.btn_subscription).click()
 })
 
-Then('System display correct information of Billing Information Screen', () => {
-    assert.equal($(BillingVerifi.lbl_addnewcard).getText(), BillingDataVerify.addnew, '');
-    assert.equal($(BillingVerifi.lbl_cardnumber).getText(), BillingDataVerify.lblcardnumber, '');
-    assert.equal($(BillingVerifi.lbl_cardholder).getText(), BillingDataVerify.lblcardholder, '');
-    assert.equal($(BillingVerifi.lbl_expirydate).getText(), BillingDataVerify.lblexpiry, '');
-    assert.equal($(BillingVerifi.lbl_cvc).getText(), BillingDataVerify.lblcvc, '');
-
-    assert.equal($(BillingVerifi.lbl_transaction).getText(), BillingDataVerify.lbltransaction, '');
-    assert.equal($(BillingVerifi.lbl_date).getText(), BillingDataVerify.lbldate, '');
-    assert.equal($(BillingVerifi.lbl_amount).getText(), BillingDataVerify.lblamount, '');
-    assert.equal($(BillingVerifi.lbl_subscription).getText(), BillingDataVerify.lblsub, '');
-    assert.equal($(BillingVerifi.lbl_desnote).getText(), BillingDataVerify.lbldesnote, '');
-    const value = ($(BillingVerifi.lbl_desnote).getText())
-    const exportname = value.writeFile('D:/test.xlxs')
+Then('System display correct information of subscription', () => {
+    assert.equal($(SubscriptionPlanObject.lbl_subscription).getText(), SubscriptionData.lbl_subscription, '')
 })
 
-/* TestCase042 */
-When('User input all valid information of card', () => {
-    const timeout = 50
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-
-    $(BillingInfoObject.txt_cardHolder).setValue(BillingInfoData.cardholder);
-
-    $(BillingInfoObject.txt_expiryDate).click();
-    browser.keys(BillingInfoData.expirydatemth);
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.expirydatemyr);
-
-    $(BillingInfoObject.txt_cvc).click();
-    browser.keys(BillingInfoData.cvc);
-
-    $(BillingInfoObject.btn_submit).click();
-    browser.pause(2000)
-})
-
-Then('User can add new card information in Billing Information Screen', () => {
-    assert.equal($(BillingVerifi.img_cardNumber).getText(), BillingDataVerify.lastdigit, '');
-})
-
-/* TestCase043 */
-When('User click button remove card', () => {
-    browser.pause(5000)
-    $(BillingInfoObject.btnRemove).click();
-})
-
-Then('User can remove existing card', () => {
-    $(BillingInfoObject.btnRemove).isExisting()
-    browser.pause(2000)
-})
-
-/* TestCase044 */
+/* SB002 */
 When('User input decline card', () => {
+    $(SubscriptionPlanObject.btn_tire1).click();
     const timeout = 50
     $(BillingInfoObject.txt_cardNumber).click();
     browser.keys('40')
@@ -98,22 +36,40 @@ When('User input decline card', () => {
     browser.pause(timeout)
     browser.keys('02')
 
+    $(BillingInfoObject.txt_cardHolder).setValue(BillingInfoData.cardholder);
+
+    $(BillingInfoObject.txt_expiryDate).click();
+    browser.keys(BillingInfoData.expirydatemth);
+    browser.pause(timeout)
+    browser.keys(BillingInfoData.expirydatemyr);
+
+    $(BillingInfoObject.txt_cvc).click();
+    browser.keys(BillingInfoData.cvc);
+
+    $(BillingInfoObject.chck_condition).click();
     $(BillingInfoObject.btn_submit).click();
-    browser.pause(2000)
+    browser.pause(7000)
 })
 
-Then("User can't add new card 1st", () => {
+Then("User can't add new declined card", () => {
     const errorcode = $(BillingVerifi.stripeverifi).getText();
     const cuterror = errorcode.slice(42);
     assert.equal(cuterror, BillingDataVerify.errorcodedeclined, '');
-    $(BillingInfoObject.btnOk).click();
+    browser.keys("\uE007")
+    // $(BillingInfoObject.btnOk).click();
     browser.pause(2000)
 })
 
-/* TestCase045 */
+/* SB003 */
 When('User input insufficient funds card', () => {
     const timeout = 50
+    // Go to iframe and clear card number -> works both in windows, mac, linux
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'))
+    $('input[name="cardnumber"]').clearValue();
+    browser.switchToParentFrame();
+
     $(BillingInfoObject.txt_cardNumber).click();
+
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -131,21 +87,26 @@ When('User input insufficient funds card', () => {
     browser.keys('95')
 
     $(BillingInfoObject.btn_submit).click();
-    browser.pause(2000)
+    browser.pause(7000)
 })
 
-Then("User can't add new card 2nd", () => {
+Then("User can't add new insufficient funds card", () => {
     const errorcode = $(BillingVerifi.stripeverifi).getText();
     const cuterror = errorcode.slice(42);
     assert.equal(cuterror, BillingDataVerify.errorcodeinsufficient, '');
-    $(BillingInfoObject.btnOk).click();
+    browser.keys("\uE007")
     browser.pause(2000)
 })
 
-/* TestCase046 */
+/* SB004 */
 When('User input lost card', () => {
     const timeout = 50
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
+    $('input[name="cardnumber"]').clearValue();
+    browser.switchToParentFrame();
+
     $(BillingInfoObject.txt_cardNumber).click();
+
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -163,21 +124,26 @@ When('User input lost card', () => {
     browser.keys('87')
 
     $(BillingInfoObject.btn_submit).click();
-    browser.pause(2000)
+    browser.pause(7000)
 })
 
-Then("User can't add new card 3rd", () => {
+Then("User can't add new lost card", () => {
     const errorcode = $(BillingVerifi.stripeverifi).getText();
     const cuterror = errorcode.slice(42);
     assert.equal(cuterror, BillingDataVerify.errorcodedeclined, '');
-    $(BillingInfoObject.btnOk).click();
+    browser.keys("\uE007")
     browser.pause(2000)
 })
 
-/* TestCase047 */
+/* SB005 */
 When('User input stolen card', () => {
     const timeout = 50
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
+    $('input[name="cardnumber"]').clearValue();
+    browser.switchToParentFrame();
+
     $(BillingInfoObject.txt_cardNumber).click();
+
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -195,21 +161,26 @@ When('User input stolen card', () => {
     browser.keys('79')
 
     $(BillingInfoObject.btn_submit).click();
-    browser.pause(2000);
+    browser.pause(7000)
 })
 
-Then("User can't add new card 4th", () => {
+Then("User can't add new stolen card", () => {
     const errorcode = $(BillingVerifi.stripeverifi).getText();
     const cuterror = errorcode.slice(42);
     assert.equal(cuterror, BillingDataVerify.errorcodedeclined, '');
-    $(BillingInfoObject.btnOk).click();
+    browser.keys("\uE007")
     browser.pause(2000)
 })
 
-/* TestCase048 */
+/* SB006 */
 When('User input expired card', () => {
     const timeout = 50
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
+    $('input[name="cardnumber"]').clearValue();
+    browser.switchToParentFrame();
+
     $(BillingInfoObject.txt_cardNumber).click();
+
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -227,21 +198,26 @@ When('User input expired card', () => {
     browser.keys('69')
 
     $(BillingInfoObject.btn_submit).click();
-    browser.pause(2000)
+    browser.pause(7000)
 })
 
-Then("User can't add new card 5th", () => {
+Then("User can't add new expired card", () => {
     const errorcode = $(BillingVerifi.stripeverifi).getText();
     const cuterror = errorcode.slice(42);
     assert.equal(cuterror, BillingDataVerify.errorcodeexpired, '');
-    $(BillingInfoObject.btnOk).click();
+    browser.keys("\uE007")
     browser.pause(2000)
 })
 
-/* TestCase049 */
+/* SB007 */
 When('User input incorrect cvc card', () => {
     const timeout = 50
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
+    $('input[name="cardnumber"]').clearValue();
+    browser.switchToParentFrame();
+
     $(BillingInfoObject.txt_cardNumber).click();
+
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -262,18 +238,23 @@ When('User input incorrect cvc card', () => {
     browser.pause(2000)
 })
 
-Then("User can't add new card 6th", () => {
+Then("User can't add new incorrect cvc card", () => {
     const errorcode = $(BillingVerifi.stripeverifi).getText();
     const cuterror = errorcode.slice(42);
     assert.equal(cuterror, BillingDataVerify.errorincorrectcvc, '');
-    $(BillingInfoObject.btnOk).click();
+    browser.keys("\uE007")
     browser.pause(2000)
 })
 
-/* TestCase050 */
+/* SB008 */
 When('User input processing error card', () => {
     const timeout = 50
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
+    $('input[name="cardnumber"]').clearValue();
+    browser.switchToParentFrame();
+
     $(BillingInfoObject.txt_cardNumber).click();
+
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -294,18 +275,23 @@ When('User input processing error card', () => {
     browser.pause(2000)
 })
 
-Then("User can't add new card 7th", () => {
+Then("User can't add new processing error card", () => {
     const errorcode = $(BillingVerifi.stripeverifi).getText();
     const cuterror = errorcode.slice(42);
     assert.equal(cuterror, BillingDataVerify.error, '');
-    $(BillingInfoObject.btnOk).click();
+    browser.keys("\uE007")
     browser.pause(2000)
 })
 
-/* TestCase051 */
+/* SB009 */
 When('User input invalid card number', () => {
     const timeout = 50
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
+    $('input[name="cardnumber"]').clearValue();
+    browser.switchToParentFrame();
+
     $(BillingInfoObject.txt_cardNumber).click();
+
     browser.keys('42')
     browser.pause(timeout)
     browser.keys('42')
@@ -323,6 +309,60 @@ When('User input invalid card number', () => {
     browser.keys('41')
 })
 
-Then("User can't add new card 8th", () => {
-    assert.equal($(BillingVerifi.cardverifi).getText(),BillingDataVerify.errorcodeCardNumber,''); 
+Then("User can't add new invalid card number", () => {
+    assert.equal($(BillingVerifi.cardverifi).getText(), BillingDataVerify.errorcodeCardNumber, '');
+})
+// SB002
+When('User input all valid information of card', () => {
+    const timeout = 50
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
+    $('input[name="cardnumber"]').clearValue();
+    browser.switchToParentFrame();
+
+    $(BillingInfoObject.txt_cardNumber).click();
+
+    browser.keys(BillingInfoData.cardnumber)
+    browser.pause(timeout)
+    browser.keys(BillingInfoData.cardnumber)
+    browser.pause(timeout)
+    browser.keys(BillingInfoData.cardnumber)
+    browser.pause(timeout)
+    browser.keys(BillingInfoData.cardnumber)
+    browser.pause(timeout)
+    browser.keys(BillingInfoData.cardnumber)
+    browser.pause(timeout)
+    browser.keys(BillingInfoData.cardnumber)
+    browser.pause(timeout)
+    browser.keys(BillingInfoData.cardnumber)
+    browser.pause(timeout)
+    browser.keys(BillingInfoData.cardnumber)
+
+    $(BillingInfoObject.btn_submit).click();
+    browser.pause(7000)
+
+})
+Then('User can payment succesfull', () => {
+    assert.equal($(SubscriptionPlanObject.lbl_subsucess).getText(), SubscriptionData.sub_success, '');
+})
+
+When('User click button cancel', () => {
+    $(ProfileObject.btn_user).click()
+    $(ProfileObject.btn_userAccount).click()
+    $(ProfileObject.btn_subscription).click()
+    $(SubscriptionPlanObject.btn_verify).click();
+    $(SubscriptionPlanObject.btn_confirm).click()
+})
+Then('User cancel subscription succesfull', () => {
+    assert.equal($(SubscriptionPlanObject.btn_verify).getText(), SubscriptionData.lbl_renewal, '');
+})
+
+When('User click button renewal', () => {
+    $(ProfileObject.btn_user).click()
+    $(ProfileObject.btn_userAccount).click()
+    $(ProfileObject.btn_subscription).click()
+    $(SubscriptionPlanObject.btn_verify).click();
+    $(SubscriptionPlanObject.btn_confirm).click()
+})
+Then('User renewal subscription succesfull', () => {
+    assert.equal($(SubscriptionPlanObject.btn_verify).getText(), SubscriptionData.lbl_cancel, '');
 })

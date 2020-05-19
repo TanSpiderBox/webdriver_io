@@ -1,6 +1,6 @@
 // '''User Profile'''
 const ProfileObject = {
-    btn_user: '//*[contains(@src,"/uploads/user/avatar")]',
+    btn_user: '(//*[contains(@class,"acreage-48")])[2]',
     btn_notifi: '//*[contains(text(),"Notification(11)")]',
     btn_userAccount: '//*[text()="Account"]',
     btn_subscription: '//*[text()="Subscription"]',
@@ -12,6 +12,9 @@ const ProfileObject = {
     btn_subuserprofile: '//*[@id="bd-profile-nav"]/a[text()="User Profile"]',
     btn_avata: '//*[contains(@class,"avatar editable")]',
     btn_upavata: 'input[id="user_avatar"]',
+    
+    btn_managedusers: '//*[text()="Manage Users"]',
+    btn_restarton: '//*[text()="Restart Onboarding Wizard"]'
 }
 
 const UserProfleObject = {
@@ -22,6 +25,7 @@ const UserProfleObject = {
     txt_newpwd: 'input[id="user_password"]',
     txt_confpwd: 'input[id="user_password_confirmation"]',
     btn_pwdsub: 'button[type="submit"]',
+    btn_pwdsub2: 'form.js_change_password button[type="submit"]',
     lbl_updatesucc: '//*[@data-toggle=".sub-info"]',
     btn_pwdback: '(//*[contains(@href,"/edit")])[3]',
     btn_linksub: '(//*[contains(@href,"/pricing")])[3]',
@@ -37,7 +41,7 @@ const UserProfileValidation = {
     user_errorpwd: '//*[@name="user[current_password]"]/following-sibling::div',
     user_errornewpwd: '//*[@name="user[password]"]/following-sibling::div',
     user_subpage: '//*[@class="text-peach py-5"]',
-    user_billpage: '//*[@class="card-header d-flex justify-content-between"]/h5',
+    user_billpage: '//*[contains(@class,"card-header")]//h5',
     user_img: '//*[contains(@class,"avatar editable")]/img'
 }
 export { ProfileObject, UserProfleObject, UserProfileValidation };

@@ -1,4 +1,5 @@
 node_modules
-allure_report
-allure_result
+allure-report
+allure-results
+.vscode
 debug.log
