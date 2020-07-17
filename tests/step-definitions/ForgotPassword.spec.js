@@ -6,7 +6,6 @@ import { ForgotPasswordData, ForgotPasswordMess } from '../data/Data_ForgotPassw
 import { LoginSuccessMessage } from "../data/Data_Login";
 import { LoginSuccessObjects } from "../page-object/Login.po"
 
-
 /* TestCase018 */
 When('User blank email field request', () => {
     $(ForgotPwdObject.btn_forgotpwd).click();
@@ -46,39 +45,77 @@ Then('User can request new password', () => {
 
 /* TestCase021 */
 When('User blank password and password confirm', () => {
-    var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+    const GraphQLClient = require('@testmail.app/graphql-request').GraphQLClient;
+    const testmailClient = new GraphQLClient(
+        // API endpoint:
+        'https://api.testmail.app/api/graphql',
+        // Use your API key:
+        { headers: { 'Authorization': 'Bearer 8af5eac9-f446-4734-9f99-0de884a0f949' } }
+    );
 
-    var requestToken = new XMLHttpRequest();
-    var urltoken = 'https://accounts.google.com/o/oauth2/token?curl &client_id=935988242274-alvlgld110kedpa92p7jk5hajes7uqq4.apps.googleusercontent.com&client_secret=tyTE9FeCW6ON7pMw6z3RkoCy&refresh_token=1//0gsIqDzubA_c9CgYIARAAGBASNwF-L9Iro0Z974Ii33zB6bHylVHBVzuqb9WmjCqeGlK0VjfZ2G5kq2nftzchnCRfgtuCUacsRHE&grant_type=refresh_token'
-    requestToken.open('POST', urltoken, false)
-    requestToken.send()
-    var responeToken = requestToken.responseText
-    var jsonToken = JSON.parse(responeToken)
-    var token = jsonToken["access_token"];
+    testmailClient.request(`{
+        inbox (
+          namespace:"6pku9"
+          tag: "tan1"
+          advanced_filters:[{
+            field:subject
+            match:exact
+            action:include
+            value:"Login Information"
+          }]
+          livequery:true
+          ) {
+            result
+            message
+            emails {
+              from
+              from_parsed {
+                address
+                name
+              }
+              subject
+              html
+            }
+          }
+      }`).then((data) => {
+        var abc = data.inbox["emails"]
+        var xyz = $$(abc)["html"]
+        var ueh = xyz.match(/href="(.*?)"/g)
+        console.log(ueh)
+    });
+    // var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
-    var requestEmail = new XMLHttpRequest();
-    var urlgmaillist = 'https://www.googleapis.com/gmail/v1/users/me/messages/'
-    requestEmail.open('GET', urlgmaillist, false)
-    requestEmail.setRequestHeader('Authorization', 'Bearer ' + token);
-    requestEmail.send()
-    var responeEmail = requestEmail.responseText
-    var jsonEmail = JSON.parse(responeEmail)
-    var email = jsonEmail["messages"][0]["id"]
+    // // var requestToken = new XMLHttpRequest();
+    // // var urltoken = 'https://accounts.google.com/o/oauth2/token?curl &client_id=935988242274-alvlgld110kedpa92p7jk5hajes7uqq4.apps.googleusercontent.com&client_secret=tyTE9FeCW6ON7pMw6z3RkoCy&refresh_token=1//0gsIqDzubA_c9CgYIARAAGBASNwF-L9Iro0Z974Ii33zB6bHylVHBVzuqb9WmjCqeGlK0VjfZ2G5kq2nftzchnCRfgtuCUacsRHE&grant_type=refresh_token'
+    // // requestToken.open('POST', urltoken, false)
+    // // requestToken.send()
+    // // var responeToken = requestToken.responseText
+    // // var jsonToken = JSON.parse(responeToken)
+    // // var token = jsonToken["access_token"];
 
-    var requestEmailContent = new XMLHttpRequest();
-    var urlgmailcontent = 'https://www.googleapis.com/gmail/v1/users/me/messages/' + email
-    requestEmailContent.open('GET', urlgmailcontent, false)
-    requestEmailContent.setRequestHeader('Authorization', 'Bearer ' + token);
-    requestEmailContent.send()
-    var responeEmailContent = requestEmailContent.responseText
-    var jsonEmailContent = JSON.parse(responeEmailContent)
-    var emailContent = jsonEmailContent["payload"]["body"]["data"]
-    var emaildecode = Base64.decode(emailContent)
+    // // var requestEmail = new XMLHttpRequest();
+    // // var urlgmaillist = 'https://www.googleapis.com/gmail/v1/users/me/messages/'
+    // // requestEmail.open('GET', urlgmaillist, false)
+    // // requestEmail.setRequestHeader('Authorization', 'Bearer ' + token);
+    // // requestEmail.send()
+    // // var responeEmail = requestEmail.responseText
+    // // var jsonEmail = JSON.parse(responeEmail)
 
-    var hyperlink = $$(emaildecode)["selector"]
-    var link = hyperlink.match(/href="(.*?)"/g)
-    link = "data-123".replace('data-','');
-    console.log(link)
+
+    // var requestEmailContent = new XMLHttpRequest();
+    // var urlgmailcontent = 'https://www.googleapis.com/gmail/v1/users/me/messages/' + email
+    // requestEmailContent.open('GET', urlgmailcontent, false)
+    // requestEmailContent.setRequestHeader('Authorization', 'Bearer ' + token);
+    // requestEmailContent.send()
+    // var responeEmailContent = requestEmailContent.responseText
+    // var jsonEmailContent = JSON.parse(responeEmailContent)
+    // var emailContent = jsonEmailContent["payload"]["body"]["data"]
+    // var emaildecode = Base64.decode(emailContent)
+
+    // var hyperlink = $$(emaildecode)["selector"]
+    // var link = hyperlink.match(/href="(.*?)"/g)
+    // link = "data-123".replace('data-','');
+    // console.log(link)
     // browser.url(link)
     // browser.switchWindow('https://staging.app.magicmap.com.au/');
     // $(ConfirmPwdObject.btn_changemypassword).click();

@@ -5,11 +5,11 @@ import { MapObject, MapVerify } from "../page-object/Mapping.po"
 
 /* MP001 */
 When("User input RTO and click button sync", () => {
-    $(MapObject.btn_strmap).click();
-    $(MapObject.txt_search).click();
-    $(MapObject.txt_inputsearch).setValue(MapData.rto);
+    $(MapObject.btn_Newsyncs).click();
+    $(MapObject.txt_Search).click();
+    $(MapObject.txt_InputSearch).setValue(MapData.rto);
     $(MapObject.txt_resultRTO).click();
-    $(MapObject.btn_search).click();
+    $(MapObject.btn_Search).click();
 })
 Then("User can sync new RTO", () => {
     assert.equal($(MapVerify.lbl_header).getText(), MapData.map_rto, '');
@@ -28,14 +28,14 @@ When("User add new map to libary in RTO succesfull", () => {
     browser.pause(timeout)
     $(MapObject.searchbox).setValue(MapData.rto);
     browser.pause(timeout)
-    $(MapObject.selectRTO(MapData.rto)).click();
+    $(MapObject.selectFilter(MapData.rto)).click();
     browser.pause(timeout)
     $(MapObject.selectRTScourse(MapData.course)).click();
     browser.pause(timeout)
     $(MapObject.selectRTSunit(MapData.unit)).click();
 
     browser.pause(timeout)
-    $(MapObject.btn_Snewmap).click();
+    $(MapObject.btn_newmap).click();
 
     browser.pause(3000)
     $(MapObject.txt_assetment1).click();
@@ -61,16 +61,16 @@ When("User add new map to libary in RTO succesfull", () => {
     $(MapObject.txt_mapnote).setValue(MapData.mapnote);
     $(MapObject.btn_savsubmit).click();
     browser.pause(5000)
-    $(MapObject.btn_back).click();
+    $(MapObject.btn_Back).click();
 })
 Then("User can add new maps in RTO", () => {
     $(MapObject.tab_maps).click()
     browser.pause(2000)
-    assert.equal($(MapVerify.lbl_mapname).getText(), MapSuccess.verify_mapname, '');
+    assert.equal($(MapVerify.lbl_MapName).getText(), MapSuccess.verify_mapname, '');
 
-    assert.equal($(MapVerify.lbl_unitrelease).getText(), MapSuccess.verify_unitrelease, '');
+    assert.equal($(MapVerify.lbl_UnitRelease).getText(), MapSuccess.verify_unitrelease, '');
 
-    assert.equal($(MapVerify.lbl_mapnote).getText(), MapSuccess.verify_mapnote, '');
+    assert.equal($(MapVerify.lbl_MapNote).getText(), MapSuccess.verify_mapnote, '');
 
     $(MapObject.btn_mapdropdown).click();
     $(MapObject.btn_maprm).click();
@@ -100,7 +100,7 @@ When("User click button delete RTO don't have maps", () => {
     browser.pause(timeout)
     $(MapObject.searchbox).setValue(MapData.rto);
     browser.pause(timeout)
-    $(MapObject.selectRTO(MapData.rto)).click();
+    $(MapObject.selectFilter(MapData.rto)).click();
     browser.pause(timeout)
     $(MapObject.selectRTScourse(MapData.course)).click();
     browser.pause(timeout)
@@ -112,12 +112,12 @@ When("User click button delete RTO don't have maps", () => {
     browser.pause(timeout)
     $(MapObject.searchbox).setValue(MapData.rto);
     browser.pause(timeout)
-    $(MapObject.selectRTO(MapData.rto)).click();
+    $(MapObject.selectFilter(MapData.rto)).click();
     browser.pause(timeout)
     $(MapObject.btn_delete).click();
 })
 Then("User can delete RTO succesfull", () => {
-    assert.exists($(MapObject.btn_strmap), '');
+    assert.exists($(MapObject.btn_nwsyncs), '');
 })
 
 /* MP005 */
@@ -138,16 +138,18 @@ Then("User can sync new Course", () => {
 /* MP006 */
 When("User add new map to libary in Course succesfull", () => {
     const timeout = 1000
-    $(MapObject.btn_RTSunit).click();
+    $(MapObject.selectRTSunit(MapData.unit)).$(MapObject.btnAddUnit).click();
     browser.pause(timeout)
     $(MapObject.btn_continue).click();
     browser.pause(timeout)
-    $(MapObject.tab_synced).click();
+    $(MapObject.btn_sidebar).click();
     browser.pause(timeout)
-    $(MapObject.btn_UnitesSynced).click();
+    $(MapObject.searchbox).setValue(MapData.unit);
     browser.pause(timeout)
+    $(MapObject.selectFilter(MapData.unit)).click();
 
-    $(MapObject.btn_Snewmap).click();
+    browser.pause(timeout)
+    $(MapObject.btn_newmap).click();
 
     browser.pause(3000)
     $(MapObject.txt_assetment1).click();
@@ -173,16 +175,16 @@ When("User add new map to libary in Course succesfull", () => {
     $(MapObject.txt_mapnote).setValue(MapData.mapnote);
     $(MapObject.btn_savsubmit).click();
     browser.pause(5000)
-    $(MapObject.btn_back).click();
+    $(MapObject.btn_Back).click();
 })
 Then("User can add new maps in Course", () => {
     $(MapObject.tab_maps).click()
     browser.pause(2000)
-    assert.equal($(MapVerify.lbl_mapname).getText(), MapSuccess.verify_mapname, '');
+    assert.equal($(MapVerify.lbl_MapName).getText(), MapSuccess.verify_mapname, '');
 
-    assert.equal($(MapVerify.lbl_unitrelease).getText(), MapSuccess.verify_unitrelease, '');
+    assert.equal($(MapVerify.lbl_UnitRelease).getText(), MapSuccess.verify_unitrelease, '');
 
-    assert.equal($(MapVerify.lbl_mapnote).getText(), MapSuccess.verify_mapnote, '');
+    assert.equal($(MapVerify.lbl_MapNote).getText(), MapSuccess.verify_mapnote, '');
 
     $(MapObject.btn_mapdropdown).click();
     $(MapObject.btn_maprm).click();
@@ -205,9 +207,7 @@ Then("User can sync new Unit", () => {
 
 /* MP008 */
 When("User select unit and start Mapping", () => {
-    $(MapObject.btn_addmaps).click();
-    $(MapObject.btn_continue).click();
-    $(MapObject.btn_Snewmap).click();
+    $(MapObject.btn_newmap).click();
 
     browser.pause(3000)
     $(MapObject.txt_assetment1).click();
@@ -234,8 +234,8 @@ When("User select unit and start Mapping", () => {
 
     $(MapObject.drop_rtoassign).click();
     $(MapObject.btn_adnew).click();
-    $(MapObject.rt_search).click();
-    $(MapObject.rt_search).setValue(MapData.rto);
+    $(MapObject.search_Rto).click();
+    $(MapObject.search_Rto).setValue(MapData.rto);
     browser.pause(2000)
     $(MapObject.value_rto).click();
     browser.pause(2000)
@@ -250,16 +250,16 @@ When("User select unit and start Mapping", () => {
     $(MapObject.btn_savsubmit).click();
 
     browser.pause(5000)
-    $(MapObject.btn_back).click();
+    $(MapObject.btn_Back).click();
 })
 Then("User can create new Mapping", () => {
     $(MapObject.tab_maps).click()
     browser.pause(2000)
-    assert.equal($(MapVerify.lbl_mapname).getText(), MapSuccess.verify_mapname, '');
+    assert.equal($(MapVerify.lbl_MapName).getText(), MapSuccess.verify_mapname, '');
 
-    assert.equal($(MapVerify.lbl_unitrelease).getText(), MapSuccess.verify_unitrelease, '');
+    assert.equal($(MapVerify.lbl_UnitRelease).getText(), MapSuccess.verify_unitrelease, '');
 
-    assert.equal($(MapVerify.lbl_mapnote).getText(), MapSuccess.verify_mapnote, '');
+    assert.equal($(MapVerify.lbl_MapNote).getText(), MapSuccess.verify_mapnote, '');
 
 })
 
@@ -282,7 +282,7 @@ Then("User can duplicate map succesfull", () => {
     $(MapObject.btn_mapsave).click();
     browser.pause(timeout)
 
-    assert.equal($(MapObject.lbl_maptitle).getValue(), MapData.mapduplicate, '');
+    assert.equal($(MapObject.lbl_Maptitle).getValue(), MapData.mapduplicate, '');
 
     assert.equal($(MapObject.txt_assetment1).getText(), MapData.assetment1, '');
 
@@ -295,17 +295,17 @@ Then("User can duplicate map succesfull", () => {
 
 /* MP010 */
 When("User click button delete duplicate maps", () => {
-    $(MapObject.btn_actiondropdown).click();
-    $(MapObject.btn_actiondelete).click();
+    $(MapObject.btn_ActionDropdown).click();
+    $(MapObject.btn_ActionDelete).click();
 })
 Then("User can delete duplicate map succesfull", () => {
     $(MapObject.tab_maps).click()
     browser.pause(2000)
-    assert.equal($(MapVerify.lbl_mapname).getText(), MapSuccess.verify_mapname, '');
+    assert.equal($(MapVerify.lbl_MapName).getText(), MapSuccess.verify_mapname, '');
 
-    assert.equal($(MapVerify.lbl_unitrelease).getText(), MapSuccess.verify_unitrelease, '');
+    assert.equal($(MapVerify.lbl_UnitRelease).getText(), MapSuccess.verify_unitrelease, '');
 
-    assert.equal($(MapVerify.lbl_mapnote).getText(), MapSuccess.verify_mapnote, '');
+    assert.equal($(MapVerify.lbl_MapNote).getText(), MapSuccess.verify_mapnote, '');
 })
 
 /* MP011 */
@@ -333,8 +333,8 @@ When("User click re-assign maps", () => {
     $(MapObject.txt_mapnote).setValue(MapData.maprenote);
 
     browser.pause(timeout)
-    $(MapObject.drop_folderassign).click();
-    $(MapObject.value_folder).click();
+    $(MapObject.drop_FolderAssign).click();
+    $(MapObject.value_Folder).click();
     $(MapObject.txt_mapnote).click();
 
     $(MapObject.btn_savsubmit).click();
@@ -400,7 +400,7 @@ Then("User can delete folder succesfull", () => {
     browser.pause(timeout)
     $(MapObject.searchbox).setValue(MapData.rto);
     browser.pause(timeout)
-    $(MapObject.selectRTO(MapData.rto)).click();
+    $(MapObject.selectFilter(MapData.rto)).click();
     browser.pause(timeout)
     $(MapObject.btn_delete).click();
 })

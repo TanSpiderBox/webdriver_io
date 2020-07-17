@@ -14,7 +14,7 @@ When('User login first time', () => {
     $(MapObject.btn_search).click();
     $(MapObject.btn_addmaps).click();
     $(MapObject.btn_continue).click();
-    $(MapObject.btn_Snewmap).click();
+    $(MapObject.btn_newmap).click();
 })
 Then('User must completed Onboarding', () => {
     assert.equal($(OboardingObject.lbl_verify).getText(), DataOnboarding.lbl_verify, '');
@@ -115,7 +115,7 @@ When('User click restart onboarding', () => {
     $(MapObject.txt_inputsearch).setValue(DataOnboarding.unit);
     $(MapObject.txt_resultUnits).click();
     $(MapObject.btn_search).click();
-    $(MapObject.btn_Snewmap).click();
+    $(MapObject.btn_newmap).click();
 })
 
 Then('User can do onboarding again', () => {

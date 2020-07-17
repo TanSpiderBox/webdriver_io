@@ -2,7 +2,6 @@ const ForgotPasswordData = {
     user_emailwrong: 'abc@xyz.com',
     user_emailLink: 'https://accounts.google.com/signin/v2/identifier?service=mail',
     user_emailconf: 'tan@spiderbox.design',
-    user_pwdconf: "TloveN@5121*",
     user_pwdshort: '1',
     user_pwdcorrect: '123456789'
 }

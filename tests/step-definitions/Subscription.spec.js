@@ -52,9 +52,8 @@ When('User input decline card', () => {
 })
 
 Then("User can't add new declined card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText();
-    const cuterror = errorcode.slice(42);
-    assert.equal(cuterror, BillingDataVerify.errorcodedeclined, '');
+    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
+    assert.equal(errorcode, BillingDataVerify.errorcodedeclined, '');
     browser.keys("\uE007")
     // $(BillingInfoObject.btnOk).click();
     browser.pause(2000)
@@ -69,7 +68,6 @@ When('User input insufficient funds card', () => {
     browser.switchToParentFrame();
 
     $(BillingInfoObject.txt_cardNumber).click();
-
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -91,9 +89,8 @@ When('User input insufficient funds card', () => {
 })
 
 Then("User can't add new insufficient funds card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText();
-    const cuterror = errorcode.slice(42);
-    assert.equal(cuterror, BillingDataVerify.errorcodeinsufficient, '');
+    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
+    assert.equal(errorcode, BillingDataVerify.errorcodeinsufficient, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -106,7 +103,6 @@ When('User input lost card', () => {
     browser.switchToParentFrame();
 
     $(BillingInfoObject.txt_cardNumber).click();
-
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -128,9 +124,8 @@ When('User input lost card', () => {
 })
 
 Then("User can't add new lost card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText();
-    const cuterror = errorcode.slice(42);
-    assert.equal(cuterror, BillingDataVerify.errorcodedeclined, '');
+    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
+    assert.equal(errorcode, BillingDataVerify.errorcodedeclined, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -143,7 +138,6 @@ When('User input stolen card', () => {
     browser.switchToParentFrame();
 
     $(BillingInfoObject.txt_cardNumber).click();
-
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -165,9 +159,8 @@ When('User input stolen card', () => {
 })
 
 Then("User can't add new stolen card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText();
-    const cuterror = errorcode.slice(42);
-    assert.equal(cuterror, BillingDataVerify.errorcodedeclined, '');
+    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
+    assert.equal(errorcode, BillingDataVerify.errorcodedeclined, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -180,7 +173,6 @@ When('User input expired card', () => {
     browser.switchToParentFrame();
 
     $(BillingInfoObject.txt_cardNumber).click();
-
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -202,9 +194,8 @@ When('User input expired card', () => {
 })
 
 Then("User can't add new expired card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText();
-    const cuterror = errorcode.slice(42);
-    assert.equal(cuterror, BillingDataVerify.errorcodeexpired, '');
+    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
+    assert.equal(errorcode, BillingDataVerify.errorcodeexpired, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -217,7 +208,6 @@ When('User input incorrect cvc card', () => {
     browser.switchToParentFrame();
 
     $(BillingInfoObject.txt_cardNumber).click();
-
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -239,9 +229,8 @@ When('User input incorrect cvc card', () => {
 })
 
 Then("User can't add new incorrect cvc card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText();
-    const cuterror = errorcode.slice(42);
-    assert.equal(cuterror, BillingDataVerify.errorincorrectcvc, '');
+    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
+    assert.equal(errorcode, BillingDataVerify.errorincorrectcvc, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -254,7 +243,6 @@ When('User input processing error card', () => {
     browser.switchToParentFrame();
 
     $(BillingInfoObject.txt_cardNumber).click();
-
     browser.keys('40')
     browser.pause(timeout)
     browser.keys('00')
@@ -276,9 +264,8 @@ When('User input processing error card', () => {
 })
 
 Then("User can't add new processing error card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText();
-    const cuterror = errorcode.slice(42);
-    assert.equal(cuterror, BillingDataVerify.error, '');
+    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
+    assert.equal(errorcode, BillingDataVerify.error, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -291,7 +278,6 @@ When('User input invalid card number', () => {
     browser.switchToParentFrame();
 
     $(BillingInfoObject.txt_cardNumber).click();
-
     browser.keys('42')
     browser.pause(timeout)
     browser.keys('42')
@@ -320,7 +306,6 @@ When('User input all valid information of card', () => {
     browser.switchToParentFrame();
 
     $(BillingInfoObject.txt_cardNumber).click();
-
     browser.keys(BillingInfoData.cardnumber)
     browser.pause(timeout)
     browser.keys(BillingInfoData.cardnumber)
