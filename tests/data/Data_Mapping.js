@@ -23,7 +23,7 @@ const MapData = {
     maprenote: 'TestMapRename',
     foldername: 'Test Folder',
 }
-const MapError = {
+const MapWarning = {
     deleteRTO: "You can only delete empty folders/RTO(s)."
 }
 
@@ -36,4 +36,4 @@ const MapSuccess = {
     verify_mapupdate: '07 Apr',
 }
 
-export { MapData, MapSuccess, MapError };
+export { MapData, MapSuccess, MapWarning };

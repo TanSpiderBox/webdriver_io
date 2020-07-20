@@ -1,11 +1,10 @@
 Feature: Login
 
-  As a User I want check all case of Feature Login
-  Background:
+  Background: As a User I want check all case of Feature Login
     Given User Open website MMAP
 
   @LG002
-  Scenario: Verify User blank 2 field and can't login system 
+  Scenario: Verify User blank 2 field and can't login system
     When User blank 2 field
     Then User can't login system with blank 2 field
 

@@ -1,6 +1,6 @@
 Feature: Subsription
 
-    As a User I want check all case of Feature Subscription
+    Background: As a User I want check all case of Feature Subscription
 
     @SB001
     Scenario: Verify system display correct information of Subscription Plan screen

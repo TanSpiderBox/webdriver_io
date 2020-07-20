@@ -1,8 +1,6 @@
 Feature: Register
-
-    As a User i wan check all case of Feature Register
-    Background: 
-      Given User Open website MMAP
+  Background: As a User i wan check all case of Feature Register
+    Given User Open website MMAP
 
   @RG001
   Scenario: Verify User blank all field and can't register new account
@@ -10,12 +8,12 @@ Feature: Register
     Then User can't register new account with blank all field
 
   @RG002
-  Scenario: Verify User blank field First Name and can't register new account 
+  Scenario: Verify User blank field First Name and can't register new account
     When User blank First Name
     Then User can't register new account with blank field First Name
 
   @RG003
-  Scenario: Verify User blank field Password can't register new account 
+  Scenario: Verify User blank field Password can't register new account
     When User blank Password
     Then User can't register new account with blank field Password
 
@@ -25,7 +23,7 @@ Feature: Register
     Then User can't register new account with blank field Confirm Password
 
   @RG005
-  Scenario: Verify User don't select User Role and can't register new account 
+  Scenario: Verify User don't select User Role and can't register new account
     When User don't select User Role
     Then User can't register new account with blank User Role
 
@@ -49,9 +47,9 @@ Feature: Register
     When User input all valid infomation
     Then User create account successfull
 
-  # @TRG010
-  # Scenario: Verify User can login system with new account register
-  #   # When User select email confirm
-  #   # Then User can comfirm Email
-  #   When User input correct email and password
-  #   Then User can login succesfull
+# @TRG010
+# Scenario: Verify User can login system with new account register
+#   # When User select email confirm
+#   # Then User can comfirm Email
+#   When User input correct email and password
+#   Then User can login succesfull

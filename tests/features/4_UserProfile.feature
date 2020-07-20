@@ -1,5 +1,6 @@
 Feature: User Profile
-   As a User I want check all case of Feature User Profile
+
+   Background:  As a User I want check all case of Feature User Profile
 
    @UP001
    Scenario: Verify system display correct User Information
@@ -39,7 +40,7 @@ Feature: User Profile
       When User clicks button Transaction History
       Then System move to billing information page
 
-   # @UP008
-   # Scenario: Verify User can browse to upload
-   #    When User browse to folder and select image
-   #    Then User can update new image 2nd
+# @UP008
+# Scenario: Verify User can browse to upload
+#    When User browse to folder and select image
+#    Then User can update new image 2nd

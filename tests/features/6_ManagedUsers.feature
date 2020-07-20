@@ -1,7 +1,6 @@
 Feature: Managed Users
 
-    As a User I want check all case of Feature Managed Users
-
+    Background:  As a User I want check all case of Feature Managed Users
 
     @MU001
     Scenario: Verify Owner can invite Users

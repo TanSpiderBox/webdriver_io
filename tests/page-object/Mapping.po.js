@@ -1,8 +1,8 @@
 const MapObject = {
     //Home Board
-    btn_Newsyncs: '//*[contains(@class,"js_start_mapping_btn")]//*[contains(@href,"/start_mappings/new")]',
-    btn_Addsyncs: '//nav[@id="bd-profile-nav"]//*[contains(@href,"/start_mappings/new")]',
-    btn_Sidebar: '//*[@id="sidebar-collapse-wrapper"]/div[1]/button/div',
+    btn_NewSyncs: '//*[contains(@class,"js_start_mapping_btn")]//*[contains(@href,"/start_mappings/new")]',
+    btn_AddSyncs: '//nav[@id="bd-profile-nav"]//*[contains(@href,"/start_mappings/new")]',
+    btn_SideBar: '//*[@id="sidebar-collapse-wrapper"]/div[1]/button/div',
     search_Box: '//input[@name="search"]',
 
     //Sidebar
@@ -30,7 +30,7 @@ const MapObject = {
     //Map Board
     btn_Addmaps: '//button[contains(text(),"Add To Library")]',
     btn_Continue: '//button[contains(@class,"swal2-confirm")]',
-    btn_Newmap: '//*[contains(@class,"js_new_map")]',
+    btn_NewMap: '//*[contains(@class,"js_new_map")]',
     btn_DownloadUnitpack: '//*[contains(@class,"dropdown js_download_pack")]',
     btn_DownloadUnitpackExcel: '//*[contains(@class,"dropdown js_download_pack")]//*[contains(text(),"Export to Excel")]',
     btn_DownloadUnitpackWord: '//*[contains(@class,"dropdown js_download_pack")]//*[contains(text(),"Export to Word")]',
@@ -61,11 +61,11 @@ const MapObject = {
     txt_references2: '(//div[contains(@class,"ui-resizable")]//textarea[@id="references"])[2]',
     txt_references3: '(//div[contains(@class,"ui-resizable")]//textarea[@id="references"])[3]',
     btn_markcomplted3: '(//div[contains(@class,"ui-resizable")]//textarea[@id="references"])[3]/following-sibling::div[@x-placement="bottom-start"]//button[text()="Mark as complete"]',
-    btn_Mapsave: '//a[contains(@data-url,"popup_save")]',
+    btn_MapSave: '//a[contains(@data-url,"popup_save")]',
 
     //Save Box
-    txt_Mapname: '//*[@id="swal2-content"]//input[@id="release_name_box"]',
-    txt_Mapnote: '//*[@id="swal2-content"]//textarea[@id="release_comment_box"]',
+    txt_MapName: '//*[@id="swal2-content"]//input[@id="release_name_box"]',
+    txt_MapNote: '//*[@id="swal2-content"]//textarea[@id="release_comment_box"]',
     drop_RtoAssign: '//select[@name="rto_ids[]"]/following-sibling::div/button',
     btn_Adnew: '//*[text()="+ Add New"]',
     search_Rto: 'input[id="search"]',
@@ -77,12 +77,12 @@ const MapObject = {
 
     drop_FolderAssign: '//select[@name="folder_ids[]"]/following-sibling::div/button',
     value_Folder: (foldername) => {
-        return "//input[@data-name='selectItemfolder_ids[]']/following-sibling::span[contains(@text()," + "'" + foldername + "'" + ")]"
+        return "//input[@data-name='selectItemfolder_ids[]']/following-sibling::span[contains(text()," + "'" + foldername + "'" + ")]"
     },
     btn_savsubmit: 'div[aria-describedby="swal2-content"]>div:nth-child(3)>button[class="swal2-confirm btn btn-success"]',
     btn_Back: '//div[@class="d-inline-flex"]/a[contains(@href,"/units")]',
 
-    btn_Mapdropdown: '//*[contains(@class,"table-borderless")]//button[@data-toggle="dropdown"]',
+    btn_MapDropDown: '//*[contains(@class,"table-borderless")]//button[@data-toggle="dropdown"]',
     btn_Deletemaps: '//*[contains(@class,"table-borderless")]//*[contains(text(),"Delete")]',
     btn_Duplicate: '//*[contains(@class,"table-borderless")]//*[text()="Duplicate Map"]',
     btn_Reassign: '//*[contains(@class,"table-borderless")]//span[contains(text(),"Rename/Reassign")]',
@@ -115,12 +115,16 @@ const MapVerify = {
     lbl_warmingmess: 'div[class="invalid-feedback"]',
     header: '/html/body/div[1]/div/div[2]/div/div[1]',
 
-    lbl_Mapname: '(//table[contains(@class,"table-striped")]//tbody//td)[2]',
+    lbl_MapName: '(//table[contains(@class,"table-striped")]//tbody//td)[2]',
     lbl_UnitRelease: '(//table[contains(@class,"table-striped")]//tbody//td)[3]',
     lbl_MapVersion: '(//table[contains(@class,"table-striped")]//tbody//td)[4]',
     lbl_MapRto: '(//table[contains(@class,"table-striped")]//tbody//td)[5]',
     lbl_MapNote: '(//table[contains(@class,"table-striped")]//tbody//td)[6]',
     lbl_MapUpdate: '(//table[contains(@class,"table-striped")]//tbody//td)[7]',
+
+    lbl_MapRename:'//*[@id="swal2-content"]//div[contains(@class,"text-pink mr-5")]',
+    lbl_MapRenote:'//*[@id="swal2-content"]//div[contains(@class,"my-3")]',
+    llb_MapReFoder:'//*[@id="swal2-content"]//div[contains(@class,"row")]/div[contains(text(),"Assign to Folder(s):")]/following-sibling::div/div',
 
     lbl_verify: '//*[@id="swal2-content"]/div[1]',
     lbl_MapRto: '//select[@name="rto_ids[]"]/following-sibling::div/following-sibling::div',
