@@ -11,12 +11,12 @@ Feature: User Profile
       Then System display User Profile Screen with all correct information of user
 
    @UP002
-   Scenario: Verify User input inccorect old password and can't change password in User Information screen 1st
+   Scenario: Verify User input inccorect old password and can't change password in User Information screen
       When User input incorrect old password
-      Then User can't change password in User Information screen
+      Then User can't change password with inccorect old password in User Information screen 
 
    @UP003
-   Scenario: Verify User input doesn't match new password and can't change password in User Information screen 2nd
+   Scenario: Verify User input doesn't match new password and can't change password in User Information screen
       When User input doesn't match new password
       Then User can't change password in User Information screen 2nd
 
@@ -43,4 +43,4 @@ Feature: User Profile
 # @UP008
 # Scenario: Verify User can browse to upload
 #    When User browse to folder and select image
-#    Then User can update new image 2nd
+#    Then User can update new image 
