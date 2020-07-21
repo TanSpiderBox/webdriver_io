@@ -59,6 +59,6 @@ When("User input correct email and password", () => {
     $(LoginObjects.btn_submit).scrollIntoView();
     $(LoginObjects.btn_submit).click();
 })
-Then("User can login succesfull", () => {
+Then("User can login succesfully", () => {
     assert.equal($(LoginSuccessObjects.lbl_success_login).getText(), LoginSuccessMessage.login_success,'');
 })

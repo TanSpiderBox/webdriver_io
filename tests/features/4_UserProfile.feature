@@ -18,7 +18,7 @@ Feature: User Profile
    @UP003
    Scenario: Verify User input doesn't match new password and can't change password in User Information screen
       When User input doesn't match new password
-      Then User can't change password in User Information screen 2nd
+      Then User can't change password with doesn't match new password in User Information screen
 
    @UP004
    Scenario: Verify User can change password in User Information screen

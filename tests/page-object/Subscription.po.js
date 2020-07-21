@@ -14,7 +14,6 @@ const SubscriptionPlanObject = {
 }
 
 const BillingInfoObject = {
-
     txt_cardNumber: '//*[@id="card-number-element"]',
     txt_cardHolder: 'input[id="card_name"]',
     txt_expiryDate: 'div[id="card-expiry-element"]',
@@ -23,6 +22,8 @@ const BillingInfoObject = {
     btnRemove: 'div[class="stripe-card"]>img',
     btnOk: 'button.swal2-confirm',
     chck_condition: '//input[contains(@name,"condition")]',
+    btn_fail3dcard: '//button[@id="test-source-fail-3ds"]',
+    btn_complete3dcard: '//button[@id="test-source-authorize-3ds"]'
 }
 
 const BillingVerifi = {

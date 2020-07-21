@@ -31,4 +31,4 @@ Feature: Login
   @LG007
   Scenario: Verify User can login system
     When User input correct email and password
-    Then User can login succesfull
+    Then User can login succesfully

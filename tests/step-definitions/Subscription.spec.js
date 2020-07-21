@@ -51,9 +51,8 @@ When('User input decline card', () => {
     browser.pause(7000)
 })
 
-Then("User can't add new declined card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
-    assert.equal(errorcode, BillingDataVerify.errorcodedeclined, '');
+Then("User can't payment with declined card", () => {
+    assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.errorcodedeclined, '');
     browser.keys("\uE007")
     // $(BillingInfoObject.btnOk).click();
     browser.pause(2000)
@@ -88,9 +87,8 @@ When('User input insufficient funds card', () => {
     browser.pause(7000)
 })
 
-Then("User can't add new insufficient funds card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
-    assert.equal(errorcode, BillingDataVerify.errorcodeinsufficient, '');
+Then("User can't payment with insufficient funds card", () => {
+    assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.errorcodeinsufficient, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -123,9 +121,8 @@ When('User input lost card', () => {
     browser.pause(7000)
 })
 
-Then("User can't add new lost card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
-    assert.equal(errorcode, BillingDataVerify.errorcodedeclined, '');
+Then("User can't payment with lost card", () => {
+    assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.errorcodecardDeclined, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -158,9 +155,8 @@ When('User input stolen card', () => {
     browser.pause(7000)
 })
 
-Then("User can't add new stolen card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
-    assert.equal(errorcode, BillingDataVerify.errorcodedeclined, '');
+Then("User can't payment with stolen card", () => {
+    assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.errorcodecardDeclined, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -193,9 +189,8 @@ When('User input expired card', () => {
     browser.pause(7000)
 })
 
-Then("User can't add new expired card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
-    assert.equal(errorcode, BillingDataVerify.errorcodeexpired, '');
+Then("User can't payment with expired card", () => {
+    assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.errorcodeexpired, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -228,9 +223,8 @@ When('User input incorrect cvc card', () => {
     browser.pause(2000)
 })
 
-Then("User can't add new incorrect cvc card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
-    assert.equal(errorcode, BillingDataVerify.errorincorrectcvc, '');
+Then("User can't payment with incorrect cvc card", () => {
+    assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.errorincorrectcvc, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -263,9 +257,8 @@ When('User input processing error card', () => {
     browser.pause(2000)
 })
 
-Then("User can't add new processing error card", () => {
-    const errorcode = $(BillingVerifi.stripeverifi).getText().slice(42);
-    assert.equal(errorcode, BillingDataVerify.error, '');
+Then("User can't payment with processing error card", () => {
+    assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.error, '');
     browser.keys("\uE007")
     browser.pause(2000)
 })
@@ -293,11 +286,48 @@ When('User input invalid card number', () => {
     browser.keys('42')
     browser.pause(timeout)
     browser.keys('41')
+
 })
 
-Then("User can't add new invalid card number", () => {
+Then("User can't payment with invalid card number", () => {
     assert.equal($(BillingVerifi.cardverifi).getText(), BillingDataVerify.errorcodeCardNumber, '');
 })
+
+// SB010
+When("User user 3d card and fail verification", () => {
+    const timeout = 50
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
+    $('input[name="cardnumber"]').clearValue();
+    browser.switchToParentFrame();
+
+    $(BillingInfoObject.txt_cardNumber).click();
+    browser.keys('40')
+    browser.pause(timeout)
+    browser.keys('00')
+    browser.pause(timeout)
+    browser.keys('00')
+    browser.pause(timeout)
+    browser.keys('00')
+    browser.pause(timeout)
+    browser.keys('00')
+    browser.pause(timeout)
+    browser.keys('00')
+    browser.pause(timeout)
+    browser.keys('32')
+    browser.pause(timeout)
+    browser.keys('20')
+
+    $(BillingInfoObject.btn_submit).click();
+    browser.pause(2000)
+    browser.switchToFrame($('//iframe[contains(@name,"__privateStripeFrame")]'));
+    browser.switchToFrame($('iframe[name="stripe-challenge-frame"]'));
+    $(BillingInfoObject.btn_fail3dcard).click();
+    browser.pause(2000)
+})
+Then("User can't payment succesfully", () => {
+    assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.error3dcard, '');
+})
+
 // SB002
 When('User input all valid information of card', () => {
     const timeout = 50
@@ -326,7 +356,7 @@ When('User input all valid information of card', () => {
     browser.pause(7000)
 
 })
-Then('User can payment succesfull', () => {
+Then('User can payment succesfully', () => {
     assert.equal($(SubscriptionPlanObject.lbl_subsucess).getText(), SubscriptionData.sub_success, '');
 })
 
@@ -337,7 +367,7 @@ When('User click button cancel', () => {
     $(SubscriptionPlanObject.btn_verify).click();
     $(SubscriptionPlanObject.btn_confirm).click()
 })
-Then('User cancel subscription succesfull', () => {
+Then('User cancel subscription succesfully', () => {
     assert.equal($(SubscriptionPlanObject.btn_verify).getText(), SubscriptionData.lbl_renewal, '');
 })
 
@@ -348,6 +378,6 @@ When('User click button renewal', () => {
     $(SubscriptionPlanObject.btn_verify).click();
     $(SubscriptionPlanObject.btn_confirm).click()
 })
-Then('User renewal subscription succesfull', () => {
+Then('User renewal subscription succesfully', () => {
     assert.equal($(SubscriptionPlanObject.btn_verify).getText(), SubscriptionData.lbl_cancel, '');
 })

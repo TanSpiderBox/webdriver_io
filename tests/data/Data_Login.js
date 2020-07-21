@@ -1,9 +1,9 @@
 const LoginData = {
     // url: "http://192.168.1.17:3000/users/sign_in",
     url: "/",
-    user_email: 'tan+5@spiderbox.design',
+    user_email: 'tan+0004@spiderbox.design',
     user_email_incorrect: 'tanbbc@spiderbox.design',
-    user_pwd: '123456789',
+    user_pwd: '123456',
     user_pwd_incoorect: '123456'
 }
 

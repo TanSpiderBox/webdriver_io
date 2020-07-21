@@ -33,10 +33,12 @@ const BillingDataVerify = {
     errorcodeExpiryDate: "Your card's expiration date is incomplete.",
     errorcodeCvc: "Your card's security code is incomplete.",
     errorcodedeclined: 'Your card was declined.',
+    errorcodecardDeclined: 'Your card has been declined.',
     errorcodeinsufficient: 'Your card has insufficient funds.',
     errorcodeexpired: 'Your card has expired.',
     errorincorrectcvc: "Your card's security code is incorrect.",
     error: "An error occurred while processing your card. Try again in a little bit.",
+    error3dcard: 'We are unable to authenticate your payment method. Please choose a different payment method and try again.',
 }
 
 export { SubscriptionData, BillingInfoData, BillingDataVerify }
