@@ -4,15 +4,33 @@ const SubscriptionData = {
     sub_success: 'Thank you, we have received your payment and your account has been upgraded. Enjoy using Magic Map!',
 
     lbl_cancel: 'Cancel Subscription',
-    
+
     lbl_renewal: 'Renewal',
 }
 
 const BillingInfoData = {
-    cardnumber: '42',
+    valid_carnumber: '4242424242424242',
+
+    decline_cardnumber: '4000000000000002',
+
+    insufficientfunds_cardnumber: '4000000000009995',
+
+    lostcard_cardnumber: '4000000000009987',
+
+    stolencard_cardnumber: '4000000000009979',
+
+    expiredcard_cardnumber: '4000000000000069',
+
+    incorrectcvc_cardnumber: '4000000000000127',
+
+    processingerror_cardnumber: '4000000000000119',
+
+    invalid_cardnumber: '4242424242424241',
+
+    cardnumber_3d: '4000000000003220',
+    
     cardholder: 'Jenny Rosen',
-    expirydatemth: '02',
-    expirydatemyr: '22',
+    expirydate: '02/22',
     cvc: '999',
 }
 

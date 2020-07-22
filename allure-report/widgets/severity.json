@@ -1,670 +1,110 @@
 [ {
-  "uid" : "37d89c9fda0f439d",
-  "name" : "Then User change password succesful",
+  "uid" : "6e7a557758c90122",
+  "name" : "Verify User input processing error card and can't process payment",
   "time" : {
-    "start" : 1571026343340,
-    "stop" : 1571026345353,
-    "duration" : 2013
+    "start" : 1595395964209,
+    "stop" : 1595395968578,
+    "duration" : 4369
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d7df18d13529b67d",
-  "name" : "Then User can't register new account 6th",
+  "uid" : "5e8e0d9c181ccf78",
+  "name" : "Verify User input insufficient funds card and can't process payment",
   "time" : {
-    "start" : 1571038979175,
-    "stop" : 1571038979188,
-    "duration" : 13
+    "start" : 1595395942422,
+    "stop" : 1595395946824,
+    "duration" : 4402
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "330ab5e74f510767",
-  "name" : "Then User can't change password in User Information screen",
+  "uid" : "efd8b0c8d020d53c",
+  "name" : "Verify User input stolen card and can't process payment",
   "time" : {
-    "start" : 1571026334459,
-    "stop" : 1571026334478,
-    "duration" : 19
+    "start" : 1595395951149,
+    "stop" : 1595395955529,
+    "duration" : 4380
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "66c2990871215d6b",
-  "name" : "When User input incorrect password field",
+  "uid" : "13934f4b9b09f47d",
+  "name" : "Verify User fail verification 3d card and can't process payment",
   "time" : {
-    "start" : 1571038975389,
-    "stop" : 1571038977272,
-    "duration" : 1883
+    "start" : 1595395968810,
+    "stop" : 1595395976268,
+    "duration" : 7458
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6e915f9f01612831",
-  "name" : "When User input doesn't match new password",
+  "uid" : "6207ac8a30086a8",
+  "name" : "Verify User input expired card and can't process payment",
   "time" : {
-    "start" : 1571026334482,
-    "stop" : 1571026334775,
-    "duration" : 293
+    "start" : 1595395955529,
+    "stop" : 1595395959869,
+    "duration" : 4340
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ea068ced4cd538a",
-  "name" : "When User input email and new password",
+  "uid" : "77a84610bf50d865",
+  "name" : "Verify User input declined card and can't process payment",
   "time" : {
-    "start" : 1571026345375,
-    "stop" : 1571026347308,
-    "duration" : 1933
+    "start" : 1595395929372,
+    "stop" : 1595395942420,
+    "duration" : 13048
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ba3deed6d5522d1",
-  "name" : "Given User Open website MMAP",
+  "uid" : "49bb9201c118bec1",
+  "name" : "Verify system display correct information of Subscription Plan screen",
   "time" : {
-    "start" : 1571038963920,
-    "stop" : 1571038969822,
-    "duration" : 5902
+    "start" : 1595395922245,
+    "stop" : 1595395929372,
+    "duration" : 7127
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "272beeb54e1e177d",
-  "name" : "Then User can't register new account 5th",
+  "uid" : "19b629727656b6a8",
+  "name" : "Verify User input invalid card number and can't process payment",
   "time" : {
-    "start" : 1571038976864,
-    "stop" : 1571038976883,
-    "duration" : 19
+    "start" : 1595395968579,
+    "stop" : 1595395968809,
+    "duration" : 230
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "dbf670b2cf91efd9",
-  "name" : "When User input incorrect email",
+  "uid" : "a428aa3d136777d3",
+  "name" : "Verify User can process payment succesfully with 3d card",
   "time" : {
-    "start" : 1571038973502,
-    "stop" : 1571038974803,
-    "duration" : 1301
+    "start" : 1595395976269,
+    "stop" : 1595395987547,
+    "duration" : 11278
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "cc3bf2b1d722ebb4",
-  "name" : "When User blank Confirm Password",
+  "uid" : "43b8087bd48af5f3",
+  "name" : "Verify User input incorrect cvc card and can't process payment",
   "time" : {
-    "start" : 1571038972361,
-    "stop" : 1571038973742,
-    "duration" : 1381
+    "start" : 1595395959871,
+    "stop" : 1595395964206,
+    "duration" : 4335
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f47b56a3c4b37c89",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038968024,
-    "stop" : 1571038968555,
-    "duration" : 531
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4c8f973d8581c331",
-  "name" : "Then User can't login system 5th",
-  "time" : {
-    "start" : 1571038977272,
-    "stop" : 1571038977282,
-    "duration" : 10
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5b888b61828832ac",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038969738,
-    "stop" : 1571038970266,
-    "duration" : 528
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2b55b7cfa9f1a29f",
-  "name" : "When User input Existing Email",
-  "time" : {
-    "start" : 1571038979724,
-    "stop" : 1571038981397,
-    "duration" : 1673
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c3d2e58cb3433421",
-  "name" : "When User input correct email and password",
-  "time" : {
-    "start" : 1571026329067,
-    "stop" : 1571026331164,
-    "duration" : 2097
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2c735b3c8eabff6b",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038976887,
-    "stop" : 1571038977497,
-    "duration" : 610
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b2c69f2cf05d3ce3",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038979195,
-    "stop" : 1571038979724,
-    "duration" : 529
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "487a6a9896afcb18",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571026323055,
-    "stop" : 1571026329067,
-    "duration" : 6012
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "22a712e2b18aecf5",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038972949,
-    "stop" : 1571038973502,
-    "duration" : 553
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "22fdb641e04c752e",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038971727,
-    "stop" : 1571038972265,
-    "duration" : 538
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ee0f20be35a37a5d",
-  "name" : "Then User can't login system 1st",
-  "time" : {
-    "start" : 1571038970290,
-    "stop" : 1571038970318,
-    "duration" : 28
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bcea16f9d1d55e95",
-  "name" : "When User input correct email and password",
-  "time" : {
-    "start" : 1571038985880,
-    "stop" : 1571038987507,
-    "duration" : 1627
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "abbac11ff3e9bc40",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038977285,
-    "stop" : 1571038977827,
-    "duration" : 542
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4d99289e7df47b51",
-  "name" : "When User blank 2 field",
-  "time" : {
-    "start" : 1571038969822,
-    "stop" : 1571038970290,
-    "duration" : 468
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a7ab4246a2c1cf35",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038970326,
-    "stop" : 1571038970871,
-    "duration" : 545
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "fdf1b62df528ec97",
-  "name" : "When User select submenu User Profile",
-  "time" : {
-    "start" : 1571026331185,
-    "stop" : 1571026331400,
-    "duration" : 215
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "af372ad19d5f7dbf",
-  "name" : "When User input incorrect old password",
-  "time" : {
-    "start" : 1571026333448,
-    "stop" : 1571026334459,
-    "duration" : 1011
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7ed09f75a9eff42e",
-  "name" : "When User browse to folder and select image",
-  "time" : {
-    "start" : 1571026342214,
-    "stop" : 1571026342402,
-    "duration" : 188
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1273e99241d8a747",
-  "name" : "Then User can't register new account 3rd",
-  "time" : {
-    "start" : 1571038971753,
-    "stop" : 1571038971762,
-    "duration" : 9
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d7c6206ae565cd06",
-  "name" : "When User input Password is too short",
-  "time" : {
-    "start" : 1571038982036,
-    "stop" : 1571038983145,
-    "duration" : 1109
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "45908b2fc468886b",
-  "name" : "Then User can login succesfull",
-  "time" : {
-    "start" : 1571038979995,
-    "stop" : 1571038980029,
-    "duration" : 34
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7bb908ac3e823470",
-  "name" : "When User blank email field",
-  "time" : {
-    "start" : 1571038970872,
-    "stop" : 1571038971674,
-    "duration" : 802
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "299dfce0788801e7",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038973772,
-    "stop" : 1571038974413,
-    "duration" : 641
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "50f40790f67d8aea",
-  "name" : "When User input Password don't match",
-  "time" : {
-    "start" : 1571038977497,
-    "stop" : 1571038979175,
-    "duration" : 1678
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3f75c6e180ab287b",
-  "name" : "When User input valid all password infomation",
-  "time" : {
-    "start" : 1571026342405,
-    "stop" : 1571026343340,
-    "duration" : 935
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "dff2cae8c9e86ef8",
-  "name" : "When User blank all all field",
-  "time" : {
-    "start" : 1571038967218,
-    "stop" : 1571038967958,
-    "duration" : 740
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a08fa2425bbb29ff",
-  "name" : "Then User can't register new account 1st",
-  "time" : {
-    "start" : 1571038967958,
-    "stop" : 1571038968011,
-    "duration" : 53
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "aef9846578dbfb79",
-  "name" : "Then User can't register new account 4th",
-  "time" : {
-    "start" : 1571038973742,
-    "stop" : 1571038973768,
-    "duration" : 26
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "41ffbbafd3349cf4",
-  "name" : "Then User can't register new account 7th",
-  "time" : {
-    "start" : 1571038981397,
-    "stop" : 1571038981415,
-    "duration" : 18
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "fccbd4f2d06c6a94",
-  "name" : "When User blank First Name",
-  "time" : {
-    "start" : 1571038968555,
-    "stop" : 1571038969719,
-    "duration" : 1164
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "782896c89f515056",
-  "name" : "When User input all valid infomation",
-  "time" : {
-    "start" : 1571038983691,
-    "stop" : 1571038985341,
-    "duration" : 1650
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "47baecef3e8d02a7",
-  "name" : "Then User can't register new account 8th",
-  "time" : {
-    "start" : 1571038983146,
-    "stop" : 1571038983157,
-    "duration" : 11
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "df37770ef09efe9f",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038974833,
-    "stop" : 1571038975389,
-    "duration" : 556
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9f2275c4ce9faaeb",
-  "name" : "When User clicks button pricing",
-  "time" : {
-    "start" : 1571026334789,
-    "stop" : 1571026334989,
-    "duration" : 200
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "80f3a6878d014b19",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038981422,
-    "stop" : 1571038982036,
-    "duration" : 614
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b65f76c714505f98",
-  "name" : "When User input correct email and password",
-  "time" : {
-    "start" : 1571038977827,
-    "stop" : 1571038979995,
-    "duration" : 2168
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a6749ee6dec1c00f",
-  "name" : "Then System move to subscriptions page",
-  "time" : {
-    "start" : 1571026334989,
-    "stop" : 1571026337015,
-    "duration" : 2026
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "783cb0ac35912fcf",
-  "name" : "When User blank Password",
-  "time" : {
-    "start" : 1571038970267,
-    "stop" : 1571038971753,
-    "duration" : 1486
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2509b70e34c06eb2",
-  "name" : "Then User can't login system 2nd",
-  "time" : {
-    "start" : 1571038971674,
-    "stop" : 1571038971723,
-    "duration" : 49
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "eb4531d40edae043",
-  "name" : "Then User can't register new account 2nd",
-  "time" : {
-    "start" : 1571038969720,
-    "stop" : 1571038969734,
-    "duration" : 14
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "80c024260990d0c0",
-  "name" : "Then System move to billing information page",
-  "time" : {
-    "start" : 1571026339823,
-    "stop" : 1571026342206,
-    "duration" : 2383
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1ca74a0e16d2df20",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038985378,
-    "stop" : 1571038985880,
-    "duration" : 502
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b181ce2c08995f54",
-  "name" : "Then System display User Profile Screen with all correct information of user",
-  "time" : {
-    "start" : 1571026331400,
-    "stop" : 1571026333440,
-    "duration" : 2040
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8c43b9f29577781",
-  "name" : "Then User can't login system 3rd",
-  "time" : {
-    "start" : 1571038972909,
-    "stop" : 1571038972929,
-    "duration" : 20
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c23d21d4b8b882ec",
-  "name" : "When User clicks button Transaction History",
-  "time" : {
-    "start" : 1571026337017,
-    "stop" : 1571026339823,
-    "duration" : 2806
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4ba9c15d8962e9e7",
-  "name" : "Then User login system successfull with new password",
-  "time" : {
-    "start" : 1571026347308,
-    "stop" : 1571026347325,
-    "duration" : 17
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2d2cf983a78fae17",
-  "name" : "Then User can update new image 2nd",
-  "time" : {
-    "start" : 1571026342402,
-    "stop" : 1571026342402,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e5f3071760b40893",
-  "name" : "Then User can't login system 4th",
-  "time" : {
-    "start" : 1571038974803,
-    "stop" : 1571038974821,
-    "duration" : 18
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c13d8db3cea070d2",
-  "name" : "Then User can't change password in User Information screen 2nd",
-  "time" : {
-    "start" : 1571026334775,
-    "stop" : 1571026334786,
-    "duration" : 11
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b5191360791dc164",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038963925,
-    "stop" : 1571038967217,
-    "duration" : 3292
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ac136bafcb2ccf14",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038971767,
-    "stop" : 1571038972360,
-    "duration" : 593
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "508e50e5b87f3ce6",
-  "name" : "Then User can login succesfull",
-  "time" : {
-    "start" : 1571026331164,
-    "stop" : 1571026331185,
-    "duration" : 21
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "cb362dce5d7175c9",
-  "name" : "Given User Open website MMAP",
-  "time" : {
-    "start" : 1571038983160,
-    "stop" : 1571038983691,
-    "duration" : 531
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8d023d72a3b7987e",
-  "name" : "When User blank password field",
-  "time" : {
-    "start" : 1571038972265,
-    "stop" : 1571038972908,
-    "duration" : 643
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8b65d4c8fec43c91",
-  "name" : "Then User create account successfull",
-  "time" : {
-    "start" : 1571038985341,
-    "stop" : 1571038985362,
-    "duration" : 21
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "579283943c74a9f6",
-  "name" : "Then User can login succesfull",
-  "time" : {
-    "start" : 1571038987507,
-    "stop" : 1571038987522,
-    "duration" : 15
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "68151b177dc4c84e",
-  "name" : "When User don't select User Role",
-  "time" : {
-    "start" : 1571038974413,
-    "stop" : 1571038976864,
-    "duration" : 2451
+  "uid" : "965ca5400b9fd780",
+  "name" : "Verify User input lost card information and can't process payment",
+  "time" : {
+    "start" : 1595395946825,
+    "stop" : 1595395951148,
+    "duration" : 4323
   },
   "status" : "passed",
   "severity" : "normal"

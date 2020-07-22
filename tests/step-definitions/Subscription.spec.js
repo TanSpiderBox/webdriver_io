@@ -18,34 +18,25 @@ Then('System display correct information of subscription', () => {
 /* SB002 */
 When('User input decline card', () => {
     $(SubscriptionPlanObject.btn_tire1).click();
-    const timeout = 50
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys('40')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('02')
 
+    //Input Card Number
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
+    $(BillingInfoObject.txt_cardNumber).setValue(BillingInfoData.decline_cardnumber);
+
+    //Input Card Holder
+    browser.switchToParentFrame();
     $(BillingInfoObject.txt_cardHolder).setValue(BillingInfoData.cardholder);
 
-    $(BillingInfoObject.txt_expiryDate).click();
-    browser.keys(BillingInfoData.expirydatemth);
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.expirydatemyr);
+    //Input Expiry Date
+    browser.switchToFrame($('iframe[name="__privateStripeFrame6"]'));
+    $(BillingInfoObject.txt_expiryDate).setValue(BillingInfoData.expirydate);
 
+    //Input CCV
+    browser.switchToParentFrame();
     $(BillingInfoObject.txt_cvc).click();
     browser.keys(BillingInfoData.cvc);
 
+    //Click Checkbox Condition
     $(BillingInfoObject.chck_condition).click();
     $(BillingInfoObject.btn_submit).click();
     browser.pause(7000)
@@ -54,37 +45,20 @@ When('User input decline card', () => {
 Then("User can't payment with declined card", () => {
     assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.errorcodedeclined, '');
     browser.keys("\uE007")
-    // $(BillingInfoObject.btnOk).click();
     browser.pause(2000)
 })
 
 /* SB003 */
 When('User input insufficient funds card', () => {
-    const timeout = 50
-    // Go to iframe and clear card number -> works both in windows, mac, linux
-    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'))
-    $('input[name="cardnumber"]').clearValue();
+    //Input Card Number
+    browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
+    $(BillingInfoObject.txt_cardNumber).clearValue();
+    $(BillingInfoObject.txt_cardNumber).setValue(BillingInfoData.insufficientfunds_cardnumber);
+
+    //Submit request
     browser.switchToParentFrame();
-
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys('40')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('99')
-    browser.pause(timeout)
-    browser.keys('95')
-
     $(BillingInfoObject.btn_submit).click();
-    browser.pause(7000)
+    browser.pause(2000)
 })
 
 Then("User can't payment with insufficient funds card", () => {
@@ -95,30 +69,15 @@ Then("User can't payment with insufficient funds card", () => {
 
 /* SB004 */
 When('User input lost card', () => {
-    const timeout = 50
+    //Input Card Number
     browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
-    $('input[name="cardnumber"]').clearValue();
+    $(BillingInfoObject.txt_cardNumber).clearValue();
+    $(BillingInfoObject.txt_cardNumber).setValue(BillingInfoData.lostcard_cardnumber);
+
+    //Submit request
     browser.switchToParentFrame();
-
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys('40')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('99')
-    browser.pause(timeout)
-    browser.keys('87')
-
     $(BillingInfoObject.btn_submit).click();
-    browser.pause(7000)
+    browser.pause(2000)
 })
 
 Then("User can't payment with lost card", () => {
@@ -129,30 +88,15 @@ Then("User can't payment with lost card", () => {
 
 /* SB005 */
 When('User input stolen card', () => {
-    const timeout = 50
+    //Input Card Number
     browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
-    $('input[name="cardnumber"]').clearValue();
+    $(BillingInfoObject.txt_cardNumber).clearValue();
+    $(BillingInfoObject.txt_cardNumber).setValue(BillingInfoData.stolencard_cardnumber);
+
+    //Submit request
     browser.switchToParentFrame();
-
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys('40')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('99')
-    browser.pause(timeout)
-    browser.keys('79')
-
     $(BillingInfoObject.btn_submit).click();
-    browser.pause(7000)
+    browser.pause(2000)
 })
 
 Then("User can't payment with stolen card", () => {
@@ -163,30 +107,15 @@ Then("User can't payment with stolen card", () => {
 
 /* SB006 */
 When('User input expired card', () => {
-    const timeout = 50
+    //Input Card Number
     browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
-    $('input[name="cardnumber"]').clearValue();
+    $(BillingInfoObject.txt_cardNumber).clearValue();
+    $(BillingInfoObject.txt_cardNumber).setValue(BillingInfoData.expiredcard_cardnumber);
+
+    //Submit request
     browser.switchToParentFrame();
-
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys('40')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('69')
-
     $(BillingInfoObject.btn_submit).click();
-    browser.pause(7000)
+    browser.pause(2000)
 })
 
 Then("User can't payment with expired card", () => {
@@ -197,28 +126,13 @@ Then("User can't payment with expired card", () => {
 
 /* SB007 */
 When('User input incorrect cvc card', () => {
-    const timeout = 50
+    //Input Card Number
     browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
-    $('input[name="cardnumber"]').clearValue();
+    $(BillingInfoObject.txt_cardNumber).clearValue();
+    $(BillingInfoObject.txt_cardNumber).setValue(BillingInfoData.incorrectcvc_cardnumber);
+
+    //Submit request
     browser.switchToParentFrame();
-
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys('40')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('01')
-    browser.pause(timeout)
-    browser.keys('27')
-
     $(BillingInfoObject.btn_submit).click();
     browser.pause(2000)
 })
@@ -231,28 +145,13 @@ Then("User can't payment with incorrect cvc card", () => {
 
 /* SB008 */
 When('User input processing error card', () => {
-    const timeout = 50
+    //Input Card Number
     browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
-    $('input[name="cardnumber"]').clearValue();
+    $(BillingInfoObject.txt_cardNumber).clearValue();
+    $(BillingInfoObject.txt_cardNumber).setValue(BillingInfoData.processingerror_cardnumber);
+
+    //Submit request
     browser.switchToParentFrame();
-
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys('40')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('01')
-    browser.pause(timeout)
-    browser.keys('19')
-
     $(BillingInfoObject.btn_submit).click();
     browser.pause(2000)
 })
@@ -265,58 +164,27 @@ Then("User can't payment with processing error card", () => {
 
 /* SB009 */
 When('User input invalid card number', () => {
-    const timeout = 50
+    //Input Card Number
     browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
-    $('input[name="cardnumber"]').clearValue();
-    browser.switchToParentFrame();
-
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys('42')
-    browser.pause(timeout)
-    browser.keys('42')
-    browser.pause(timeout)
-    browser.keys('42')
-    browser.pause(timeout)
-    browser.keys('42')
-    browser.pause(timeout)
-    browser.keys('42')
-    browser.pause(timeout)
-    browser.keys('42')
-    browser.pause(timeout)
-    browser.keys('42')
-    browser.pause(timeout)
-    browser.keys('41')
+    $(BillingInfoObject.txt_cardNumber).clearValue();
+    $(BillingInfoObject.txt_cardNumber).setValue(BillingInfoData.invalid_cardnumber);
 
 })
 
 Then("User can't payment with invalid card number", () => {
+    browser.switchToParentFrame();
     assert.equal($(BillingVerifi.cardverifi).getText(), BillingDataVerify.errorcodeCardNumber, '');
 })
 
 // SB010
-When("User user 3d card and fail verification", () => {
-    const timeout = 50
+When("User use 3d card and fail verification", () => {
+    //Input Card Number
     browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
-    $('input[name="cardnumber"]').clearValue();
+    $(BillingInfoObject.txt_cardNumber).clearValue();
+    $(BillingInfoObject.txt_cardNumber).setValue(BillingInfoData.cardnumber_3d);
+
+    //Click button fail verification
     browser.switchToParentFrame();
-
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys('40')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('00')
-    browser.pause(timeout)
-    browser.keys('32')
-    browser.pause(timeout)
-    browser.keys('20')
-
     $(BillingInfoObject.btn_submit).click();
     browser.pause(2000)
     browser.switchToFrame($('//iframe[contains(@name,"__privateStripeFrame")]'));
@@ -326,58 +194,81 @@ When("User user 3d card and fail verification", () => {
 })
 Then("User can't payment succesfully", () => {
     assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.error3dcard, '');
+    browser.keys("\uE007")
+    browser.pause(2000)
 })
 
-// SB002
-When('User input all valid information of card', () => {
-    const timeout = 50
+//SB011
+When('User use 3d card and completed verifycation', () => {
+    //Input Card Number
     browser.switchToFrame($('iframe[name="__privateStripeFrame5"]'));
-    $('input[name="cardnumber"]').clearValue();
+    $(BillingInfoObject.txt_cardNumber).clearValue();
+    $(BillingInfoObject.txt_cardNumber).setValue(BillingInfoData.cardnumber_3d);
+
     browser.switchToParentFrame();
-
-    $(BillingInfoObject.txt_cardNumber).click();
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-    browser.pause(timeout)
-    browser.keys(BillingInfoData.cardnumber)
-
     $(BillingInfoObject.btn_submit).click();
-    browser.pause(7000)
-
+    browser.pause(2000)
+    browser.switchToFrame($('//iframe[contains(@name,"__privateStripeFrame")]'));
+    browser.switchToFrame($('iframe[name="stripe-challenge-frame"]'));
+    $(BillingInfoObject.btn_complete3dcard).click();
+    browser.pause(2000)
 })
-Then('User can payment succesfully', () => {
+Then('User can payment with 3d card succesfully', () => {
     assert.equal($(SubscriptionPlanObject.lbl_subsucess).getText(), SubscriptionData.sub_success, '');
 })
 
-When('User click button cancel', () => {
-    $(ProfileObject.btn_user).click()
-    $(ProfileObject.btn_userAccount).click()
-    $(ProfileObject.btn_subscription).click()
-    $(SubscriptionPlanObject.btn_verify).click();
-    $(SubscriptionPlanObject.btn_confirm).click()
+// SB012
+When('User choose higher plan and add valid card',()=>{
+
 })
-Then('User cancel subscription succesfully', () => {
-    assert.equal($(SubscriptionPlanObject.btn_verify).getText(), SubscriptionData.lbl_renewal, '');
+Then('User upgrade new plan succesfully',()=>{
+    
 })
 
-When('User click button renewal', () => {
-    $(ProfileObject.btn_user).click()
-    $(ProfileObject.btn_userAccount).click()
-    $(ProfileObject.btn_subscription).click()
-    $(SubscriptionPlanObject.btn_verify).click();
-    $(SubscriptionPlanObject.btn_confirm).click()
+// SB013
+When('User choose lower tire subscription',()=>{
+
 })
-Then('User renewal subscription succesfully', () => {
-    assert.equal($(SubscriptionPlanObject.btn_verify).getText(), SubscriptionData.lbl_cancel, '');
+Then('System will process request downgrade for next payment',()=>{
+    
+})
+
+// SB014
+When('User choose another plan',()=>{
+
+})
+Then('System will display warning massage',()=>{
+    
+})
+
+// SB015
+When('User click hyperlink cancel request',()=>{
+
+})
+Then('System process cancel request successfully',()=>{
+    
+})
+
+// SB016
+When('User click button cancel subsciption',()=>{
+
+})
+Then('System will process request cancel subscription for next payment',()=>{
+    
+})
+
+// SB017
+When('User choose another plan',()=>{
+
+})
+Then('System will display warning massage',()=>{
+    
+})
+
+// SB018
+When('User click hyperlink cancel request',()=>{
+
+})
+Then('System process cancel request successfully',()=>{
+    
 })

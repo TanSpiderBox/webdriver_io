@@ -52,21 +52,45 @@ Feature: Subsription
 
     @SB010
     Scenario: Verify User fail verification 3d card and can't process payment
-        When User user 3d card and fail verification
+        When User use 3d card and fail verification
         Then User can't payment succesfully
 
-    # @SB0010
-    # Scenario: Verify User can choose new plan
-    #     When User input all valid information of card
-    #     Then User can payment succesfully
+    @SB011
+    Scenario: Verify User can process payment succesfully with 3d card
+        When User use 3d card and completed verification
+        Then User can payment with 3d card succesfully
 
-    # @SB0011
-    # Scenario: Verify User can cancel subscription
-    #     When User click button cancel
-    #     Then User cancel subscription succesfully
+    @SB012
+    Scenario: Verify User can upgrade new subscription plan
+        When User choose higher plan and add valid card
+        Then User upgrade new plan succesfully
 
-    # @SB0012
-    # Scenario: Verify User can renewal subscription
-    #     When User click button renewal
-    #     Then User renewal subscription succesfully
+    @SB013
+    Scenario: Verify User can downgrade subscription plan
+        When User choose lower tire subscription
+        Then System will process request downgrade for next payment
 
+    @SB014
+    Scenario: Verify User can't choose new subscription plan after request downgrade
+        When User choose another plan
+        Then System will display warning massage
+
+    @SB015
+    Scenario: Verify User can cancel request downgrade
+        When User click hyperlink cancel request
+        Then System process cancel request successfully
+
+    @SB016
+    Scenario: Verify User can cancel subscription
+        When User click button cancel subsciption
+        Then System will process request cancel subscription for next payment
+
+    @SB017
+    Scenario: Verify User can't choose new plan after reuqest cancel
+        When User choose another plan
+        Then System will display warning massage
+
+    @SB018
+    Scenario: Verify User can cancel request cancel
+        When User click hyperlink cancel request
+        Then System process cancel request successfully

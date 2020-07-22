@@ -1,114 +1,15 @@
 {
-  "total" : 24,
+  "total" : 1,
   "items" : [ {
-    "uid" : "b185f386bba0894e51f3910f1de67c39",
-    "name" : "User Profile: Verify system display correct User Information",
+    "uid" : "14527d9e33932b00c5aab306f765149d",
+    "name" : "Subsription",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 11,
       "unknown" : 0,
-      "total" : 5
-    }
-  }, {
-    "uid" : "13c575d9c206e186be218da59115754f",
-    "name" : "Login: Verify User blank 2 field and can't login system 1st",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "e4aedace5e60f6c2617f96fe991d83c9",
-    "name" : "Register: Verify User blank all field and can't register new account 1st",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "316d02ecf9d87030399f584d46083680",
-    "name" : "Register: Verify User blank field First Name and can't register new account 2nd",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "8e62656947e307f9fc506f0843327fa8",
-    "name" : "Register: Verify User blank field Password can't register new account 3rd",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "875c9797db8028bbcda4b7a086274605",
-    "name" : "Login: Verify User blank email field and can't login system 2nd",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "0a27e14d6d7e6e2c311e3e512c07a3c6",
-    "name" : "Login: Verify User blank password field and can't login system 3rd",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "d398ccf52cf75e181ccfddac0cf01c21",
-    "name" : "Register: Verify User blank field Confirm Password and can't register new account 4th",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "cddd8edcbe44f6a7ef2e5945edf3d07f",
-    "name" : "Login: Verify User input incorrect email and can't login system 4th",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
-    }
-  }, {
-    "uid" : "eed6216fc6302b3aa713ae449ad52c0d",
-    "name" : "Register: Verify User don't select User Role and can't register new account 5th",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 3
+      "total" : 11
     }
   } ]
 }

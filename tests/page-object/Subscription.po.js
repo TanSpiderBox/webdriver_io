@@ -14,9 +14,9 @@ const SubscriptionPlanObject = {
 }
 
 const BillingInfoObject = {
-    txt_cardNumber: '//*[@id="card-number-element"]',
+    txt_cardNumber: 'input[name="cardnumber"]',
     txt_cardHolder: 'input[id="card_name"]',
-    txt_expiryDate: 'div[id="card-expiry-element"]',
+    txt_expiryDate: 'input[name="exp-date"]',
     txt_cvc: 'div[id="card-cvc-element"]',
     btn_submit: 'button[data-disabled-with="Paymenting...."]',
     btnRemove: 'div[class="stripe-card"]>img',
