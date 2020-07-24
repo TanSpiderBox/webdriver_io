@@ -1,15 +1,15 @@
 // '''User Profile'''
 const ProfileObject = {
-    btn_user: '(//*[contains(@class,"acreage-48")])[2]',
-    btn_notifi: '//*[contains(text(),"Notification(11)")]',
+    btn_user: '//*[contains(@class,"align-items-center")]//div[contains(@class,"avatar--default acreage-48")]',
+    btn_notifi: '//*[contains(@class,"align-items-center")]//div[contains(@class,"pointer avatar--default position-relative")]',
     btn_userAccount: '//*[text()="Account"]',
     btn_subscription: '//*[text()="Subscription"]',
     btn_billing: '//*[text()="Billing Information"]',
-    btn_managedmember: '//a[@aria-current="page"]',
+    btn_managedmember: '//*[text()="Manage Users"]',
     btn_inter: '//*[text()="Integrations"]',
     btn_userProfile: '//*[text()="User Profile"]',
     btn_signOut: '//*[contains(@href,"/sign_out")]',
-    btn_subuserprofile: '//*[@id="bd-profile-nav"]/a[text()="User Profile"]',
+
     btn_avata: '//*[contains(@class,"avatar editable")]',
     btn_upavata: 'input[id="user_avatar"]',
     

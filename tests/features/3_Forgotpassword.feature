@@ -51,4 +51,4 @@ Feature: Forgot Password
     @FP010
     Scenario: Verify User can login with new password
         When User input valid password and password confirm
-        Then User can login succesfull with new password
+        Then User can login successfully with new password

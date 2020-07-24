@@ -1,10 +1,9 @@
-import { Given, When, Then } from "cucumber"
+import { When, Then } from "cucumber"
 import { assert } from "chai"
 import { UserProfileData, UserErrorData, UserValidData } from "../data/Data_UserProfile"
 import { ProfileObject, UserProfleObject, UserProfileValidation } from "../page-object/UserProfile.po"
 import { LoginSuccessMessage } from "../data/Data_Login"
 import { LoginSuccessObjects } from "../page-object/Login.po"
-import { writeFile } from "fs"
 
 /* TestCase028 */
 When('User select submenu User Profile', () => {
@@ -16,10 +15,10 @@ When('User select submenu User Profile', () => {
 
 Then('System display User Profile Screen with all correct information of user', () => {
     browser.pause(2000)
-    assert.equal($(UserProfileValidation.user_firstname).getText(),UserProfileData.user_firstname,'')
-    assert.equal($(UserProfileValidation.user_lastname).getText(),UserProfileData.user_lastname,'')
-    assert.equal($(UserProfileValidation.user_email).getText(),UserProfileData.user_email,'')
-    assert.equal($(UserProfileValidation.user_type).getText(),UserProfileData.user_type,'')
+    assert.equal($(UserProfileValidation.user_firstname).getText(), UserProfileData.user_firstname, '')
+    assert.equal($(UserProfileValidation.user_lastname).getText(), UserProfileData.user_lastname, '')
+    assert.equal($(UserProfileValidation.user_email).getText(), UserProfileData.user_email, '')
+    assert.equal($(UserProfileValidation.user_type).getText(), UserProfileData.user_type, '')
 })
 
 /* TestCase029 */
@@ -32,8 +31,8 @@ When('User input valid all password information', () => {
     $(UserProfleObject.btn_pwdsub2).click();
 })
 
-Then('User change password succesfull', () => {
-    assert.equal($(UserProfileValidation.user_namesubscription).getText(), UserValidData.user_updatesuccess,'');
+Then('User change password successfully', () => {
+    assert.equal($(UserProfileValidation.user_namesubscription).getText(), UserValidData.user_updatesuccess, '');
 })
 
 /* TestCase030 */
@@ -47,7 +46,7 @@ When('User input email and new password', () => {
 })
 
 Then('User login system successfull with new password', () => {
-    assert.equal($(LoginSuccessObjects.lbl_success_login).getText(), LoginSuccessMessage.login_success,'');
+    assert.equal($(LoginSuccessObjects.lbl_success_login).getText(), LoginSuccessMessage.login_success, '');
     $(ProfileObject.btn_user).click()
     $(ProfileObject.btn_userAccount).click()
     $(ProfileObject.btn_userProfile).click()
@@ -64,7 +63,7 @@ When('User input incorrect old password', () => {
 })
 
 Then('User can\'t change password in User Information screen', () => {
-    assert.equal($(UserProfileValidation.user_errorpwd).getText(), UserErrorData.user_error_currentpwd,'');
+    assert.equal($(UserProfileValidation.user_errorpwd).getText(), UserErrorData.user_error_currentpwd, '');
 })
 
 /* TestCase032 */
@@ -77,7 +76,7 @@ When('User input doesn\'t match new password', () => {
 })
 
 Then('User can\'t change password in User Information screen 2nd', () => {
-    assert.equal($(UserProfileValidation.user_errornewpwd).getText(), UserErrorData.user_error_matchpwd,'');
+    assert.equal($(UserProfileValidation.user_errornewpwd).getText(), UserErrorData.user_error_matchpwd, '');
 })
 
 /* TestCase033 */
@@ -89,19 +88,19 @@ When('User clicks button pricing', () => {
 
 Then('System move to subscriptions page', () => {
     browser.pause(2000);
-    assert.equal($(UserProfileValidation.user_subpage).getText(), UserValidData.user_subpage,'');
+    assert.equal($(UserProfileValidation.user_subpage).getText(), UserValidData.user_subpage, '');
 })
 
 /* TestCase034 */
 When('User clicks button Transaction History', () => {
-    $(ProfileObject.btn_subuserprofile).click()
+    $(ProfileObject.submn_UserProfile).click()
     $(UserProfleObject.btn_linkbill).click()
 })
 
 Then('System move to billing information page', () => {
     browser.pause(2000);
-    assert.equal($(UserProfileValidation.user_billpage).getText(), UserValidData.user_billpage,'');
-    $(ProfileObject.btn_subuserprofile).click();
+    assert.equal($(UserProfileValidation.user_billpage).getText(), UserValidData.user_billpage, '');
+    $(ProfileObject.submn_UserProfile).click();
 })
 
 // /* TestCase036 */

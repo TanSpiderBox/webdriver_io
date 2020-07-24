@@ -16,7 +16,7 @@ Then("User can sync new RTO", () => {
 })
 
 /* MP002 */
-When("User add new map to libary in RTO succesfull", () => {
+When("User add new map to libary in RTO successfully", () => {
     $(MapObject.selectRTScourse(MapData.course)).click();
     $(MapObject.selectRTSunit(MapData.unit)).$(MapObject.btnAddUnit).click();
     $(MapObject.btn_Continue).click();
@@ -28,21 +28,21 @@ When("User add new map to libary in RTO succesfull", () => {
 
     $(MapObject.btn_NewMap).click();
 
-    $(MapObject.txt_assetment1).click();
-    $(MapObject.txt_assetment1).setValue(MapData.assetment1);
-    $(MapObject.txt_references1).click();
+    $(MapObject.txt_Assetment(1)).click();
+    $(MapObject.txt_Assetment(1)).setValue(MapData.assetment1);
+    $(MapObject.txt_References(1)).click();
 
-    $(MapObject.txt_assetment2).click();
-    $(MapObject.txt_assetment2).setValue(MapData.assetment2);
-    $(MapObject.txt_references2).doubleClick();
-    $(MapObject.txt_references2).setValue(MapData.references2);
+    $(MapObject.txt_Assetment(2)).click();
+    $(MapObject.txt_Assetment(2)).setValue(MapData.assetment2);
+    $(MapObject.txt_References(2)).doubleClick();
+    $(MapObject.txt_References(2)).setValue(MapData.references2);
 
-    $(MapObject.txt_assetment3).click();
-    $(MapObject.txt_assetment3).setValue(MapData.assetment3);
-    $(MapObject.txt_references3).doubleClick();
-    $(MapObject.txt_references3).setValue(MapData.references3);
-    $(MapObject.txt_references3).click();
-    $(MapObject.btn_markcomplted3).click();
+    $(MapObject.txt_Assetment(3)).click();
+    $(MapObject.txt_Assetment(3)).setValue(MapData.assetment3);
+    $(MapObject.txt_References(3)).doubleClick();
+    $(MapObject.txt_References(3)).setValue(MapData.references3);
+    $(MapObject.txt_References(3)).click();
+    $(MapObject.btn_Markcomplted(3)).click();
 
     $(MapObject.btn_MapSave).click();
     $(MapObject.txt_MapName).setValue(MapData.mapname);
@@ -88,7 +88,7 @@ When("User click button delete RTO don't have maps", () => {
     browser.pause(timeout)
     $(MapObject.btn_Delete).click();
 })
-Then("User can delete RTO succesfull", () => {
+Then("User can delete RTO successfully", () => {
     assert.exists($(MapObject.btn_NewSyncs), '');
 })
 
@@ -108,7 +108,7 @@ Then("User can sync new Course", () => {
 })
 
 /* MP005 */
-When("User add new map to libary in Course succesfull", () => {
+When("User add new map to libary in Course successfully", () => {
     const timeout = 2000
     $(MapObject.selectRTScourse(MapData.course)).click();
     $(MapObject.selectRTSunit(MapData.unit)).$(MapObject.btnAddUnit).click();
@@ -123,25 +123,22 @@ When("User add new map to libary in Course succesfull", () => {
 
     browser.pause(timeout)
     $(MapObject.btn_NewMap).click();
+   
+    $(MapObject.txt_Assetment(1)).click();
+    $(MapObject.txt_Assetment(1)).setValue(MapData.assetment1);
+    $(MapObject.txt_References(1)).click();
 
-    browser.pause(3000)
-    $(MapObject.txt_assetment1).click();
-    $(MapObject.txt_assetment1).setValue(MapData.assetment1);
-    $(MapObject.txt_references1).click();
+    $(MapObject.txt_Assetment(2)).click();
+    $(MapObject.txt_Assetment(2)).setValue(MapData.assetment2);
+    $(MapObject.txt_References(2)).doubleClick();
+    $(MapObject.txt_References(2)).setValue(MapData.references2);
 
-    browser.pause(2000)
-    $(MapObject.txt_assetment2).click();
-    $(MapObject.txt_assetment2).setValue(MapData.assetment2);
-    $(MapObject.txt_references2).doubleClick();
-    $(MapObject.txt_references2).setValue(MapData.references2);
-
-    browser.pause(2000)
-    $(MapObject.txt_assetment3).click();
-    $(MapObject.txt_assetment3).setValue(MapData.assetment3);
-    $(MapObject.txt_references3).doubleClick();
-    $(MapObject.txt_references3).setValue(MapData.references3);
-    $(MapObject.txt_references3).click();
-    $(MapObject.btn_markcomplted3).click();
+    $(MapObject.txt_Assetment(3)).click();
+    $(MapObject.txt_Assetment(3)).setValue(MapData.assetment3);
+    $(MapObject.txt_References(3)).doubleClick();
+    $(MapObject.txt_References(3)).setValue(MapData.references3);
+    $(MapObject.txt_References(3)).click();
+    $(MapObject.btn_Markcomplted(3)).click();
 
     $(MapObject.btn_MapSave).click();
     $(MapObject.txt_MapName).setValue(MapData.mapname);
@@ -183,24 +180,21 @@ Then("User can sync new Unit", () => {
 When("User select unit and start Mapping", () => {
     $(MapObject.btn_NewMap).click();
 
-    browser.pause(3000)
-    $(MapObject.txt_assetment1).click();
-    $(MapObject.txt_assetment1).setValue(MapData.assetment1);
-    $(MapObject.txt_references1).click();
+    $(MapObject.txt_Assetment(1)).click();
+    $(MapObject.txt_Assetment(1)).setValue(MapData.assetment1);
+    $(MapObject.txt_References(1)).click();
 
-    browser.pause(2000)
-    $(MapObject.txt_assetment2).click();
-    $(MapObject.txt_assetment2).setValue(MapData.assetment2);
-    $(MapObject.txt_references2).doubleClick();
-    $(MapObject.txt_references2).setValue(MapData.references2);
+    $(MapObject.txt_Assetment(2)).click();
+    $(MapObject.txt_Assetment(2)).setValue(MapData.assetment2);
+    $(MapObject.txt_References(2)).doubleClick();
+    $(MapObject.txt_References(2)).setValue(MapData.references2);
 
-    browser.pause(2000)
-    $(MapObject.txt_assetment3).click();
-    $(MapObject.txt_assetment3).setValue(MapData.assetment3);
-    $(MapObject.txt_references3).doubleClick();
-    $(MapObject.txt_references3).setValue(MapData.references3);
-    $(MapObject.txt_references3).click();
-    $(MapObject.btn_markcomplted3).click();
+    $(MapObject.txt_Assetment(3)).click();
+    $(MapObject.txt_Assetment(3)).setValue(MapData.assetment3);
+    $(MapObject.txt_References(3)).doubleClick();
+    $(MapObject.txt_References(3)).setValue(MapData.references3);
+    $(MapObject.txt_References(3)).click();
+    $(MapObject.btn_Markcomplted(3)).click();
 
     $(MapObject.btn_MapSave).click();
     $(MapObject.txt_MapName).setValue(MapData.mapname);
@@ -213,13 +207,13 @@ When("User select unit and start Mapping", () => {
     browser.pause(2000)
     $(MapObject.selectRto(MapData.rto)).click();
     browser.pause(2000)
-    $(MapObject.value_course).click();
+    $(MapObject.select_Courselist(MapData.rto,MapData.map_course)).click();
     browser.pause(2000)
     $(MapObject.btn_savsubmit).click();
     browser.pause(2000)
 
     $(MapObject.drop_RtoAssign).click();
-    $(MapObject.rto_group).click();
+    $(MapObject.selectCourse(MapData.map_course)).click();
     $(MapObject.txt_MapNote).click();
     $(MapObject.btn_savsubmit).click();
 
@@ -250,7 +244,7 @@ When("User click button duplicate maps", () => {
 
 
 })
-Then("User can duplicate map succesfull", () => {
+Then("User can duplicate map successfully", () => {
     const timeout = 3000
     browser.pause(timeout)
     $(MapObject.btn_MapSave).click();
@@ -273,7 +267,7 @@ When("User click button delete duplicate maps", () => {
     $(MapObject.btn_ActionDelete).click();
     $(MapObject.btn_Continue).click();
 })
-Then("User can delete duplicate map succesfull", () => {
+Then("User can delete duplicate map successfully", () => {
     $(MapObject.tab_Maps).click()
     browser.pause(2000)
     assert.equal($(MapVerify.lbl_MapName).getText(), MapSuccess.verify_mapname, '');
@@ -315,7 +309,7 @@ When("User click re-assign maps", () => {
     $(MapObject.btn_savsubmit).click();
     browser.pause(timeout)
 })
-Then("User can re-assign maps succesfull", () => {
+Then("User can re-assign maps successfully", () => {
     assert.equal($(MapVerify.lbl_MapRename).getText(), MapData.maprename, '');
     assert.equal($(MapVerify.lbl_MapRenote).getText(), MapData.maprenote, '');
     assert.equal($(MapVerify.llb_MapReFoder).getText(), MapData.foldername, '');
@@ -332,7 +326,7 @@ When("User click button delete re-assign maps", () => {
     $(MapObject.units_Result(MapData.unit)).click();
     $(MapObject.btn_Search).click();
 })
-Then("User can delete re-assign maps succesfull", () => {
+Then("User can delete re-assign maps successfully", () => {
     $(MapObject.tab_Maps).click()
     browser.pause(1000)
     $(MapObject.btn_MapDropDown).click();
@@ -358,7 +352,7 @@ When("User click button delete folder don't have maps", () => {
     browser.pause(3000)
     $(MapObject.btn_Delete).click();
 })
-Then("User can delete folder succesfull", () => {
+Then("User can delete folder successfully", () => {
     const timeout = 1000
     $(MapObject.btn_SideBar).click();
     browser.pause(timeout)

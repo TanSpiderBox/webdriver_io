@@ -18,7 +18,7 @@ When('User invite new Users', () => {
     $(ManagedUserObj.btn_confirm).click()
 })
 
-Then('User invite new Users succesfull', () => {
+Then('User invite new Users successfully', () => {
     assert.equal($(ManagedUserObj.lbl_verify).getText(), ManagedUsersData.lbl_inviteverify, '');
     $(ManagedUserObj.btn_close).click()
 })
@@ -29,7 +29,7 @@ When('User click button reinvite', () => {
     $(ManagedUserObj.btn_resend).click()
 })
 
-Then('User can reinvite succesfull', () => {
+Then('User can reinvite successfully', () => {
     assert.equal($(ManagedUserObj.lbl_verify).getText(), ManagedUsersData.lbl_resend, '');
     browser.keys("\uE007")
 })
@@ -91,7 +91,7 @@ When('User click button unlock Users and buy new plan', () => {
     $(BillingInfoObject.btn_submit).click();
     browser.pause(7000)
 })
-Then('User can unlock Users succesfull', () => {
+Then('User can unlock Users successfully', () => {
     browser.keys("Escape")
     $(ProfileObject.btn_user).click()
     $(ProfileObject.btn_userAccount).click()
@@ -104,6 +104,6 @@ When('User click button delete member', () => {
     $(ManagedUserObj.btn_close).click()
 })
 
-Then('User can delete member succesfull', () => {
+Then('User can delete member successfully', () => {
 
 })

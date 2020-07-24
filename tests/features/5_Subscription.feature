@@ -6,7 +6,7 @@ Feature: Subsription
     Scenario: Verify system display correct information of Subscription Plan screen
         Given  User Open website MMAP
         When User input correct email and password
-        Then User can login succesfully
+        Then User can login successfully
         When User access Subscription
         Then System display correct information of subscription
 
@@ -53,17 +53,17 @@ Feature: Subsription
     @SB010
     Scenario: Verify User fail verification 3d card and can't process payment
         When User use 3d card and fail verification
-        Then User can't payment succesfully
+        Then User can't payment successfully
 
     @SB011
-    Scenario: Verify User can process payment succesfully with 3d card
+    Scenario: Verify User can process payment successfully with 3d card
         When User use 3d card and completed verification
-        Then User can payment with 3d card succesfully
+        Then User can payment with 3d card successfully
 
     @SB012
     Scenario: Verify User can upgrade new subscription plan
         When User choose higher plan and add valid card
-        Then User upgrade new plan succesfully
+        Then User upgrade new plan successfully
 
     @SB013
     Scenario: Verify User can downgrade subscription plan
@@ -86,7 +86,7 @@ Feature: Subsription
         Then System will process request cancel subscription for next payment
 
     @SB017
-    Scenario: Verify User can't choose new plan after reuqest cancel
+    Scenario: Verify User can't choose new plan after request cancel
         When User choose another plan
         Then System will display warning massage
 

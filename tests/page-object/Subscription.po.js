@@ -3,6 +3,13 @@ const SubscriptionPlanObject = {
     lbl_subscription: '//*[contains(text(),"Subscription Plan")]',
 
     btn_tire1: '(//a[contains(@class,"btn-price rounded")])[3]',
+    subscription_block: (tire, header) => {
+        return "//div[contains(@class,'plan-card p-3 rounded border')]//div[contains(text()," + "'" + tire + "'" + ")]/parent::div/following-sibling::div/div[contains(text()," + "'" + header + "'" + ")]/parent::div"
+    },
+
+    btn_subscription_register: (tire) => {
+        return "//div[contains(@class,'plan-card p-3 rounded border')]//div[contains(text()," + "'" + tire + "'" + ")]/parent::div/following-sibling::div[5]"
+    },
 
     btn_action: '(//*[contains(@class,"btn btn-cancel")])[1]',
 

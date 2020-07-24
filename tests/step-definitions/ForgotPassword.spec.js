@@ -178,6 +178,6 @@ When('User input valid password and password confirm', () => {
     $(ConfirmPwdObject.txt_newpwdconf).setValue(ForgotPasswordData.user_pwdcorrect);
     $(ConfirmPwdObject.btn_changemypassword).click();
 })
-Then('User can login succesfull with new password', () => {
+Then('User can login successfully with new password', () => {
     assert.equal($(LoginSuccessObjects.lbl_success_login).getText(), LoginSuccessMessage.login_success, '');
 })

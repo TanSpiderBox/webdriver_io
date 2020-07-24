@@ -60,7 +60,7 @@ exports.config = {
             // binary: "/usr/local/Caskroom/google-chrome/latest/Google Chrome.app/Contents/MacOS/Google Chrome",
             args: [
                 'start-maximized',
-                '--headless',
+                // '--headless',
                 '--window-size=1920,1080',
             ]
         },

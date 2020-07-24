@@ -45,11 +45,11 @@ Feature: Register
   @RG009
   Scenario: Verify User can register new account
     When User input all valid infomation
-    Then User create account successfull
+    Then User create account successfully
 
 # @TRG010
 # Scenario: Verify User can login system with new account register
 #   # When User select email confirm
 #   # Then User can comfirm Email
 #   When User input correct email and password
-#   Then User can login succesfull
+#   Then User can login successfully

@@ -52,7 +52,7 @@ const MapObject = {
         return "(//div[contains(@class,'ui-resizable')]//textarea[@id='references'])[" + "'" + references_field + "'" + "]"
     },
     btn_Markcomplted: (references_field) => {
-        return "(//div[contains(@class,'ui-resizable')]//textarea[@id='references'])[" + "'" + references_field + "'" + "]/following-sibling::div[@x-placement='bottom - start']//button[text()='Mark as complete']"
+        return "(//div[contains(@class,'ui-resizable')]//textarea[@id='references'])[" + "'" + references_field + "'" + "]/following-sibling::div[@x-placement='bottom-start']//button[text()='Mark as complete']"
     },
     txt_assetment1: '(//textarea[contains(@name,"assessment_mapping")])[1]',
     txt_assetment2: '(//textarea[contains(@name,"assessment_mapping")])[2]',
@@ -72,9 +72,13 @@ const MapObject = {
     selectRto: (rtoname) => {
         return "//*[@id='rtos_section']//*[contains(text()," + "'" + rtoname + "'" + ")]/ancestor::button"
     },
-    value_course: '//*[@id="rtos_section"]/div/button/div/div[1]/div/input',
+    select_Courselist: (rtoname, coursename) => {
+        return "//*[@id='rtos_section']//*[contains(text()," + "'" + rtoname + "'" + ")]/ancestor::button/following-sibling::div//*[contains(text()," + "'" + coursename + "'" + ")]/parent::div/parent::div//div[@class='magic-checkbox dark']"
+    },
     rto_group: '//input[@data-name="selectGrouprto_ids[]"]',
-
+    selectCourse: (coursename) => {
+        return "//input[@data-name='selectItemrto_ids[]']/following-sibling::span[contains(text()," + "'" + coursename + "'" + ")]"
+    },
     drop_FolderAssign: '//select[@name="folder_ids[]"]/following-sibling::div/button',
     value_Folder: (foldername) => {
         return "//input[@data-name='selectItemfolder_ids[]']/following-sibling::span[contains(text()," + "'" + foldername + "'" + ")]"
@@ -122,9 +126,9 @@ const MapVerify = {
     lbl_MapNote: '(//table[contains(@class,"table-striped")]//tbody//td)[6]',
     lbl_MapUpdate: '(//table[contains(@class,"table-striped")]//tbody//td)[7]',
 
-    lbl_MapRename:'//*[@id="swal2-content"]//div[contains(@class,"text-pink mr-5")]',
-    lbl_MapRenote:'//*[@id="swal2-content"]//div[contains(@class,"my-3")]',
-    llb_MapReFoder:'//*[@id="swal2-content"]//div[contains(@class,"row")]/div[contains(text(),"Assign to Folder(s):")]/following-sibling::div/div',
+    lbl_MapRename: '//*[@id="swal2-content"]//div[contains(@class,"text-pink mr-5")]',
+    lbl_MapRenote: '//*[@id="swal2-content"]//div[contains(@class,"my-3")]',
+    llb_MapReFoder: '//*[@id="swal2-content"]//div[contains(@class,"row")]/div[contains(text(),"Assign to Folder(s):")]/following-sibling::div/div',
 
     lbl_verify: '//*[@id="swal2-content"]/div[1]',
     lbl_MapRto: '//select[@name="rto_ids[]"]/following-sibling::div/following-sibling::div',

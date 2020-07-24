@@ -6,7 +6,7 @@ Feature: User Profile
    Scenario: Verify system display correct User Information
       Given  User Open website MMAP
       When User input correct email and password
-      Then User can login succesfull
+      Then User can login successfully
       When User select submenu User Profile
       Then System display User Profile Screen with all correct information of user
 
@@ -23,12 +23,12 @@ Feature: User Profile
    @UP004
    Scenario: Verify User can change password in User Information screen
       When User input valid all password information
-      Then User change password succesfull
+      Then User change password successfully
 
    @UP005
    Scenario: Verify User can login system with new password
       When User input email and new password
-      Then User login system successfull with new password
+      Then User login system successfully with new password
 
    @UP006
    Scenario: Verify User clicks button pricing system will move to subscriptions page

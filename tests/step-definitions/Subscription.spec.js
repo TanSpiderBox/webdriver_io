@@ -192,7 +192,7 @@ When("User use 3d card and fail verification", () => {
     $(BillingInfoObject.btn_fail3dcard).click();
     browser.pause(2000)
 })
-Then("User can't payment succesfully", () => {
+Then("User can't payment successfully", () => {
     assert.equal($(BillingVerifi.stripeverifi).getText(), BillingDataVerify.error3dcard, '');
     browser.keys("\uE007")
     browser.pause(2000)
@@ -213,7 +213,7 @@ When('User use 3d card and completed verifycation', () => {
     $(BillingInfoObject.btn_complete3dcard).click();
     browser.pause(2000)
 })
-Then('User can payment with 3d card succesfully', () => {
+Then('User can payment with 3d card successfully', () => {
     assert.equal($(SubscriptionPlanObject.lbl_subsucess).getText(), SubscriptionData.sub_success, '');
 })
 
@@ -221,7 +221,7 @@ Then('User can payment with 3d card succesfully', () => {
 When('User choose higher plan and add valid card',()=>{
 
 })
-Then('User upgrade new plan succesfully',()=>{
+Then('User upgrade new plan successfully',()=>{
     
 })
 
