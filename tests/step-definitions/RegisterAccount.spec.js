@@ -124,7 +124,7 @@ Then("User can't register new account with Password is so short", () => {
 })
 
 /* RG009 */
-When("User input all valid infomation", () => {
+When("User input all valid information", () => {
   $(RegisObject.btn_regis).click();
   $(RegisObject.txt_userfirstname).setValue(RegisData.user_firstName);
   $(RegisObject.txt_usersurname).setValue(RegisData.user_lastName);

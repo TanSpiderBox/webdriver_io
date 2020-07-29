@@ -5,7 +5,7 @@ Feature: Managed Users
     @MU001
     Scenario: Verify Owner can invite Users
         Given  User Open website MMAP
-        When User input all valid infomation
+        When User input all valid information
         Then User create account successfully
         When User invite new Users
         Then User invite new Users successfully

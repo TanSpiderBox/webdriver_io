@@ -44,7 +44,7 @@ Feature: Register
 
   @RG009
   Scenario: Verify User can register new account
-    When User input all valid infomation
+    When User input all valid information
     Then User create account successfully
 
 # @TRG010

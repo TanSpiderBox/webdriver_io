@@ -28,21 +28,21 @@ When("User add new map to libary in RTO successfully", () => {
 
     $(MapObject.btn_NewMap).click();
 
-    $(MapObject.txt_Assetment(1)).click();
-    $(MapObject.txt_Assetment(1)).setValue(MapData.assetment1);
-    $(MapObject.txt_References(1)).click();
+    $(MapObject.txt_assetment1).click();
+    $(MapObject.txt_assetment1).setValue(MapData.assetment1);
+    $(MapObject.txt_references1).click();
 
-    $(MapObject.txt_Assetment(2)).click();
-    $(MapObject.txt_Assetment(2)).setValue(MapData.assetment2);
-    $(MapObject.txt_References(2)).doubleClick();
-    $(MapObject.txt_References(2)).setValue(MapData.references2);
+    $(MapObject.txt_assetment2).click();
+    $(MapObject.txt_assetment2).setValue(MapData.assetment2);
+    $(MapObject.txt_references2).doubleClick();
+    $(MapObject.txt_references2).setValue(MapData.references2);
 
-    $(MapObject.txt_Assetment(3)).click();
-    $(MapObject.txt_Assetment(3)).setValue(MapData.assetment3);
-    $(MapObject.txt_References(3)).doubleClick();
-    $(MapObject.txt_References(3)).setValue(MapData.references3);
-    $(MapObject.txt_References(3)).click();
-    $(MapObject.btn_Markcomplted(3)).click();
+    $(MapObject.txt_assetment3).click();
+    $(MapObject.txt_assetment3).setValue(MapData.assetment3);
+    $(MapObject.txt_references3).doubleClick();
+    $(MapObject.txt_references3).setValue(MapData.references3);
+    $(MapObject.txt_references3).click();
+    $(MapObject.btn_markcomplted3).click();
 
     $(MapObject.btn_MapSave).click();
     $(MapObject.txt_MapName).setValue(MapData.mapname);
@@ -123,22 +123,25 @@ When("User add new map to libary in Course successfully", () => {
 
     browser.pause(timeout)
     $(MapObject.btn_NewMap).click();
-   
-    $(MapObject.txt_Assetment(1)).click();
-    $(MapObject.txt_Assetment(1)).setValue(MapData.assetment1);
-    $(MapObject.txt_References(1)).click();
 
-    $(MapObject.txt_Assetment(2)).click();
-    $(MapObject.txt_Assetment(2)).setValue(MapData.assetment2);
-    $(MapObject.txt_References(2)).doubleClick();
-    $(MapObject.txt_References(2)).setValue(MapData.references2);
+    browser.pause(3000)
+    $(MapObject.txt_assetment1).click();
+    $(MapObject.txt_assetment1).setValue(MapData.assetment1);
+    $(MapObject.txt_references1).click();
 
-    $(MapObject.txt_Assetment(3)).click();
-    $(MapObject.txt_Assetment(3)).setValue(MapData.assetment3);
-    $(MapObject.txt_References(3)).doubleClick();
-    $(MapObject.txt_References(3)).setValue(MapData.references3);
-    $(MapObject.txt_References(3)).click();
-    $(MapObject.btn_Markcomplted(3)).click();
+    browser.pause(2000)
+    $(MapObject.txt_assetment2).click();
+    $(MapObject.txt_assetment2).setValue(MapData.assetment2);
+    $(MapObject.txt_references2).doubleClick();
+    $(MapObject.txt_references2).setValue(MapData.references2);
+
+    browser.pause(2000)
+    $(MapObject.txt_assetment3).click();
+    $(MapObject.txt_assetment3).setValue(MapData.assetment3);
+    $(MapObject.txt_references3).doubleClick();
+    $(MapObject.txt_references3).setValue(MapData.references3);
+    $(MapObject.txt_references3).click();
+    $(MapObject.btn_markcomplted3).click();
 
     $(MapObject.btn_MapSave).click();
     $(MapObject.txt_MapName).setValue(MapData.mapname);
@@ -180,21 +183,24 @@ Then("User can sync new Unit", () => {
 When("User select unit and start Mapping", () => {
     $(MapObject.btn_NewMap).click();
 
-    $(MapObject.txt_Assetment(1)).click();
-    $(MapObject.txt_Assetment(1)).setValue(MapData.assetment1);
-    $(MapObject.txt_References(1)).click();
+    browser.pause(3000)
+    $(MapObject.txt_assetment1).click();
+    $(MapObject.txt_assetment1).setValue(MapData.assetment1);
+    $(MapObject.txt_references1).click();
 
-    $(MapObject.txt_Assetment(2)).click();
-    $(MapObject.txt_Assetment(2)).setValue(MapData.assetment2);
-    $(MapObject.txt_References(2)).doubleClick();
-    $(MapObject.txt_References(2)).setValue(MapData.references2);
+    browser.pause(2000)
+    $(MapObject.txt_assetment2).click();
+    $(MapObject.txt_assetment2).setValue(MapData.assetment2);
+    $(MapObject.txt_references2).doubleClick();
+    $(MapObject.txt_references2).setValue(MapData.references2);
 
-    $(MapObject.txt_Assetment(3)).click();
-    $(MapObject.txt_Assetment(3)).setValue(MapData.assetment3);
-    $(MapObject.txt_References(3)).doubleClick();
-    $(MapObject.txt_References(3)).setValue(MapData.references3);
-    $(MapObject.txt_References(3)).click();
-    $(MapObject.btn_Markcomplted(3)).click();
+    browser.pause(2000)
+    $(MapObject.txt_assetment3).click();
+    $(MapObject.txt_assetment3).setValue(MapData.assetment3);
+    $(MapObject.txt_references3).doubleClick();
+    $(MapObject.txt_references3).setValue(MapData.references3);
+    $(MapObject.txt_references3).click();
+    $(MapObject.btn_markcomplted3).click();
 
     $(MapObject.btn_MapSave).click();
     $(MapObject.txt_MapName).setValue(MapData.mapname);

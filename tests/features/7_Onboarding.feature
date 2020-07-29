@@ -5,7 +5,7 @@ Feature: Oboarding
     @OB001
     Scenario: Verify New User first login must complete Onboarding
         Given User Open website MMAP
-        When User input all valid infomation
+        When User input all valid information
         Then User create account successfully
         When User login first time
         Then User must completed Onboarding

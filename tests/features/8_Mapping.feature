@@ -3,6 +3,14 @@ Feature: Mapping
     Background: As a User I want check all case of Feature Mapping
 
     @MP001
+    Scenario: Vefiry User can't sync new RTO
+        Given  User Open website MMAP
+        When User input correct email and password
+        Then User can login successfully
+        When User blank input field
+        Then User can sync new RTO
+
+    @MP002
     Scenario: Verify User can sync new RTO
         Given  User Open website MMAP
         When User input correct email and password
@@ -10,7 +18,7 @@ Feature: Mapping
         When User input RTO and click button sync
         Then User can sync new RTO
 
-    @MP002
+    @MP003
     Scenario: Verify User can add new Maps in RTO
         When User add new map to libary in RTO successfully
         Then User can add new maps in RTO
